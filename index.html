@@ -1,12 +1,119 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+	<title>Pink</title>
+	<link rel="stylesheet" href="css/style.min.css"> </head>
 
-  </body>
+<body>
+	<div class="page">
+		<header class="page__header">
+			<div class="section  header-section">
+				<div class="section__inner  header-section__inner"> <a class="header-logo" href="index.html">PINK</a>
+					<nav class="header-menu"> <span id="header-menu-toggle" class="header-menu__toggle  header-menu__toggle--active"></span>
+						<ul id="header-menu--list" class="header-menu__list  header-menu__list--opened">
+							<li class="header-menu__item"><a class="header-menu__link" href="index.html">ГЛАВНАЯ</a></li>
+							<li class="header-menu__item"><a class="header-menu__link" href="photo.html">ФОТОГРАФИИ</a></li>
+							<li class="header-menu__item"><a class="header-menu__link" href="form.html">КОНКУРС</a></li>
+							<li class="header-menu__item"><a class="header-menu__link" href="http://htmlacademy.ru">HTML ACADEMY</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="page__content">
+			<div class="section  content-section">
+				<div class="section__inner  content-section__inner">
+					<section class="download"> <a class="download__btn" href="#">Скачать приложение</a>
+						<a class="download__icon" href="#"><img src="http://placehold.it/50x50" width="" height="" alt=""></a>
+						<a class="download__icon" href="#"><img src="http://placehold.it/50x50" width="" height="" alt=""></a>
+						<a class="download__icon" href="#"><img src="http://placehold.it/50x50" width="" height="" alt=""></a>
+						<p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+					</section>
+					<section class="features">
+						<h2 class="features__heading">Устали от серости мегаполиса?</h2>
+						<h2 class="features__heading">Нам есть, что вам предложить!</h2>
+						<div class="features__description">
+							<h2 class="features__item-heading">Поднимает настроение</h2>
+							<p class="features__item">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+							<h2 class="features__item-heading">Меняет мир вокруг</h2>
+							<p class="features__item">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+							<h2 class="features__item-heading">Заводит новых друзей</h2>
+							<p class="features__item">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+						</div>
+						 <img class="features__pic" src="http://placehold.it/156x280" width="" height="" alt="">
+					 </section>
+					 <section class="review">
+						<div class="review-slider">
+							<input class="slider-input" type="radio" id="slider-btn1" name="slider-btn1" checked>
+							<input class="slider-input" type="radio" id="slider-btn2" name="slider-btn2">
+							<input class="slider-input" type="radio" id="slider-btn3" name="slider-btn3">
+							<div class="slider-controls">
+								<label for="slider-btn1"></label>
+								<label for="slider-btn2"></label>
+								<label for="slider-btn3"></label>
+							</div>
+							<div class="review-slider__slide">
+								<p class="review-slider__username">Николай Петров</p>
+								<p class="review-slider__opinion">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+							</div>
+							<div class="review-slider__slide">Контент</div>
+							<div class="review-slider__slide">Контент</div>
+						</div>
+					 </section>
+					 <section class="price">
+						<div class="price-slider">
+							<input class="slider-input" type="radio" id="slider-btn1" name="slider-btn1">
+							<input class="slider-input" type="radio" id="slider-btn2" name="slider-btn2" checked>
+							<input class="slider-input" type="radio" id="slider-btn3" name="slider-btn3">
+							<div class="slider-controls">
+								<label for="slider-btn1"></label>
+								<label for="slider-btn2"></label>
+								<label for="slider-btn3"></label>
+							</div>
+							<div class="price-slider__slide">
+								<div class="price-slider__stripe">
+									<h2 class="price-slider__heading">СТАНДАРТ</h2>
+									<p class="price-slider__numbers">3,99 USD</p>
+								</div>
+								<div class="price-slider__item">
+									<p class="price-slider__feature">РОЗОВЫЙ ФИЛЬТР</p>
+								</div>
+								<div class="price-slider__item">
+									<p class="price-slider__feature">СМАЙЛИКИ</p>
+								</div>
+								<div class="price-slider__item">
+									<p class="price-slider__feature">КОММЕНТАРИИ</p>
+								</div>
+							</div>
+							<div class="price-slider__slide">Контент</div>
+							<div class="price-slider__slide">Контент</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</main>
+		<footer class="page__footer">
+			<div class="section  footer-contacts">
+				<div class="section__inner  footer-contacts__inner">
+					<h2 class="features__heading">Остались вопросы? Свяжитесь с нами!</h2>
+					<article class="footer-contact">
+						<p class="footer-contact__text">Звоните:</p> <a href="tel:+78125556666" class="footer-contact__info">+7 (812) 555-66-66</a> </article>
+					<article class="footer-contact">
+						<p class="footer-contact__text">Пишите:</p> <a href="mailto:mail@htmlacademy.ru" class="footer-contact__info">mail@htmlacademy.ru</a> </article>
+					<article class="footer-contact">
+						<p class="footer-contact__text">Приезжайте в гости:</p>
+						<p class="footer-contact__info">ул. Большая Конюшенная, 19/8</p>
+					</article>
+					<div class="section  footer-map">
+						<div class="section__inner  footer-map__inner"> </div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
 </html>
