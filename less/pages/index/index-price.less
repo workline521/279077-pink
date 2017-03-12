@@ -1,0 +1,75 @@
+.price {
+	.margin-top(70px);
+	position: relative;
+	height: 398px;
+	background: @description-bg;
+	padding: 40px 20px 0 20px;
+}
+.price:after{
+	content: "";
+	top: -20px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: inherit;
+	z-index: -1;
+	transform: skewY(-4deg);
+	}
+.price-slider {
+	background: @description-bg;
+	}
+.price-slider__stripe{
+	.centerize() ;
+	position: relative;
+	width: 276px;
+	height: 98px;
+	background: @link-bg;
+	border-left: 2px solid @slider-border;
+	border-right: 2px solid @slider-border;
+	border-bottom: none;
+	border-top: none;
+}
+.price-slider__stripe:before{
+	content: "";
+	top:  0;
+	left: 0;
+	width: 74px;
+	height: 73px;
+	position: absolute;
+	z-index: 1;
+	background: url("../../../img/hit-icon.png") no-repeat;
+}
+.price-slider__heading{
+	.text-align();
+	font-family: @font-regular;
+	font-size: @font-size;
+	line-height: @line-height - 2;
+	color: @font-color;
+	    padding-top: 20px;
+	margin-bottom: 0;
+}
+.price-slider__numbers{
+	.text-align();
+	.font-light();
+	font-family: @font-regular;
+	font-size: @font-size + 6;
+	line-height: @line-height - 2;
+	color: @font-color;
+	.margin-top(0);
+}
+.price-slider__item{
+	.background-white();
+	padding: 15px 0 15px 20px;
+	border-left: 2px solid @slider-border;
+	border-right: 2px solid @slider-border;
+	border-bottom: 2px solid @slider-border;
+	border-top: none;
+}
+.price-slider__feature{
+	font-family: @font-regular;
+	font-size: @font-size - 4;
+	line-height: @line-height - 2;
+	color: @link-bg;
+	.zero-margin();
+}

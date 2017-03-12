@@ -1,0 +1,114 @@
+.functional {
+	background: @description-bg;
+}
+
+.functional__edit-photo {
+	.centerize();
+	.display-block();
+	.margin-top(20px);
+}
+
+.functional__tool-list {
+	.list-style();
+	.zero-margin();
+	padding: 0;
+}
+
+.functional__tool-item {
+	.display-inlineblock();
+	.vertical-align(middle);
+	margin-right: 34px;
+	.margin-top(42px);
+}
+
+.functional__tool1 {
+	background: url("../../../img/icon-editor-crop.svg") no-repeat;
+	.no-borders();
+	width: 48px;
+	height: 48px;
+	cursor: pointer;
+	margin-left: 55px;
+}
+
+.functional__tool2 {
+	background: url("../../../img/icon-editor-fill.svg") no-repeat;
+	.no-borders();
+	width: 48px;
+	height: 48px;
+	cursor: pointer;
+}
+
+.functional__tool3 {
+	background: url("../../../img/icon-editor-contrast.svg") no-repeat;
+	.no-borders();
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+}
+
+.functional__toolcontrols {
+	position: relative;
+	margin: 40px;
+}
+
+.functional__toolscale {
+	width: 240px;
+	height: 2px;
+	background: @link-bg;
+}
+
+.functional__tooltoggle {
+	position: absolute;
+	top: -6px;
+	right: 33px;
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
+	border: 2px solid @font-red;
+	border-radius: 50%;
+	background: @font-color;
+}
+
+.functional__btns {
+	.no-borders();
+	height: 201px;
+	border-top: 1px solid #dddfe0;
+}
+
+.functional__post-btn {
+	.display-inlineblock();
+	.vertical-align();
+	.text-align();
+	.font-bold ();
+	.text-decoration();
+	.margin-top(38px);
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 15px 92px;
+	border: 3px solid @font-red;
+	border-radius: 30px;
+	font-family: @font-regular;
+	color: @font-red;
+	font-size: @font-size;
+	line-height: @line-height - 14;
+	background: transparent;
+}
+
+.functional__cancel-btn {
+	.display-inlineblock();
+	.vertical-align();
+	.text-align();
+	.font-bold ();
+	.text-decoration();
+	.margin-top(12px);
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 15px 103px;
+	border: 3px solid #dddfe0;
+	border-radius: 30px;
+	font-family: @font-regular;
+	color: #dddfe0;
+	font-size: @font-size;
+	line-height: @line-height - 14;
+	background: transparent;
+}

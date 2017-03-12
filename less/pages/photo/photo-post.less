@@ -1,0 +1,52 @@
+.photo-post {
+	padding: 10px 20px;
+}
+
+.photo-post__background {
+	background: @description-bg;
+	.margin-top(-5px);
+	padding: 20px 16px;
+}
+
+.photo-post__info {}
+
+.photo-post__username {
+	font-size: @font-size - 4;
+	color: @link-bg;
+	.font-bold ();
+}
+
+.photo-post__when {
+	.zero-margin();
+	.font-light();
+	font-size: @font-size - 7;
+}
+
+.photo-post__usermessage {
+	font-size: @font-size - 4;
+	color: @link-bg;
+	.white-space();
+	text-align: left;
+}
+
+.photo-post__usermessage p {
+	.zero-margin();
+}
+
+.photo-post__controls {}
+
+.like-button {width: 13px;
+	height: 12px;
+	border: none;
+	.display-inlineblock();
+	.vertical-align(baseline);
+	background: url("../../../img/icon-heart.svg") no-repeat;
+}
+
+.photo-post__likes-number {
+	.display-inlineblock();
+	.vertical-align(baseline);
+	.zero-margin();
+	color: @font-red;
+	font-size: @font-size - 6;
+}
