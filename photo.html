@@ -5,13 +5,16 @@
 	<meta charset="UTF-8">
 	<meta content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
 	<title>Pink - фотографии пользователей</title>
-	<link rel="stylesheet" href="css/style.min.css"> </head>
+	<link rel="stylesheet" href="css/style.css"> </head>
 
 <body>
 	<div class="page">
 		<header class="page__header">
 			<div class="section  header-section">
-				<div class="section__inner  header-section__inner"> <a class="header-logo" href="index.html">PINK</a>
+				<div class="section__inner  header-section__inner">
+				<span class="header-stripe"><a class="header-logo" href="index.html"><img class="pink-logo" src="img/logo-pink-white-mobile.svg" width="75" height="23"> </a>
+				<button class="header-close" type="button" title="Закрыть">Закрыть</button>
+				</span>
 					<nav class="header-menu"> <span id="header-menu-toggle" class="header-menu__toggle  header-menu__toggle--active"></span>
 						<ul id="header-menu--list" class="header-menu__list  header-menu__list--opened">
 							<li class="header-menu__item"><a class="header-menu__link" href="index.html">ГЛАВНАЯ</a></li>
@@ -20,44 +23,58 @@
 							<li class="header-menu__item"><a class="header-menu__link" href="http://htmlacademy.ru">HTML ACADEMY</a></li>
 						</ul>
 					</nav>
-					<h1 class="header-heading">Фотографии пользователей</h1> 
 				</div>
 			</div>
 		</header>
 		<main class="page__content">
 			<div class="section  photo-section">
 				<div class="section__inner  photo-section__inner">
-					<h2 class="common-heading">Взгляните на фотографии, которые выкладывают пользователи!</h2>
+				    <div class="photo-content">
+				    <h1 class="photo-content__heading">Фотографии
+ пользователей</h1>
+					<h2 class="common-heading">Взгляните на фотографии, которые
+ выкладывают пользователи!
+ Видите, как не хватает ваших?</h2>
+					</div>
 					<article class="photo-post">
 						<a class="photo-post__photo" href="#">
-							<picture><img src="http://placehold.it/280x180" width="280" height="180" alt="photo"></picture>
+							<picture><img src="img/panorama-mobile@1x.jpg" width="280" height="180" alt="photo"></picture>
 						</a>
+						<div class="photo-post__background">
 						<div class="photo-post__info"> <b class="photo-post__username">Анна</b> <span class="photo-post__when">(5 МИНУТ НАЗАД)</span> </div>
 						<div class="photo-post__usermessage">
-							<p>Прыгать или нет?Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+							<p>Прыгать или нет? Напишите в
+комментарии свой совет и смотрите
+прямую трансляцию в перископе,
+задавайте свои вопросы!</p>
 						</div>
 						<div class="photo-post__controls">
 							<button class="like-button" type="button" title="like"></button>
-							<p class="photo-post__likes-number">Нравится: 215</p>
+							<p class="photo-post__likes-number">НРАВИТСЯ: 215</p>
+						</div>
 						</div>
 					</article>
 					<article class="photo-post">
 						<a class="photo-post__photo" href="#">
-							<picture><img src="http://placehold.it/280x180" width="280" height="180" alt="photo"></picture>
+							<picture><img src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="photo"></picture>
 						</a>
+						<div class="photo-post__background">
 						<div class="photo-post__info"> <b class="photo-post__username">Левон</b> <span class="photo-post__when">(5 ЧАСОВ НАЗАД)</span> </div>
 						<div class="photo-post__usermessage">
-							<p>Вчера он на луну летал,сегодня в руки к нам попал.</p>
+							<p>Вчера он на луну летал, сегодня в
+руки к нам попал.</p>
 						</div>
 						<div class="photo-post__controls">
 							<button class="like-button" type="button" title="like"></button>
 							<p class="photo-post__likes-number">НРАВИТСЯ: 356</p>
 						</div>
+						</div>
 					</article>
 					<article class="photo-post">
 						<a class="photo-post__photo" href="#">
-							<picture><img src="http://placehold.it/280x180" width="280" height="180" alt="photo"></picture>
+							<picture><img src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="photo"></picture>
 						</a>
+						<div class="photo-post__background">
 						<div class="photo-post__info"> <b class="photo-post__username">Антон</b> <span class="photo-post__when">(12 ЧАСОВ НАЗАД)</span> </div>
 						<div class="photo-post__usermessage">
 							<p>Соседи будут рады!</p>
@@ -66,24 +83,29 @@
 							<button class="like-button" type="button" title="like"></button>
 							<p class="photo-post__likes-number">НРАВИТСЯ: 666</p>
 						</div>
+						</div>
 					</article>
 					<article class="photo-post">
 						<a class="photo-post__photo" href="#">
-							<picture><img src="http://placehold.it/280x180" width="280" height="180" alt="photo"></picture>
+							<picture><img src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="photo"></picture>
 						</a>
+						<div class="photo-post__background">
 						<div class="photo-post__info"> <b class="photo-post__username">Борис</b> <span class="photo-post__when">(20 ЧАСОВ НАЗАД)</span> </div>
 						<div class="photo-post__usermessage">
-							<p>Здесь могла быть ваша цитата о высоком и вечном.</p>
+							<p>Здесь могла быть ваша цитата о
+высоком и вечном.</p>
 						</div>
 						<div class="photo-post__controls">
 							<button class="like-button" type="button" title="like"></button>
 							<p class="photo-post__likes-number">НРАВИТСЯ: 215</p>
 						</div>
+						</div>
 					</article>
 					<article class="photo-post">
 						<a class="photo-post__photo" href="#">
-							<picture><img src="http://placehold.it/280x180" width="280" height="180" alt="photo"></picture>
+							<picture><img src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="photo"></picture>
 						</a>
+						<div class="photo-post__background">
 						<div class="photo-post__info"> <b class="photo-post__username">Сергей</b> <span class="photo-post__when">(25 ЧАСОВ НАЗАД)</span> </div>
 						<div class="photo-post__usermessage">
 							<p>Самая кубанская в мире!</p>
@@ -92,11 +114,13 @@
 							<button class="like-button" type="button" title="like"></button>
 							<p class="photo-post__likes-number">НРАВИТСЯ: 4</p>
 						</div>
+						</div>
 					</article>
 					<article class="photo-post">
 						<a class="photo-post__photo" href="#">
-							<picture><img src="http://placehold.it/280x180" width="280" height="180" alt="photo"></picture>
+							<picture><img src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="photo"></picture>
 						</a>
+						<div class="photo-post__background">
 						<div class="photo-post__info"> <b class="photo-post__username">Максим</b> <span class="photo-post__when">(40 ЧАСОВ НАЗАД)</span> </div>
 						<div class="photo-post__usermessage">
 							<p>Где снег-то?</p>
@@ -105,11 +129,13 @@
 							<button class="like-button" type="button" title="like"></button>
 							<p class="photo-post__likes-number">НРАВИТСЯ: 150</p>
 						</div>
+						</div>
 					</article>
 					<article class="photo-post">
 						<a class="photo-post__photo" href="#">
-							<picture><img src="http://placehold.it/280x180" width="280" height="180" alt="photo"></picture>
+							<picture><img src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="photo"></picture>
 						</a>
+						<div class="photo-post__background">
 						<div class="photo-post__info"> <b class="photo-post__username">Надежда</b> <span class="photo-post__when">(45 ЧАСОВ НАЗАД)</span> </div>
 						<div class="photo-post__usermessage">
 							<p>Всем GM и взаимные лайки!</p>
@@ -118,10 +144,11 @@
 							<button class="like-button" type="button" title="like"></button>
 							<p class="photo-post__likes-number">НРАВИТСЯ: 2560</p>
 						</div>
+						</div>
 					</article>
 					<section class="functional">
-						<h2 class="common-heading">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
-						<div class="functional__area"> <img class="functional__edit-photo" src="http://placehold.it/280x374" width="280" height="374" alt="Фото пользователя">
+						<h2 class="common-heading">Затмите их всех!<br>Выкладывайте все, что накопилось<br> в телефоне!</h2>
+						<div class="functional__area"> <img class="functional__edit-photo" src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="Фото пользователя">
 							<ul class="functional__tool-list">
 								<li class="functional__tool-item">
 									<button class="functional__tool1" type="button"></button>
@@ -134,9 +161,7 @@
 								</li>
 							</ul>
 							<div class="functional__toolcontrols">
-								<div class="functional__toolscale">
-									<div class="functional__toolbar"></div>
-								</div>
+								<div class="functional__toolscale"></div>
 								<div class="functional__tooltoggle"></div>
 							</div>
 						</div>
@@ -151,7 +176,7 @@
 		<footer class="page__footer">
 			<div class="section  footer-inner">
 				<div class="section__inner  footer-inner__inner">
-					<a class="footer__logo" href="#"><img class="footer__glasses" src="http://placehold.it/147x40" width="147" height="40" alt="Логотип"></a>
+					<a class="footer__logo" href="#"><img class="footer__glasses" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип"></a>
 					<ul class="footer-social">
 						<li class="footer-social__item">
 							<a class="footer-social__link  footer-social__link--tw" href="#"></a>
@@ -159,11 +184,11 @@
 						<li class="footer-social__item">
 							<a class="footer-social__link  footer-social__link--fb" href="#"></a>
 						</li>
-						<li class="footer__social-item">
-							<a class="footer__social-link footer-social__link--yt" href="#"></a>
+						<li class="footer-social__item">
+							<a class="footer-social__link  footer-social__link--yt" href="#"></a>
 						</li>
 					</ul>
-					<a href="#" class="footer-copyright"> <span class="footer-copyright__text">Разработано </span> <img class="footer-copyright__logo" src="http://placehold.it/27x34" width="27" height="34" alt="Htmlacademy.SVG"> </a>
+					<a href="#" class="footer-copyright"><p class="footer-copyright__text">Разработано</p> <img class="footer-copyright__logo" src="img/htmlacademy.svg" width="60" height="60" alt="Htmlacademy.SVG"></a>
 				</div>
 			</div>
 		</footer>
