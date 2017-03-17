@@ -1,11 +1,13 @@
 .price {
-	.margin-top(70px);
+	.margin-top(60px);
+	margin-bottom: 40px;
 	position: relative;
 	height: 398px;
 	background: @description-bg;
-	padding: 40px 20px 0 20px;
+	padding-top: 43px;
 }
-.price:after{
+
+.price:after {
 	content: "";
 	top: -20px;
 	left: 0;
@@ -15,14 +17,20 @@
 	background: inherit;
 	z-index: -1;
 	transform: skewY(-4deg);
-	}
+}
+
 .price-slider {
 	background: @description-bg;
-	}
-.price-slider__stripe{
-	.centerize() ;
+}
+
+.price-slider__mobile-slide {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.price-slider__stripe {
+	.centerize();
 	position: relative;
-	width: 276px;
 	height: 98px;
 	background: @link-bg;
 	border-left: 2px solid @slider-border;
@@ -30,26 +38,29 @@
 	border-bottom: none;
 	border-top: none;
 }
-.price-slider__stripe:before{
+
+.price-slider__stripe:before {
 	content: "";
-	top:  0;
+	top: 0;
 	left: 0;
 	width: 74px;
 	height: 73px;
 	position: absolute;
 	z-index: 1;
-	background: url("../../../img/hit-icon.png") no-repeat;
+	background: url("@{img-url}/hit-icon.png") no-repeat;
 }
-.price-slider__heading{
+
+.price-slider__heading {
 	.text-align();
 	font-family: @font-regular;
 	font-size: @font-size;
 	line-height: @line-height - 2;
 	color: @font-color;
-	    padding-top: 20px;
+	padding-top: 20px;
 	margin-bottom: 0;
 }
-.price-slider__numbers{
+
+.price-slider__numbers {
 	.text-align();
 	.font-light();
 	font-family: @font-regular;
@@ -58,7 +69,8 @@
 	color: @font-color;
 	.margin-top(0);
 }
-.price-slider__item{
+
+.price-slider__item {
 	.background-white();
 	padding: 15px 0 15px 20px;
 	border-left: 2px solid @slider-border;
@@ -66,10 +78,150 @@
 	border-bottom: 2px solid @slider-border;
 	border-top: none;
 }
-.price-slider__feature{
+
+.price-slider__feature {
 	font-family: @font-regular;
 	font-size: @font-size - 4;
 	line-height: @line-height - 2;
 	color: @link-bg;
 	.zero-margin();
+}
+
+.price__review {
+	display: none;
+}
+
+.slider-controls2 {
+	display: block;
+	width: 50px;
+	margin: 0 auto;
+}
+
+@media @tablet-widths {
+	.price {
+		margin-top: 88px;
+		height: 288px;
+		padding-top: 36px;
+		background: #f2f2f2;
+	}
+	.price:after {
+		top: -25px;
+	}
+	.price-slider {
+		display: none;
+	}
+	.price__review {
+		display: block;
+		padding-right: 40px;
+		padding-left: 40px;
+	}
+	.price__table {
+		border-collapse: collapse;
+	}
+	td {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.col-head {
+		width: 152px;
+		height: 78px;
+		background: @link-bg;
+		color: @font-color;
+		font-size: 18px;
+		line-height: 30px;
+		text-align: center;
+	}
+	.col-head--border {
+		border-left: 2px solid #e6e6e6;
+		border-right: 2px solid #e6e6e6;
+	}
+	.bold {
+		.font-bold ();
+		color: @font-color;
+		font-size: 16px;
+		line-height: 30px;
+	}
+	.col {
+		width: 144px;
+		height: 42px;
+		border: 2px solid #e6e6e6;
+		background: @font-color;
+		font-size: 14px;
+		line-height: 30px;
+		color: @link-bg;
+	}
+	.price__review::before {
+		content: "";
+		top: 36px;
+		right: 279px;
+		width: 74px;
+		height: 73px;
+		position: absolute;
+		z-index: 1;
+		background: url("@{img-url}/hit-icon.png") no-repeat;
+	}
+	.col-2,
+	.col-3,
+	.col-4,
+	.col-7,
+	.col-8,
+	.col-12 {
+		background: #ffffff url("@{img-url}/icon-yes.svg") no-repeat 65px 13px;
+	}
+	.col-6,
+	.col-10,
+	.col-11 {
+		background: #ffffff url("@{img-url}/icon-no.svg") no-repeat 63px 7px;
+	}
+}
+
+@media @desktop-widths {
+	.price {
+		height: 406px;
+		margin-top: 124px;
+	}
+	.price:after {
+		top: -42px;
+	}
+	.price__table {
+		margin-top: 30px;
+	}
+	.price__review {
+		padding-right: 130px;
+		padding-left: 130px;
+	}
+	.price__review::before {
+		top: 66px;
+		right: 525px;
+	}
+	td {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.bold {
+		.font-bold ();
+		font-size: 18px;
+	}
+	.col-head {
+		font-size: 24px;
+		height: 97px;
+	}
+	.col {
+		font-size: 18px;
+		width: 193px;
+		height: 56px;
+	}
+	.col-2,
+	.col-3,
+	.col-4,
+	.col-7,
+	.col-8,
+	.col-12 {
+		background: #ffffff url("@{img-url}/icon-yes.svg") no-repeat 104px 20px;
+	}
+	.col-6,
+	.col-10,
+	.col-11 {
+		background: #ffffff url("@{img-url}/icon-no.svg") no-repeat 103px 15px;
+	}
 }

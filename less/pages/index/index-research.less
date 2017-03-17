@@ -1,0 +1,100 @@
+.research {
+	.display-none();
+}
+
+@media @tablet-widths {
+	.research {
+		display: flex;
+		justify-content: center;
+		padding-top: 59px;
+		padding-bottom: 70px;
+	}
+	.research__image {
+		width: 242px;
+		height: 281px;
+		background: url("@{img-url}/diagramm.png") no-repeat;
+		background-size: cover;
+		/*margin-left: 41px;*/
+	}
+	.research__info {
+		margin-left: 52px;
+	}
+	.research__heading {
+		display: none;
+	}
+	.research__heading--tablet {
+		display: block;
+		.zero-margin();
+		font-size: 33px;
+		.font-bold ();
+		line-height: 35px;
+		margin-top: 38px;
+	}
+	.research__text {
+		display: none;
+	}
+	.research__text--tablet {
+		.zero-margin();
+		margin-top: 10px;
+		color: @link-bg;
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.research__link {
+		width: 230px;
+		display: block;
+		margin-top: 8px;
+		color: #d22856;
+		text-decoration: underline;
+		font-size: 14px;
+	}
+}
+
+@media @desktop-widths {
+	.research {
+		display: flex;
+		justify-content: space-between;
+		background: @description-bg;
+	}
+	.research__image {
+		margin-top: 53px;
+		margin-left: 132px;
+		width: 298px;
+		height: 345px;
+		background: url("@{img-url}/diagramm.png") no-repeat;
+	}
+	.research__info {
+		margin-top: 138px;
+		margin-right: 177px;
+	}
+	.research__heading {
+		display: block;
+		.font-bold ();
+		.zero-margin();
+		font-size: 33px;
+		margin-top: 10px;
+		line-height: 28px;
+	}
+	.research__heading--tablet {
+		display: none;
+	}
+	.research__text {
+		display: block;
+		.zero-margin();
+		margin-top: 25px;
+		line-height: 31px;
+		color: @link-bg;
+	}
+	.research__text--tablet {
+		display: none;
+	}
+	.research__link {
+		width: 300px;
+		display: block;
+		margin-top: 32px;
+		color: #d22856;
+		text-decoration: underline;
+		font-size: 18px;
+		line-height: 24px;
+	}
+}

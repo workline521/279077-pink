@@ -5,26 +5,32 @@
 	<meta charset="UTF-8">
 	<meta content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
 	<title>Pink - конкурс на самое безбашенное путешествие с Pink</title>
-	<link rel="stylesheet" href="css/style.css"> </head>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
 
 <body>
 	<div class="page">
 		<header class="page__header">
-			<div class="section  header-section">
-				<div class="section__inner  header-section__inner">
-				 <span class="header-stripe"><a class="header-logo" href="index.html"><img class="pink-logo" src="img/logo-pink-white-mobile.svg" width="75" height="23"> </a>
-				<button class="header-close" type="button" title="Закрыть">Закрыть</button>
-				</span>
-					<nav class="header-menu"> <span id="header-menu-toggle" class="header-menu__toggle  header-menu__toggle--active"></span>
-						<ul id="header-menu--list" class="header-menu__list  header-menu__list--opened">
-							<li class="header-menu__item"><a class="header-menu__link" href="index.html">ГЛАВНАЯ</a></li>
-							<li class="header-menu__item"><a class="header-menu__link" href="photo.html">ФОТОГРАФИИ</a></li>
-							<li class="header-menu__item"><a class="header-menu__link" href="form.html">КОНКУРС</a></li>
-							<li class="header-menu__item"><a class="header-menu__link" href="http://htmlacademy.ru">HTML ACADEMY</a></li>
+		
+			<div class="section__inner  header-section__inner"> 
+				<div class="header-stripe">
+				<a class="header-logo" href="index.html"></a>
+				<button class="header-stripe__toggle header-stripe--closed " type="button" title="Закрыть">Закрыть</button>
+				</div>
+	   	   <nav class="header-menu header-menu--closed"> 
+	              <div class="header-menu--background">
+		              <a class="desktop-logo" href="index.html"></a>
+						<ul id="header-menu--list" class="header-menu__list  ">
+							<li class="header-menu__item"><a class="header-menu__link" href="index.html">Главная</a></li>
+							<li class="header-menu__item"><a class="header-menu__link" href="photo.html">Фотографии</a></li>
+							<li class="header-menu__item header-menu__item--active"><a class="header-menu__link">Конкурс</a></li>
+							<li class="header-menu__item"><a class="header-menu__link" href="http://htmlacademy.ru">HTML Academy</a></li>
 						</ul>
+						</div>
 					</nav>
-				 </div>
-			</div>
+				</div>
+			
 		</header>
 		<main class="page__content">
 			<div class="section  form-section">
@@ -139,6 +145,30 @@
 			<button class="form__close-ok" type="button" title="OK">ОК</button>
 		</div>
 	</div>
+	<script>
+    var headerMenu = document.querySelector('.header-menu');
+    var navToggle = document.querySelector('.header-stripe__toggle');
+
+     window.onload = function (event) {
+	navToggle.classList.remove('header-stripe--closed');
+		 navToggle.classList.add('header-stripe--opened');
+	
+     };
+
+    navToggle.addEventListener('click', function() {
+      if (headerMenu.classList.contains('header-menu--closed')) {
+		  navToggle.classList.add('header-stripe--opened')
+		  navToggle.classList.remove('header-stripe--closed')
+        headerMenu.classList.remove('header-menu--closed');
+        headerMenu.classList.add('header-menu--opened');
+      } else {
+        headerMenu.classList.add('header-menu--closed');
+        headerMenu.classList.remove('header-menu--opened');
+		  navToggle.classList.remove('header-stripe--opened');
+		  navToggle.classList.add('header-stripe--closed');
+      }
+    });
+  </script>
 </body>
 
 </html>

@@ -1,5 +1,10 @@
 .functional {
 	background: @description-bg;
+	margin: 0 auto;
+}
+
+.common-heading--functional {
+	display: none;
 }
 
 .functional__edit-photo {
@@ -22,7 +27,7 @@
 }
 
 .functional__tool1 {
-	background: url("../../../img/icon-editor-crop.svg") no-repeat;
+	background: url("@{img-url}/icon-editor-crop.svg") no-repeat;
 	.no-borders();
 	width: 48px;
 	height: 48px;
@@ -31,7 +36,7 @@
 }
 
 .functional__tool2 {
-	background: url("../../../img/icon-editor-fill.svg") no-repeat;
+	background: url("@{img-url}/icon-editor-fill.svg") no-repeat;
 	.no-borders();
 	width: 48px;
 	height: 48px;
@@ -39,7 +44,7 @@
 }
 
 .functional__tool3 {
-	background: url("../../../img/icon-editor-contrast.svg") no-repeat;
+	background: url("@{img-url}/icon-editor-contrast.svg") no-repeat;
 	.no-borders();
 	width: 32px;
 	height: 32px;
@@ -48,7 +53,7 @@
 
 .functional__toolcontrols {
 	position: relative;
-	margin: 40px;
+	margin: 30px 40px 33px 40px;
 }
 
 .functional__toolscale {
@@ -87,7 +92,6 @@
 	padding: 15px 92px;
 	border: 3px solid @font-red;
 	border-radius: 30px;
-	font-family: @font-regular;
 	color: @font-red;
 	font-size: @font-size;
 	line-height: @line-height - 14;
@@ -106,9 +110,166 @@
 	padding: 15px 103px;
 	border: 3px solid #dddfe0;
 	border-radius: 30px;
-	font-family: @font-regular;
 	color: #dddfe0;
 	font-size: @font-size;
 	line-height: @line-height - 14;
 	background: transparent;
+}
+
+@media @tablet-widths {
+	.common-heading--functional {
+		display: block;
+		.zero-margin();
+		.text-align();
+		font-size: 18px;
+		line-height: @line-height - 2;
+		color: @link-bg;
+		background: @font-color;
+		padding-top: 44px;
+		padding-bottom: 70px;
+	}
+	.functional__area--mobile {
+		display: none;
+	}
+	.functional__tablet-photo {
+		.display-inlineblock();
+		.vertical-align;
+		margin-top: 57px;
+		margin-left: 40px;
+		margin-right: 40px;
+		width: 300px;
+		height: 400px;
+		background: url("@{img-url}/photo-7-mobile@1x.jpg");
+		background-size: cover;
+	}
+	.inlineblock-wrapper {
+		.display-inlineblock();
+		.vertical-align;
+		padding-bottom: 52px;
+	}
+	.functional__tool-list--tablet {
+		margin-top: 39px;
+		width: 275px;
+	}
+	.tool-item1--tablet {
+		height: 72px;
+		background: url("@{img-url}/icon-editor-crop.svg") no-repeat 0 50%;
+	}
+	.tool-item2--tablet {
+		border-top: 1px solid #dddfe0;
+		border-bottom: 1px solid #dddfe0;
+		height: 72px;
+		background: url("@{img-url}/icon-editor-fill.svg") no-repeat 0 50%;
+	}
+	.tool-item3--tablet {
+		height: 72px;
+		background: url("@{img-url}/icon-editor-contrast.svg") no-repeat 0 50%;
+	}
+	.toolcontrols {
+		position: relative;
+		padding: 36px 18px 34px 55px;
+	}
+	.toolscale {
+		width: 202px;
+		height: 2px;
+		background: @link-bg;
+	}
+	.tooltoggle {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		width: 10px;
+		height: 10px;
+		cursor: pointer;
+		border: 2px solid @font-red;
+		border-radius: 50%;
+		background: @font-color;
+	}
+	.toggle1 {
+		top: 31px;
+		right: 59px;
+	}
+	.toggle2 {
+		top: 31px;
+		right: 180px;
+	}
+	.toggle3 {
+		top: 30px;
+		right: 110px;
+	}
+	.functional__btns {
+		width: 300px;
+	}
+	.functional__post-btn {
+		margin-top: 65px;
+		margin-left: 0;
+		padding: 15px 83px;
+	}
+	.functional__cancel-btn {
+		margin-top: 26px;
+		margin-left: 0;
+		padding: 15px 95px;
+	}
+}
+
+@media @desktop-widths {
+	.functional {
+		width: 940px;
+	}
+	.common-heading--functional {
+		padding-top: 33px;
+		padding-bottom: 65px;
+	}
+	.inlineblock-wrapper {
+		padding-bottom: 55px;
+	}
+	.functional__tablet-photo {
+		margin-left: 80px;
+		margin-right: 80px;
+	}
+	.functional__btns {
+		width: 410px;
+	}
+	.functional__tool-list--tablet {
+		width: 410px;
+	}
+	.tool-item1--tablet {
+		background-position: 1% 57%;
+	}
+	.tool-item2--tablet {
+		background-position: 2% 65%;
+	}
+	.tool-item3--tablet {
+		background-position: 3% 50%;
+	}
+	.toolscale {
+		width: 288px;
+	}
+	.toolcontrols {
+		padding: 36px 24px 34px 98px;
+	}
+	.toggle1 {
+		top: 31px;
+		right: 226px;
+	}
+	.toggle2 {
+		top: 31px;
+		right: 50px;
+	}
+	.toggle3 {
+		top: 30px;
+		right: 138px;
+	}
+	.functional__btns{
+		width: 420px;
+	}
+	.functional__post-btn {
+		margin: 145px 40px 0 5px;
+		padding: 15px 44px;
+	}
+	.functional__cancel-btn {
+		margin: 0;
+		padding: 15px 54px;
+		margin-top: 145px;
+	}
 }
