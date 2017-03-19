@@ -1,16 +1,7 @@
-.fieldset--bg{
-	background: @description-bg;
-	.margin-top(25px);
-}
-.fieldset__title{
-	.text-align();
-	.margin-top(38px);
-	color: @font-red;
-	font-size: @font-size - 4;
-	line-height:  @line-height - 14;
-}
+
+
 .form-checkbox{
-	margin: 56px 0;
+	margin: 49px 0;
 	
 }
 .form-checkbox__label{
@@ -18,4 +9,32 @@
 	color: @link-bg;
 	font-size: @font-size - 1;
 	padding-left: 45px;
+}
+@media @tablet-widths {
+	.form-checkbox{
+		    margin: 51px 0 51px 55px;
+	}
+
+}
+
+@media @desktop-widths{
+	.fieldset--order3{
+		
+	}
+	.form-checkbox{
+		width: 250px;
+		margin: 51px 0;
+		font-size: 18px;
+		line-height: 30px;
+	}
+	.inline-wrapper{
+		display: inline-block;
+		vertical-align: top;
+		width: 250px;
+		height: 218px;
+		margin-left: 55px;
+	}
+	.form-checkbox__label{
+	
+	}
 }

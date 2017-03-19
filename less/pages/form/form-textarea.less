@@ -4,13 +4,16 @@
 	box-sizing: border-box;
 	border: 2px solid #e5e5e5;
 	color: @link-bg;
-	font-size: @font-size - 1;
+	font-size: 19px;
 	line-height: @line-height - 2;
 	padding: 15px 20px 20px 20px;
 }
-.form__submit{
+
+.form__submit {
+	display: block;
+	margin: 0 auto;
 	.no-borders();
-	.margin-top(43px);
+	.margin-top(45px);
 	border-radius: 3px;
 	background: #2aab6d;
 	color: @font-color;
@@ -20,13 +23,66 @@
 	padding: 16px 53px;
 	cursor: pointer;
 }
-.red{
+
+.red {
 	color: @font-red;
 }
-.form__commentary{
+
+.form__commentary {
 	color: @link-bg;
 	.text-align();
 	font-size: @font-size - 4;
 	line-height: @line-height - 2;
 	.margin-top(33px);
+}
+
+.form__commentary--desktop {
+	display: none;
+}
+
+@media @tablet-widths {
+	.form-textarea__textarea {
+		width: 496px;
+		margin-top: 37px;
+		color: @link-bg;
+		font-size: 18px;
+		padding-left: 16px;
+		letter-spacing: 0.5px;
+	}
+	.form__submit {
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 69px;
+		margin-left: 40px;
+		padding: 16px 66px;
+	}
+	.form__commentary {
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 86px;
+		margin-left: 135px;
+	}
+}
+
+@media @desktop-widths {
+	.form-textarea__textarea {
+		width: 818px;
+		height: 126px;
+	}
+	.form__submit {
+		margin-top: 64px;
+		margin-left: 130px;
+	}
+	.form__commentary{
+		display: none;
+	}
+	.form__commentary--desktop {
+		display: inline-block;
+		vertical-align: top;
+		color: @link-bg;
+		font-size: @font-size - 4;
+		line-height: @line-height - 2;
+		margin-top: 82px;
+		margin-left: 321px;
+	}
 }

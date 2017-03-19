@@ -4,90 +4,69 @@
 	padding-left: 20px;
 	padding-right: 20px;
 	height: 65px;
-	background: url("@{img-url}/bg-back-mobile@1x.jpg") no-repeat  -190px 2px;
-
+	background: rgba(0, 0, 0, 0.3);
 }
+
+.header-stripe--background {
+	background: url("@{img-url}/bg-back-mobile@1x.jpg") no-repeat -190px 2px;
+}
+
+
 /*background-color: rgba(0, 0, 0, 0.3); Как применить к header-stripe?*/
 
-.header-logo{
+.header-logo {
 	.margin-top(20px);
 	padding: 0px 40px 0px 40px;
 	background: url('@{img-url}/logo-pink-white-mobile.svg') no-repeat;
-	
 }
-
-
 
 .header-stripe__toggle {
 	cursor: pointer;
-	position: relative;
-	vertical-align: top;
 	.margin-top(21px);
 	width: 21px;
 	height: 21px;
 	font-size: 0;
-	background-color: transparent;
 	border: 0;
 	cursor: pointer;
 	padding: 10px 20px 20px 10px;
 	outline: none;
 }
 
-
 .header-stripe--closed {
 	background: transparent url("@{img-url}/icon-menu-burger.svg") no-repeat;
 }
 
-.header-stripe--opened{
+.header-stripe--opened {
 	background: transparent url("@{img-url}/icon-menu-cross.svg") no-repeat;
 }
 
-@media @tablet-widths{
-	
-	
+@media @tablet-widths {
 	.header-stripe {
-	.flex();
-	height: 110px;
+		.flex();
+		height: 110px;
 		padding-left: 40px;
 		padding-right: 40px;
-		background: @link-bg;
-	
-}
-
-	
-	.header-logo{
+		background: rgba(0, 0, 0, 0.3);
+	}
+	.header-logo {
 		.margin-top(27px);
 		padding: 21px 76px;
 		font-size: 0;
-		 background:  url(../img/logo-pink-white-mobile.svg) no-repeat;
-
-
+		background: url(../img/logo-pink-white-mobile.svg) no-repeat;
 	}
-	.header-stripe__toggle{
-		.margin-top(44px);
+	.header-stripe--background {
+		background: url("@{img-url}/bg-back-mobile@1x.jpg") no-repeat;
+		background-size: cover;
 	}
-	
 }
 
-@media @desktop-widths{
-	
-	
-	
-	
+@media @desktop-widths {
 	.header-stripe {
-	display: none;
-	
-
-		
+		display: none;
 	}
-	
-	.header-logo{
+	.header-logo {
 		padding: 21px 76px;
 		font-size: 0;
 		background: url("@{img-url}/logotype-white-desktopadd.png") no-repeat;
 	}
-	
-	
-	
-	
 }

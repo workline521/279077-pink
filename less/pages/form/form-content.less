@@ -13,4 +13,73 @@
 	padding-top: 30px;
 	padding-bottom: 56px;
 }
+.form-heading--desktop{
+	display: none;
+}
+.common-heading--form {
+	padding-bottom: 34px;
+	padding-top: 44px;
+}
+.common-heading--form-tablet{
+	display: none;
+}
+.common-heading--form-desktop{
+	display: none;
+}
+
+@media @tablet-widths {
+	.form-content{
+	height: 330px;
+		background: @link-bg url("@{img-url}/bg-back-mobile@1x.jpg") no-repeat 50% 82%;
+		background-size: cover;
+	}
+	.form-heading{
+		font-size: 48px;
+		line-height: 60px;
+		padding-top: 70px;
+	}
+	
+	.common-heading--form-tablet{
+		display: block;
+		margin: 0;
+		text-align: center;
+		padding-top: 90px;
+		padding-bottom: 70px;
+		font-size: 18px;
+		color: @link-bg;
+	}
+	
+	
+  }
+@media @desktop-widths{
+	.form-content{
+		height: 284px;
+	}
+	.form-heading{
+		display: none;
+	}
+	.form-heading--desktop{
+		display: block;
+		font-size: 48px;
+	line-height:60px;
+	color: @font-color;
+	.font-light();
+	.text-align();
+	.zero-margin();
+		padding-top: 65px;
+	
+	}
+	.common-heading--form-tablet{
+		display: none;
+	}
+	.common-heading--form-desktop{
+		display: block;
+		margin: 0;
+		text-align: center;
+		padding-top: 90px;
+		padding-bottom: 84px;
+		font-size: 18px;
+		color: @link-bg;
+	}
+}
 
