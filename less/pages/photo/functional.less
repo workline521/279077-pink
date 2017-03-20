@@ -73,6 +73,9 @@
 	border-radius: 50%;
 	background: @font-color;
 }
+.functional__tooltoggle:hover{
+		background: @font-red;
+	}
 
 .functional__btns {
 	.no-borders();
@@ -96,9 +99,18 @@
 	font-size: @font-size;
 	line-height: @line-height - 14;
 	background: transparent;
+	cursor: pointer;
 }
-
+.functional__post-btn:hover{
+	background: @font-red;
+	color: white;
+}
+.functional__post-btn:active{
+	background: @font-red;
+	color: #e06989;
+}
 .functional__cancel-btn {
+	cursor: pointer;
 	.display-inlineblock();
 	.vertical-align();
 	.text-align();
@@ -115,7 +127,14 @@
 	line-height: @line-height - 14;
 	background: transparent;
 }
-
+.functional__cancel-btn:hover{
+	color: #b5b9be;
+	border: 3px solid #b5b9be;
+}
+.functional__cancel-btn:active{
+	color: #cbced2;
+	background: #b5b9be;
+}
 @media @tablet-widths {
 	.common-heading--functional {
 		display: block;
@@ -185,6 +204,9 @@
 		border-radius: 50%;
 		background: @font-color;
 	}
+	.tooltoggle:hover{
+		background: @font-red;
+	}
 	.toggle1 {
 		top: 31px;
 		right: 59px;
@@ -203,12 +225,12 @@
 	.functional__post-btn {
 		margin-top: 65px;
 		margin-left: 0;
-		padding: 15px 83px;
+		padding: 15px 79px;
 	}
 	.functional__cancel-btn {
 		margin-top: 26px;
 		margin-left: 0;
-		padding: 15px 95px;
+		padding: 15px 92px;
 	}
 }
 
@@ -264,12 +286,16 @@
 		width: 420px;
 	}
 	.functional__post-btn {
-		margin: 145px 40px 0 5px;
-		padding: 15px 44px;
+		
+		margin: 0 ;
+		padding: 15px 42px;
+		margin-top: 145px;
 	}
 	.functional__cancel-btn {
 		margin: 0;
 		padding: 15px 54px;
 		margin-top: 145px;
-	}
+		margin-left: 38px;
+}
+	
 }

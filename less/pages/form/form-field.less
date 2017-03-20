@@ -37,7 +37,15 @@
 	border: 2px solid #e5e5e5;
 	margin-bottom: 17px;
 }
-
+.form-field__origin:hover{
+	border-color: @link-bg;
+}
+.form-field__origin:focus{
+	border-color: @font-red;
+}
+:focus{
+	outline-color: transparent;
+}
 .form-field__origin::-webkit-input-placeholder {
 	color: @link-bg;
 	font-size: @font-size;
