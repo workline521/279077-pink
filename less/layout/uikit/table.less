@@ -1,0 +1,112 @@
+.table{
+	display: none;
+}
+@media @tablet-widths{
+	
+	.table{
+		display: block;
+		padding-right: 40px;
+		padding-left: 40px;
+	}
+	.table__price {
+		border-collapse: collapse;
+	}
+	td {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.table__col-head {
+		width: 152px;
+		height: 78px;
+		background: @link-bg;
+		color: @font-color;
+		font-size: 18px;
+		line-height: 30px;
+		text-align: center;
+	}
+	.table__col-head--border {
+		border-left: 2px solid #e6e6e6;
+		border-right: 2px solid #e6e6e6;
+	}
+	.table__text {
+		.font-bold ();
+		color: @font-color;
+		font-size: 16px;
+		line-height: 30px;
+	}
+	.table__col {
+		width: 144px;
+		height: 42px;
+		border: 2px solid #e6e6e6;
+		background: @font-color;
+		font-size: 14px;
+		line-height: 30px;
+		color: @link-bg;
+	}
+	.table::before {
+		content: "";
+		top: 36px;
+		right: 279px;
+		width: 74px;
+		height: 73px;
+		position: absolute;
+		z-index: 1;
+		background: url("@{img-url}/hit-icon.png") no-repeat;
+	}
+	.table__col--col-2,
+	.table__col--col-3,
+	.table__col--col-4,
+	.table__col--col-7,
+	.table__col--col-8,
+	.table__col--col-12 {
+		background: #ffffff url("@{img-url}/icon-yes.svg") no-repeat 65px 13px;
+	}
+	.table__col--col-6,
+	.table__col--col-10,
+	.table__col--col-11 {
+		background: #ffffff url("@{img-url}/icon-no.svg") no-repeat 63px 7px;
+	}
+}
+@media @desktop-widths{
+	.table__price {
+		margin-top: 30px;
+	}
+	.table {
+		padding-right: 130px;
+		padding-left: 130px;
+	}
+	.table::before {
+		top: 66px;
+		right: 525px;
+	}
+	td {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.table__text {
+		.font-bold ();
+		font-size: 18px;
+	}
+	.table__col-head {
+		font-size: 24px;
+		height: 97px;
+	}
+	.table__col {
+		font-size: 18px;
+		width: 193px;
+		height: 56px;
+	}
+	.table__col--col-2,
+	.table__col--col-3,
+	.table__col--col-4,
+	.table__col--col-7,
+	.table__col--col-8,
+	.table__col--col-12 {
+		background: #ffffff url("@{img-url}/icon-yes.svg") no-repeat 104px 20px;
+	}
+	.table__col--col-6,
+	.table__col--col-10,
+	.table__col--col-11 {
+		background: #ffffff url("@{img-url}/icon-no.svg") no-repeat 103px 15px;
+	}
+}

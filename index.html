@@ -10,125 +10,210 @@
 <body>
 	<div class="page">
 		<header class="page__header">
-			<div class="section  header-section">
-				<div class="section__inner  header-section__inner"> 
-				<span class="header-stripe"><a class="header-logo" href="index.html"><img class="pink-logo" src="img/logo-pink-white-mobile.svg" width="75" height="23"> </a>
-				<button class="header-close" type="button" title="Закрыть">Закрыть</button>
-				</span>
-					<nav class="header-menu"> <span id="header-menu-toggle" class="header-menu__toggle  header-menu__toggle--active"></span>
-						<ul id="header-menu--list" class="header-menu__list  header-menu__list--opened">
-							<li class="header-menu__item"><a class="header-menu__link" href="index.html">ГЛАВНАЯ</a></li>
-							<li class="header-menu__item"><a class="header-menu__link" href="photo.html">ФОТОГРАФИИ</a></li>
-							<li class="header-menu__item"><a class="header-menu__link" href="form.html">КОНКУРС</a></li>
-							<li class="header-menu__item"><a class="header-menu__link" href="http://htmlacademy.ru">HTML ACADEMY</a></li>
-						</ul>
-					</nav>
+			<div class="section section--inner">
+				<div class="wrapper wrapper--header">
+					<div class="header-stripe">
+						<a class="header-logo"></a>
+						<button class="header-stripe__toggle header-stripe--closed " type="button" title="Закрыть">Закрыть</button>
+					</div>
 				</div>
+				<nav class="header-menu header-menu--closed">
+					<div class="wrapper wrapper--menu">
+						<a class="desktop-logo"></a>
+						<ul class="header-menu__list  ">
+							<li class="header-menu__item"><a class="header-menu__link header-menu__link--active">Главная</a></li>
+							<li class="header-menu__item"><a class="header-menu__link" href="photo.html">Фотографии</a></li>
+							<li class="header-menu__item"><a class="header-menu__link" href="form.html">Конкурс</a></li>
+							<li class="header-menu__item"><a class="header-menu__link" href="http://htmlacademy.ru">HTML Academy</a></li>
+						</ul>
+					</div>
+				</nav>
 			</div>
 		</header>
 		<main class="page__content">
-			<div class="section  content-section">
-				<div class="section__inner  content-section__inner">
-					<section class="download"> 
-				   <div class="download__pic"></div>
-					   <div class="download__controls"> <a class="download__btn" href="#">Скачать приложение</a>
-						<a class="download__icon" href="#"><img src="img/logo-apple.svg" width="47" height="57" alt=""></a>
-						<a class="download__icon" href="#"><img src="img/logo-android.svg" width="43" height="48" alt=""></a>
-						<a class="download__icon" href="#"><img src="img/logo-microsoft.svg" width="44" height="42" alt=""></a>
+			<div class="section section--inner">
+				<section class="download">
+					<div class="download__pic"></div>
+					<div class="download__controls">
+						<p class="download__heading">Взгляните
+							<br>на жизнь
+							<br>иначе!</p> <a class="download__btn" href="#">Скачать приложение</a>
+						<div class="download__links">
+							<a class="download__icon download__icon--margin" href="#"><img src="img/logo-apple.svg" width="47" height="57" alt=""></a>
+							<a class="download__icon" href="#"><img src="img/logo-android.svg" width="43" height="48" alt=""></a>
+							<a class="download__icon" href="#"><img src="img/logo-microsoft.svg" width="44" height="42" alt=""></a>
+						</div>
 						<p class="download__description">Доступно для iPhone, iPad, Android,
-  Windows Phone, OS X, Windows 8</p></div>
-					</section>
-					<section class="features">
-						<h2 class="features__heading">Устали от серости
- мегаполиса?</h2>
-						<h2 class="features__heading">Нам есть, что вам
- предложить!</h2>
+							<br>Windows Phone, OS X, Windows 8</p>
+					</div>
+				</section>
+				<section class="features">
+					<div class="features__title">
+						<h2 class="features__heading features__heading--desktop">Устали от серости мегаполиса?</h2>
+						<h2 class="features__heading">Нам есть, что вам<br>предложить!</h2> </div>
+					<div class="wrapper wrapper--features">
 						<div class="features__description">
-							<h2 class="features__item-heading">Поднимает настроение</h2>
-							<p class="features__item">Приложение позволит вам победить
- осеннюю хандру и депрессию
- буквально в несколько кликов!</p>
-							<h2 class="features__item-heading">Меняет мир вокруг</h2>
-							<p class="features__item">Сделайте снимок и украсьте его
- смайликом или текстовой подписью,
- чтобы усилить эффект</p>
-							<h2 class="features__item-heading">Заводит новых друзей</h2>
-							<p class="features__item">Ставьте лайки, комментируйте, делитесь
- фотографиями с друзьями и заводите
-новых</p>
-							<img class="features__pic" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="">
+							<div class="features__block"> <img class="features__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="">
+								<h2 class="features__item-heading">Поднимает настроение</h2>
+								<p class="features__item">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+							</div>
+							<div class="features__block"> <img class="features__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="">
+								<h2 class="features__item-heading">Меняет мир вокруг</h2>
+								<p class="features__item">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+							</div>
+							<div class="features__block"> <img class="features__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="">
+								<h2 class="features__item-heading">Заводит новых друзей</h2>
+								<p class="features__item">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+							</div> <img class="features__pic" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt=""> </div>
+					</div>
+				</section>
+				<section class="research">
+					<div class="research__image"></div>
+					<div class="research__info">
+						<p class="research__heading">Эффект на 24 часа!</p>
+						<p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p> <a class="research__link" href="#">Узнать больше об исследовании</a> </div>
+				</section>
+				<section class="review">
+					<div class="review__slider"> <img class="review__quotes" src="img/quotesold.png" width="79" height="63" alt="">
+						<div class="review__slide">
+							<p class="review__opinion review__opinion--tablet"> &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+							<p class="review__username">Николай Петров</p>
+							<p class="review__opinion"> &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+							<p class="review__profession">25 лет, водитель трамвая</p>
 						</div>
-						</section>
-					 <section class="review">
-						<div class="review-slider">
-						   	<div class="review-slider__slide">
-								<p class="review-slider__username">Николай Петров</p>
-								<p class="review-slider__opinion"> &laquo;Это приложение перевернуло мой мир
-  и позволило по-новому взглянуть на
-  привычные серые вещи! А ещё я
-  познакомился со своей будущей женой
-  в комментариях к выложенной
-  фотографии!&raquo;</p>
+						<div class="review__slide2"></div>
+						<div class="review__slide3"></div>
+						<div class="slider-controls">
+							<div class="slider-bullet slider-bullet--active">
+								<a class="slider-tool" href="#"></a>
 							</div>
-							<input class="slider-input" type="radio" id="btn1" name="toggle" checked>
-							<input class="slider-input" type="radio" id="btn2" name="toggle">
-							<input class="slider-input" type="radio" id="btn3" name="toggle">
-							<div class="slider-controls">
-								<label for="btn1"></label>
-								<label for="btn2"></label>
-								<label for="btn3"></label>
+							<div class="slider-bullet">
+								<a class="slider-tool" href="#"></a>
 							</div>
-						</div>
-					 </section>
-					 <section class="price">
-						<div class="price-slider">
-						    <div class="price-slider__slide">
-								<div class="price-slider__stripe">
-									<h2 class="price-slider__heading">СТАНДАРТ</h2>
-									<p class="price-slider__numbers">3,99 USD</p>
-								</div>
-								<div class="price-slider__item">
-									<p class="price-slider__feature">РОЗОВЫЙ ФИЛЬТР</p>
-								</div>
-								<div class="price-slider__item">
-									<p class="price-slider__feature">СМАЙЛИКИ</p>
-								</div>
-								<div class="price-slider__item">
-									<p class="price-slider__feature">КОММЕНТАРИИ</p>
-								</div>
-							</div>
-							<input class="slider-input" type="radio" id="btn4" name="toggle2">
-							<input class="slider-input" type="radio" id="btn5" name="toggle2" checked>
-							<input class="slider-input" type="radio" id="btn6" name="toggle2">
-							<div class="slider-controls2">
-								<label for="btn4"></label>
-								<label for="btn5"></label>
-								<label for="btn6"></label>
+							<div class="slider-bullet">
+								<a class="slider-tool" href="#"></a>
 							</div>
 						</div>
-					</section>
-				</div>
+					</div>
+				</section>
+				<section class="price">
+					<div class="price__slider">
+						<div class="price__slide-mobile">
+							<div class="price__stripe">
+								<h2 class="price__slider-heading">СТАНДАРТ</h2>
+								<p class="price__slider-numbers">3,99 USD</p>
+							</div>
+							<div class="price__slider-item">
+								<p class="price__slider-feature">РОЗОВЫЙ ФИЛЬТР</p>
+							</div>
+							<div class="price__slider-item">
+								<p class="price__slider-feature">СМАЙЛИКИ</p>
+							</div>
+							<div class="price__slider-item">
+								<p class="price__slider-feature">КОММЕНТАРИИ</p>
+							</div>
+						</div>
+						<div class="slider-controls">
+							<div class="slider-bullet">
+								<a class="slider-tool" href="#"></a>
+							</div>
+							<div class="slider-bullet slider-bullet--active">
+								<a class="slider-tool" href="#"></a>
+							</div>
+							<div class="slider-bullet">
+								<a class="slider-tool" href="#"></a>
+							</div>
+						</div>
+					</div>
+					<div class="table">
+						<table class="table__price">
+							<tr>
+								<td class="table__col-empty"></td>
+								<td class="table__col-head"><span class="bold">БАЗА</span>
+									<br>1,99 USD</td>
+								<td class="table__col-head table__col-head--border"><span class="bold">СТАНДАРТ</span>
+									<br>3,99 USD</td>
+								<td class="table__col-head"><span class="table__text">АНЛИМ</span>
+									<br>9,99 USD</td>
+							</tr>
+							<tr>
+								<td class="table__col">Розовый фильтр</td>
+								<td class="table__col table__col--col-2"></td>
+								<td class="table__col table__col--col-3"></td>
+								<td class="table__col table__col--col-4"></td>
+							</tr>
+							<tr>
+								<td class="table__col">Смайлики</td>
+								<td class="table__col table__col--col-6"></td>
+								<td class="table__col table__col--col-7"></td>
+								<td class="table__col table__col--col-8"></td>
+							</tr>
+							<tr>
+								<td class="table__col">Комментарии</td>
+								<td class="table__col table__col--col-10"></td>
+								<td class="table__col table__col--col-11"></td>
+								<td class="table__col table__col--col-12"></td>
+							</tr>
+						</table>
+					</div>
+				</section>
 			</div>
 		</main>
 		<footer class="page__footer">
-			<div class="section  footer-contacts">
-				<div class="section__inner  footer-contacts__inner index-footer">
-					<h2 class="features__heading features__heading--white">Остались вопросы?
-Свяжитесь с нами!</h2>
-					<article class="footer-contact">
-						<p class="footer-contact__text">Звоните:</p> <a href="tel:+78125556666" class="footer-contact__info footer-contact--link">+7 (812) 555-66-66</a> </article>
-					<article class="footer-contact">
-						<p class="footer-contact__text">Пишите:</p> <a href="mailto:mail@htmlacademy.ru" class="footer-contact__info footer-contact--link">mail@htmlacademy.ru</a> </article>
-					<article class="footer-contact footer-contact--triangle">
-						<p class="footer-contact__text">Приезжайте в гости:</p>
-						<p class="footer-contact__info">ул. Большая
-Конюшенная, 19/8</p>
-					</article>
-					
+			<div class="section section--inner">
+				<div class="index-footer">
+					<h2 class="features__heading">Остались вопросы?<br>Свяжитесь с нами!</h2>
+					<div class="index-footer__section">
+						<article class="index-footer__contact">
+							<p class="index-footer__text">Звоните:</p> <a href="tel:+78125556666" class="index-footer__info index-footer__info--link">+7 (812) 555-66-66</a> </article>
+						<article class="index-footer__contact index-footer__contact--order">
+							<p class="index-footer__text">Пишите:</p> <a href="mailto:mail@htmlacademy.ru" class="index-footer__info index-footer__info--link">mail@htmlacademy.ru</a> </article>
+						<article class="index-footer__contact index-footer__contact--triangle">
+							<p class="index-footer__text">Приезжайте в гости:</p>
+							<p class="index-footer__info index-footer__info--padding">ул. Большая
+								<br>Конюшенная, 19/8</p>
+						</article>
+					</div>
+				</div>
+			</div>
+			<div class="section section--inner">
+				<div class="standart-footer standart-footer--index standart-footer--tablet standart-footer--desktop">
+					<a class="standart-footer__logo" href="#"><img class="standart-footer__glasses" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип"></a>
+					<ul class="standart-footer__social">
+						<li class="standart-footer__social-item">
+							<a class="standart-footer__social-link  standart-footer__social-link--tw" href="#"></a>
+						</li>
+						<li class="standart-footer__social-item">
+							<a class="standart-footer__social-link  standart-footer__social-link--fb" href="#"></a>
+						</li>
+						<li class="standart-footer__social-item">
+							<a class="standart-footer__social-link  standart-footer__social-link--yt" href="#"></a>
+						</li>
+					</ul>
+					<a href="#" class="standart-footer__copyright">
+						<p class="standart-footer__copyright-text">Разработано</p> <img class="standart-footer__copyright-logo" src="img/htmlacademy.svg" width="60" height="60" alt="Htmlacademy.SVG"></a>
 				</div>
 			</div>
 		</footer>
 	</div>
+	<script>
+		var headerMenu = document.querySelector('.header-menu');
+		var navToggle = document.querySelector('.header-stripe__toggle');
+		navToggle.addEventListener('click', function () {
+			if (headerMenu.classList.contains('header-menu--closed')) {
+				navToggle.classList.add('header-stripe--opened')
+				navToggle.classList.remove('header-stripe--closed')
+				headerMenu.classList.remove('header-menu--closed');
+				headerMenu.classList.add('header-menu--opened');
+			}
+			else {
+				headerMenu.classList.add('header-menu--closed');
+				headerMenu.classList.remove('header-menu--opened');
+				navToggle.classList.remove('header-stripe--opened');
+				navToggle.classList.add('header-stripe--closed');
+			}
+		});
+	</script>
 </body>
 
 </html>

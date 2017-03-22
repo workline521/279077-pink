@@ -1,0 +1,61 @@
+.header-stripe {
+	.flex();
+	justify-content: space-between;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 65px;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.header-logo {
+	.margin-top(20px);
+	padding: 0px 40px 0px 40px;
+	background: url('@{img-url}/logo-pink-white-mobile.svg') no-repeat;
+}
+
+.header-stripe__toggle {
+	cursor: pointer;
+	.margin-top(21px);
+	width: 21px;
+	height: 21px;
+	font-size: 0;
+	border: 0;
+	cursor: pointer;
+	padding: 10px 20px 20px 10px;
+	outline: none;
+}
+
+.header-stripe--closed {
+	background: transparent url("@{img-url}/icon-menu-burger.svg") no-repeat;
+}
+
+.header-stripe--opened {
+	background: transparent url("@{img-url}/icon-menu-cross.svg") no-repeat;
+}
+
+@media @tablet-widths {
+	.header-stripe {
+		.flex();
+		height: 110px;
+		padding-left: 40px;
+		padding-right: 40px;
+		background: rgba(0, 0, 0, 0.3);
+	}
+	.header-logo {
+		.margin-top(27px);
+		padding: 21px 76px;
+		font-size: 0;
+		background: url(../img/header-logo-old.png) no-repeat;
+	}
+	.header-stripe--background {
+		background: url("@{img-url}/bg-back-mobile@1x.jpg") no-repeat;
+		background-size: cover;
+	}
+}
+
+@media @desktop-widths {
+	.header-stripe {
+		display: none;
+	}
+	
+}

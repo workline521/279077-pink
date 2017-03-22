@@ -1,0 +1,116 @@
+.review__quotes {
+	display: none;
+}
+
+.review__username {
+	.text-align();
+	font-size: @font-size;
+	line-height: @line-height - 2;
+	.font-bold ();
+	letter-spacing: 0.5px;
+	.margin-top(0);
+}
+
+.review__profession {
+	display: none;
+}
+
+.review__opinion {
+	.text-align();
+	font-size: @font-size - 4;
+	line-height: @line-height - 2;
+	margin-bottom: 25px;
+	color: @link-bg;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.review__opinion--tablet {
+	display: none;
+}
+
+.review__slide2 {
+	display: none
+}
+
+.review__slide3 {
+	display: none;
+}
+
+
+
+@media @tablet-widths {
+	.review__opinion {
+		display: none;
+	}
+	.review__profession {
+		display: block;
+		color: @link-bg;
+		text-align: center;
+		font-size: 14px;
+		margin: 0;
+	}
+	.review__opinion--tablet {
+		display: block;
+		margin-top: 22px;
+		text-align: center;
+		font-size: 18px;
+		line-height: 30px;
+		color: @link-bg;
+	}
+	.review__username {
+		margin-top: 35px;
+		font-size: 21px;
+		margin-bottom: 0;
+	}
+}
+
+@media @desktop-widths {
+	.review__quotes {
+		display: block;
+		margin: 0 auto;
+		margin-top: 70px;
+	}
+	.review__opinion {
+		display: none;
+	}
+	.review__opinion--tablet {
+		width: 700px;
+		display: block;
+		margin: 0 auto;
+		margin-top: 50px;
+		text-align: center;
+		line-height: 30px;
+		color: @link-bg;
+	}
+	.review__username {
+		font-size: 25px;
+	}
+	.review__profession {
+		font-size: 18px;
+	}
+	
+	.review__slider {
+		position: relative;
+	}
+	.review__slider::before {
+		content: "";
+		position: absolute;
+		top: 140px;
+		left: 130px;
+		width: 22px;
+		height: 41px;
+		z-index: 1;
+		background: url("@{img-url}/left-arrow.png") no-repeat;
+	}
+	.review__slider::after {
+		content: "";
+		position: absolute;
+		top: 140px;
+		right: 130px;
+		width: 22px;
+		height: 41px;
+		z-index: 1;
+		background: url("@{img-url}/right-arrow.png") no-repeat;
+	}
+}

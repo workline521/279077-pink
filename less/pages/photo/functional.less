@@ -1,5 +1,6 @@
 .functional {
 	background: @description-bg;
+	margin: 0 auto;
 }
 
 .functional__edit-photo {
@@ -13,6 +14,9 @@
 	.zero-margin();
 	padding: 0;
 }
+.functional__tool-list--tablet{
+	display: none;
+}
 
 .functional__tool-item {
 	.display-inlineblock();
@@ -22,7 +26,7 @@
 }
 
 .functional__tool1 {
-	background: url("../../../img/icon-editor-crop.svg") no-repeat;
+	background: url("@{img-url}/icon-editor-crop.svg") no-repeat;
 	.no-borders();
 	width: 48px;
 	height: 48px;
@@ -31,7 +35,7 @@
 }
 
 .functional__tool2 {
-	background: url("../../../img/icon-editor-fill.svg") no-repeat;
+	background: url("@{img-url}/icon-editor-fill.svg") no-repeat;
 	.no-borders();
 	width: 48px;
 	height: 48px;
@@ -39,7 +43,7 @@
 }
 
 .functional__tool3 {
-	background: url("../../../img/icon-editor-contrast.svg") no-repeat;
+	background: url("@{img-url}/icon-editor-contrast.svg") no-repeat;
 	.no-borders();
 	width: 32px;
 	height: 32px;
@@ -48,7 +52,7 @@
 
 .functional__toolcontrols {
 	position: relative;
-	margin: 40px;
+	margin: 30px 40px 33px 40px;
 }
 
 .functional__toolscale {
@@ -69,6 +73,10 @@
 	background: @font-color;
 }
 
+.functional__tooltoggle:hover {
+	background: @font-red;
+}
+
 .functional__btns {
 	.no-borders();
 	height: 201px;
@@ -87,14 +95,25 @@
 	padding: 15px 92px;
 	border: 3px solid @font-red;
 	border-radius: 30px;
-	font-family: @font-regular;
 	color: @font-red;
 	font-size: @font-size;
 	line-height: @line-height - 14;
 	background: transparent;
+	cursor: pointer;
+}
+
+.functional__post-btn:hover {
+	background: @font-red;
+	color: white;
+}
+
+.functional__post-btn:active {
+	background: @font-red;
+	color: #e06989;
 }
 
 .functional__cancel-btn {
+	cursor: pointer;
 	.display-inlineblock();
 	.vertical-align();
 	.text-align();
@@ -106,9 +125,160 @@
 	padding: 15px 103px;
 	border: 3px solid #dddfe0;
 	border-radius: 30px;
-	font-family: @font-regular;
 	color: #dddfe0;
 	font-size: @font-size;
 	line-height: @line-height - 14;
 	background: transparent;
+}
+
+.functional__cancel-btn:hover {
+	color: #b5b9be;
+	border: 3px solid #b5b9be;
+}
+
+.functional__cancel-btn:active {
+	color: #cbced2;
+	background: #b5b9be;
+}
+
+@media @tablet-widths {
+	
+	.functional__area-mobile {
+		display: none;
+	}
+	.functional__tablet-photo {
+		.display-inlineblock();
+		.vertical-align;
+		margin-top: 57px;
+		margin-left: 40px;
+		margin-right: 40px;
+		width: 300px;
+		height: 400px;
+		background: url("@{img-url}/photo-7-mobile@1x.jpg");
+		background-size: cover;
+	}
+	
+	.functional__tool-list--tablet {
+		display: block;
+		margin-top: 39px;
+		width: 275px;
+	}
+	.functional__tool-item--tablet1 {
+		height: 72px;
+		background: url("@{img-url}/icon-editor-crop.svg") no-repeat 0 50%;
+		margin-top: 0;
+	}
+	.functional__tool-item--tablet2 {
+		border-top: 1px solid #dddfe0;
+		border-bottom: 1px solid #dddfe0;
+		height: 72px;
+		background: url("@{img-url}/icon-editor-fill.svg") no-repeat 0 50%;
+		margin-top: 0;
+	}
+	.functional__tool-item--tablet3 {
+		height: 72px;
+		background: url("@{img-url}/icon-editor-contrast.svg") no-repeat 0 50%;
+		margin-top: 0;
+	}
+	.functional__toolcontrols--tablet{
+		position: relative;
+		padding: 36px 18px 34px 55px;
+		margin: 0;
+	}
+	.functional__toolscale--tablet {
+		width: 202px;
+		height: 2px;
+		background: @link-bg;
+	}
+	
+	.tooltoggle:hover {
+		background: @font-red;
+	}
+	.functional__tooltoggle--position1 {
+		top: 31px;
+		right: 59px;
+	}
+	.functional__tooltoggle--position2 {
+		top: 31px;
+		right: 180px;
+	}
+	.functional__tooltoggle--position3 {
+		top: 30px;
+		right: 110px;
+	}
+	.functional__btns {
+		width: 275px;
+	}
+	.functional__post-btn {
+		margin-top: 65px;
+		margin-left: 0;
+		padding: 15px 79px;
+	}
+	.functional__cancel-btn {
+		margin-top: 26px;
+		margin-left: 0;
+		padding: 15px 92px;
+	}
+}
+
+@media @desktop-widths {
+	.functional {
+		width: 940px;
+	}
+	
+	.inlineblock-wrapper {
+		padding-bottom: 55px;
+	}
+	.functional__tablet-photo {
+		margin-left: 80px;
+		margin-right: 80px;
+	}
+	.functional__btns {
+		width: 410px;
+	}
+	.functional__tool-list--tablet {
+		width: 410px;
+	}
+	.tool-item1--tablet {
+		background-position: 1% 57%;
+	}
+	.tool-item2--tablet {
+		background-position: 2% 65%;
+	}
+	.tool-item3--tablet {
+		background-position: 3% 50%;
+	}
+	.functional__toolscale--tablet {
+		width: 288px;
+	}
+	.functional__toolcontrols--tablet {
+		padding: 36px 24px 34px 98px;
+		margin: 0;
+	}
+	.toggle1 {
+		top: 31px;
+		right: 226px;
+	}
+	.toggle2 {
+		top: 31px;
+		right: 50px;
+	}
+	.toggle3 {
+		top: 30px;
+		right: 138px;
+	}
+	.functional__btns {
+		width: 420px;
+	}
+	.functional__post-btn {
+		margin: 0;
+		padding: 15px 42px;
+		margin-top: 145px;
+	}
+	.functional__cancel-btn {
+		margin: 0;
+		padding: 15px 54px;
+		margin-top: 145px;
+		margin-left: 38px;
+	}
 }

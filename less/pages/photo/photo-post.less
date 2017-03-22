@@ -1,46 +1,48 @@
 .photo-post {
-	padding: 10px 20px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
-.photo-post__background {
+.photo-post__content {
 	background: @description-bg;
-	.margin-top(-5px);
-	padding: 20px 16px;
+	.margin-top(-8px);
+	margin-bottom: 20px;
 }
 
-.photo-post__info {}
+.photo-post__info {
+	padding-top: 13px;
+}
 
 .photo-post__username {
 	font-size: @font-size - 4;
 	color: @link-bg;
 	.font-bold ();
+	padding-left: 16px;
 }
 
 .photo-post__when {
 	.zero-margin();
 	.font-light();
 	font-size: @font-size - 7;
+	color: @link-bg;
 }
 
 .photo-post__usermessage {
 	font-size: @font-size - 4;
 	color: @link-bg;
-	.white-space();
 	text-align: left;
+	padding-left: 17px;
 }
 
 .photo-post__usermessage p {
 	.zero-margin();
+	line-height: 22px;
 }
 
-.photo-post__controls {}
-
-.like-button {width: 13px;
-	height: 12px;
-	border: none;
-	.display-inlineblock();
-	.vertical-align(baseline);
-	background: url("../../../img/icon-heart.svg") no-repeat;
+.photo-post__controls {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
 }
 
 .photo-post__likes-number {
@@ -49,4 +51,87 @@
 	.zero-margin();
 	color: @font-red;
 	font-size: @font-size - 6;
+	padding-left: 10px;
+}
+
+@media @tablet-widths {
+	.photo-post {
+		width: 300px;
+		margin-bottom: 20px;
+		padding: 0;
+	}
+	.photo-post__pic-mobile {
+		display: none;
+	}
+	.photo-post__content {
+		margin: 0;
+		width: 300px;
+		height: 155px;
+	}
+	.photo-post__photo {
+		width: 300px;
+		height: 300px;
+	}
+	.photo-post__photo--pic-1 {
+		display: block;
+		background: url("@{img-url}/photo-1-mobile@1x.jpg") no-repeat 50% 50%;
+		background-size: cover;
+	}
+	.photo-post__photo--pic-2 {
+		display: block;
+		background: url("@{img-url}/photo-2-mobile@1x.jpg") no-repeat 50% 50%;
+		background-size: cover;
+	}
+	.photo-post__photo--pic-3 {
+		display: block;
+		background: url("@{img-url}/photo-3-mobile@1x.jpg") no-repeat 50% 50%;
+		background-size: cover;
+	}
+	.photo-post__photo--pic-4 {
+		display: block;
+		background: url("@{img-url}/photo-4-mobile@1x.jpg") no-repeat 50% 50%;
+		background-size: cover;
+	}
+	.photo-post__photo--pic-5 {
+		display: block;
+		background: url("@{img-url}/photo-5-mobile@1x.jpg") no-repeat 50% 50%;
+		background-size: cover;
+	}
+	.photo-post__photo--pic-6 {
+		display: block;
+		background: url("@{img-url}/photo-6-mobile@1x.jpg") no-repeat 50% 50%;
+		background-size: cover;
+	}
+	.photo-post__controls {
+		padding: 0;
+	}
+	.photo-post__username {
+		padding-left: 28px;
+	}
+	.photo-post__info {
+		padding-top: 19px;
+	}
+	.photo-post__usermessage {
+		padding-left: 28px;
+		height: 50px;
+	}
+	.photo-post__controls {
+		flex-direction: row;
+		display: flex;
+		justify-content: space-between;
+	}
+	.photo-post__likes-number {
+		padding-left: 27px;
+		padding-top: 5px;
+	}
+}
+
+@media @desktop-widths {
+	.photo-post {
+		margin-top: 27px;
+		margin-bottom: 27px;
+	}
+	.photo-post__photo {
+		height: 400px;
+	}
 }

@@ -1,9 +1,11 @@
 .font-bold () {
-	font-weight: bold;
+	font-family: @font-regular;
+	font-weight: @bold;
 }
 
 .font-light() {
-	font-weight: lighter;
+	font-family: @font-regular;
+	font-weight: @light;
 }
 
 .text-decoration() {
@@ -26,23 +28,34 @@
 .list-style(){
 	list-style: none;
 }
-.zero-margin(){
-	margin: 0;
+.zero-margin(){	margin: 0;
 }
-.background-white(){
-	background: #ffffff;
+.zero-padding(){padding: 0;
 }
-.no-borders(){
-	border: none;
+.background-white(){background: #ffffff;
+}
+.no-borders(){border: none;
 }
 
 .display-none() {display: none;}
 .display-block(){display: block;}
 .display-inlineblock() {display: inline-block;}
 .vertical-align(@vertical-align: top){vertical-align: @vertical-align;}
+.flex(){display:flex;}
 .white-space(){white-space: pre;}
 
+.container() {
+  width: 320px;
+  margin: 0 auto;
 
+  @media @tablet-widths {
+    width: 700px;
+  }
+
+  @media @desktop-widths {
+    width: 1200px;
+  }
+}
 
 
 

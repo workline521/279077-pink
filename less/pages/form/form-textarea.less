@@ -4,29 +4,25 @@
 	box-sizing: border-box;
 	border: 2px solid #e5e5e5;
 	color: @link-bg;
-	font-size: @font-size - 1;
+	font-size: 19px;
 	line-height: @line-height - 2;
 	padding: 15px 20px 20px 20px;
 }
-.form__submit{
-	.no-borders();
-	.margin-top(43px);
-	border-radius: 3px;
-	background: #2aab6d;
-	color: @font-color;
-	font-size: @font-size - 1;
-	line-height: @line-height - 2;
-	.font-bold ();
-	padding: 16px 53px;
-	cursor: pointer;
+
+@media @tablet-widths {
+	.form-textarea__textarea {
+		width: 496px;
+		margin-top: 37px;
+		color: @link-bg;
+		font-size: 18px;
+		padding-left: 16px;
+		letter-spacing: 0.5px;
+	}
 }
-.red{
-	color: @font-red;
-}
-.form__commentary{
-	color: @link-bg;
-	.text-align();
-	font-size: @font-size - 4;
-	line-height: @line-height - 2;
-	.margin-top(33px);
+
+@media @desktop-widths {
+	.form-textarea__textarea {
+		width: 818px;
+		height: 126px;
+	}
 }

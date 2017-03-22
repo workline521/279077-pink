@@ -1,0 +1,17 @@
+	.like-button {
+		width: 13px;
+		height: 12px;
+		.no-borders();
+		.display-inlineblock();
+		.vertical-align(baseline);
+		background: url("@{img-url}/icon-heart.svg") no-repeat;
+	}
+	
+	@media @tablet-widths {
+		.like-button {
+			order: 2;
+			padding: 0;
+			margin-top: 12px;
+			margin-right: 31px;
+		}
+	}

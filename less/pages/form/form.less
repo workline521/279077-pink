@@ -1,0 +1,81 @@
+.form {}
+
+.form__submit {
+	.display-block();
+	margin: 0 auto;
+	.no-borders();
+	.margin-top(45px);
+	border-radius: 3px;
+	background: #2aab6d;
+	color: @font-color;
+	font-size: @font-size - 1;
+	line-height: @line-height - 2;
+	.font-bold ();
+	padding: 16px 53px;
+	cursor: pointer;
+}
+
+.form__submit:hover {
+	background: #1c9b5e;
+}
+
+.form__submit:active {
+	color: #61b98f;
+}
+
+.form__commentary--red {
+	color: @font-red;
+}
+
+.form__commentary {
+	color: @link-bg;
+	.text-align();
+	font-size: @font-size - 4;
+	line-height: @line-height - 2;
+	.margin-top(33px);
+}
+
+.form__commentary--desktop {
+	.display-none();
+}
+
+@media @tablet-widths {
+	.form {
+		margin-bottom: 45px;
+	}
+	.form__submit {
+		.display-inlineblock();
+		.vertical-align;
+		margin-top: 69px;
+		margin-left: 40px;
+		padding: 16px 66px;
+	}
+	.form__commentary {
+		.display-inlineblock();
+		.vertical-align;
+		margin-top: 86px;
+		margin-left: 135px;
+	}
+}
+
+@media @desktop-widths {
+	.form {
+		
+	}
+	.form__submit {
+		margin-top: 64px;
+		margin-left: 130px;
+	}
+	.form__commentary {
+		display: none;
+	}
+	.form__commentary--desktop {
+		.display-inlineblock();
+		.vertical-align;
+		color: @link-bg;
+		font-size: @font-size - 4;
+		line-height: @line-height - 2;
+		margin-top: 82px;
+		margin-left: 321px;
+	}
+}
