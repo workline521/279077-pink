@@ -3,10 +3,6 @@
 	margin: 0 auto;
 }
 
-.common-heading--functional {
-	display: none;
-}
-
 .functional__edit-photo {
 	.centerize();
 	.display-block();
@@ -17,6 +13,9 @@
 	.list-style();
 	.zero-margin();
 	padding: 0;
+}
+.functional__tool-list--tablet{
+	display: none;
 }
 
 .functional__tool-item {
@@ -73,9 +72,10 @@
 	border-radius: 50%;
 	background: @font-color;
 }
-.functional__tooltoggle:hover{
-		background: @font-red;
-	}
+
+.functional__tooltoggle:hover {
+	background: @font-red;
+}
 
 .functional__btns {
 	.no-borders();
@@ -101,14 +101,17 @@
 	background: transparent;
 	cursor: pointer;
 }
-.functional__post-btn:hover{
+
+.functional__post-btn:hover {
 	background: @font-red;
 	color: white;
 }
-.functional__post-btn:active{
+
+.functional__post-btn:active {
 	background: @font-red;
 	color: #e06989;
 }
+
 .functional__cancel-btn {
 	cursor: pointer;
 	.display-inlineblock();
@@ -127,27 +130,20 @@
 	line-height: @line-height - 14;
 	background: transparent;
 }
-.functional__cancel-btn:hover{
+
+.functional__cancel-btn:hover {
 	color: #b5b9be;
 	border: 3px solid #b5b9be;
 }
-.functional__cancel-btn:active{
+
+.functional__cancel-btn:active {
 	color: #cbced2;
 	background: #b5b9be;
 }
+
 @media @tablet-widths {
-	.common-heading--functional {
-		display: block;
-		.zero-margin();
-		.text-align();
-		font-size: 18px;
-		line-height: @line-height - 2;
-		color: @link-bg;
-		background: @font-color;
-		padding-top: 44px;
-		padding-bottom: 70px;
-	}
-	.functional__area--mobile {
+	
+	.functional__area-mobile {
 		display: none;
 	}
 	.functional__tablet-photo {
@@ -161,66 +157,57 @@
 		background: url("@{img-url}/photo-7-mobile@1x.jpg");
 		background-size: cover;
 	}
-	.inlineblock-wrapper {
-		.display-inlineblock();
-		.vertical-align;
-		padding-bottom: 52px;
-	}
+	
 	.functional__tool-list--tablet {
+		display: block;
 		margin-top: 39px;
 		width: 275px;
 	}
-	.tool-item1--tablet {
+	.functional__tool-item--tablet1 {
 		height: 72px;
 		background: url("@{img-url}/icon-editor-crop.svg") no-repeat 0 50%;
+		margin-top: 0;
 	}
-	.tool-item2--tablet {
+	.functional__tool-item--tablet2 {
 		border-top: 1px solid #dddfe0;
 		border-bottom: 1px solid #dddfe0;
 		height: 72px;
 		background: url("@{img-url}/icon-editor-fill.svg") no-repeat 0 50%;
+		margin-top: 0;
 	}
-	.tool-item3--tablet {
+	.functional__tool-item--tablet3 {
 		height: 72px;
 		background: url("@{img-url}/icon-editor-contrast.svg") no-repeat 0 50%;
+		margin-top: 0;
 	}
-	.toolcontrols {
+	.functional__toolcontrols--tablet{
 		position: relative;
 		padding: 36px 18px 34px 55px;
+		margin: 0;
 	}
-	.toolscale {
+	.functional__toolscale--tablet {
 		width: 202px;
 		height: 2px;
 		background: @link-bg;
 	}
-	.tooltoggle {
-		position: absolute;
-		top: 0px;
-		right: 0px;
-		width: 10px;
-		height: 10px;
-		cursor: pointer;
-		border: 2px solid @font-red;
-		border-radius: 50%;
-		background: @font-color;
-	}
-	.tooltoggle:hover{
+	
+	.tooltoggle:hover {
 		background: @font-red;
 	}
-	.toggle1 {
+	.functional__tooltoggle--position1 {
 		top: 31px;
 		right: 59px;
 	}
-	.toggle2 {
+	.functional__tooltoggle--position2 {
 		top: 31px;
 		right: 180px;
 	}
-	.toggle3 {
+	.functional__tooltoggle--position3 {
 		top: 30px;
 		right: 110px;
 	}
 	.functional__btns {
-		width: 300px;
+		width: 275px;
 	}
 	.functional__post-btn {
 		margin-top: 65px;
@@ -238,10 +225,7 @@
 	.functional {
 		width: 940px;
 	}
-	.common-heading--functional {
-		padding-top: 33px;
-		padding-bottom: 65px;
-	}
+	
 	.inlineblock-wrapper {
 		padding-bottom: 55px;
 	}
@@ -264,11 +248,12 @@
 	.tool-item3--tablet {
 		background-position: 3% 50%;
 	}
-	.toolscale {
+	.functional__toolscale--tablet {
 		width: 288px;
 	}
-	.toolcontrols {
+	.functional__toolcontrols--tablet {
 		padding: 36px 24px 34px 98px;
+		margin: 0;
 	}
 	.toggle1 {
 		top: 31px;
@@ -282,12 +267,11 @@
 		top: 30px;
 		right: 138px;
 	}
-	.functional__btns{
+	.functional__btns {
 		width: 420px;
 	}
 	.functional__post-btn {
-		
-		margin: 0 ;
+		margin: 0;
 		padding: 15px 42px;
 		margin-top: 145px;
 	}
@@ -296,6 +280,5 @@
 		padding: 15px 54px;
 		margin-top: 145px;
 		margin-left: 38px;
-}
-	
+	}
 }

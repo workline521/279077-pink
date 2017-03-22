@@ -6,11 +6,7 @@
 }
 
 .desktop-logo {
-	display: none;
-}
-
-.desktop-logo__wrapper {
-	display: none;
+	.display-none();
 }
 
 .header-menu__item {
@@ -26,7 +22,6 @@
 .header-menu__link {
 	.display-block();
 	.text-decoration();
-	.vertical-align();
 	.font-bold ();
 	.text-align();
 	font-family: @font-regular;
@@ -36,30 +31,26 @@
 	padding: 15px 50px;
 	text-transform: uppercase;
 }
+
 .header-menu__link:hover {
-		color: @hover;
-	}
-	.header-menu__link:active{
-		color:@active;
-	}
+	color: @hover;
+}
+
+.header-menu__link:active {
+	color: @active;
+}
 
 .header-menu--closed {
-	display: none;
+	.display-none();
 }
 
 .header-menu--opened {
-	display: block;
+	.display-block();
 }
 
 @media @desktop-widths {
-	.header-menu--background {
-		background: rgba(0, 0, 0, 0.3);
-		.flex();
-		justify-content: space-around;
-		width: 100%;
-	}
 	.desktop-logo {
-		display: block;
+		.display-block();
 		width: 120px;
 		height: 30px;
 		padding: 20px 20px;
@@ -86,10 +77,10 @@
 		margin-right: 28px;
 	}
 	.header-menu__item {
-		border: none;
+		.no-borders();
 	}
 	.header-menu__item:first-child {
-		border: none;
+		.no-borders();
 		box-shadow: none;
 	}
 	.header-menu__link {
@@ -98,26 +89,19 @@
 		text-transform: none;
 		padding: 15px 40px;
 	}
-	
-	.active {
+	.header-menu__link--active {
 		position: relative;
 	}
-	.active::after {
+	.header-menu__link--active::after {
 		content: "";
 		position: absolute;
 		bottom: 0;
-		/* в базовом интенсиве эта строчка работает, в реале - нет!
 		left: 40px;
 		right: 40px;
-		width: 100%;
-		*/
-		left: 25%;
-		width: 50%;
 		height: 3px;
 		background-color: @font-color;
 	}
-	.active:hover::after{
+	.header-menu__link--active:hover::after {
 		background-color: @hover;
 	}
-	
 }

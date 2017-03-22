@@ -1,7 +1,3 @@
-.features--wrapper {
-	background: @description-bg;
-}
-
 .features__image {
 	display: none;
 }
@@ -15,14 +11,9 @@
 	color: @link-bg;
 }
 
-.features__heading--desktop {
-	.display-none();
-}
-
 .features__heading--white {
 	.background-white();
 	margin: 0;
-	
 	line-height: 29px;
 }
 
@@ -54,10 +45,6 @@
 	padding-bottom: 15px;
 }
 
-.features__item-heading--desktop {
-	display: none;
-}
-
 .features__item-heading:first-child {
 	margin-left: 50px;
 	.display-inlineblock();
@@ -71,15 +58,7 @@
 	color: @link-bg;
 	.text-align();
 	.zero-margin();
-	padding: 0;
-}
-
-.features__item--desktop {
-	.display-none();
-}
-
-.features__item--tablet {
-	.display-none();
+	padding: 0 20px;
 }
 
 .features__pic {
@@ -89,7 +68,6 @@
 }
 
 @media @tablet-widths {
-	
 	.features__heading {
 		.zero-margin();
 		font-size: 40px;
@@ -109,23 +87,14 @@
 		margin-left: 350px;
 		padding: 0;
 		padding-bottom: 15px;
-		
-	}
-	
-	.features__item--tablet {
-		.display-block();
-		.zero-margin();
-		margin-left: 350px;
-		font-size: @font-size - 4;
-		line-height: @line-height - 10;
-		color: @link-bg;
-		padding-bottom: 40px;
 	}
 	.features__item {
-		.display-none();
-	}
-	.features__item--desktop {
-		.display-none();
+		.display-block();
+		.zero-margin();
+		margin-left: 330px;
+		padding-bottom: 40px;
+		padding-right: 40px;
+		text-align: left;
 	}
 	.features__description {
 		height: 420px;
@@ -153,17 +122,12 @@
 }
 
 @media @desktop-widths {
-	
-	.features__description::before{
+	.features__description::before {
 		content: "";
 		top: 0;
 		left: 0;
 		position: absolute;
 		z-index: -1;
-		
-	}
-	.features--wrapper {
-		background: @description-bg;
 	}
 	.features__description {
 		display: flex;
@@ -195,10 +159,6 @@
 		line-height: 70px;
 		margin-top: 63px;
 	}
-	.features__heading--margin{
-		margin-top: 70px;
-	}
-	
 	.features__image {
 		display: block;
 		margin: 0 auto;
@@ -208,9 +168,6 @@
 		margin-top: -90px;
 	}
 	.features__item-heading {
-		display: none;
-	}
-	.features__item-heading--desktop {
 		margin: 0;
 		margin-top: 33px;
 		display: block;
@@ -218,18 +175,12 @@
 		font-size: 30px;
 		line-height: 30px;
 	}
-	.features__item--desktop {
+	.features__item {
 		display: block;
 		margin: 25px 0 0 0;
 		text-align: center;
 		font-size: 18px;
 		line-height: 30px;
 		color: @link-bg;
-	}
-	.features__item {
-		.display-none();
-	}
-	.features__item--tablet {
-		.display-none();
 	}
 }

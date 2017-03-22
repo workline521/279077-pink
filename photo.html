@@ -11,248 +11,244 @@
 <body>
 	<div class="page">
 		<header class="page__header">
-			
-				<div class="section__inner  header-section__inner"> 
-				<div class="header-stripe--background">
-				<div class="header-stripe">
-				<a class="header-logo"></a>
-				<button class="header-stripe__toggle header-stripe--closed " type="button" title="Закрыть">Закрыть</button>
+			<div class="section section--inner">
+				<div class="wrapper wrapper--header">
+					<div class="header-stripe">
+						<a class="header-logo"></a>
+						<button class="header-stripe__toggle header-stripe--closed " type="button" title="Закрыть">Закрыть</button>
+					</div>
 				</div>
-   	    </div>
-	   	   <nav class="header-menu header-menu--closed"> 
-	              <div class="header-menu--background">
-		              <a class="desktop-logo" href="index.html"></a>
-						<ul id="header-menu--list" class="header-menu__list  ">
+				<nav class="header-menu header-menu--closed">
+					<div class="wrapper wrapper--menu">
+						<a class="desktop-logo" href="index.html"></a>
+						<ul class="header-menu__list">
 							<li class="header-menu__item"><a class="header-menu__link" href="index.html">Главная</a></li>
-							<li class="header-menu__item active"><a class="header-menu__link">Фотографии</a></li>
+							<li class="header-menu__item"><a class="header-menu__link header-menu__link--active">Фотографии</a></li>
 							<li class="header-menu__item"><a class="header-menu__link" href="form.html">Конкурс</a></li>
 							<li class="header-menu__item"><a class="header-menu__link" href="http://htmlacademy.ru">HTML Academy</a></li>
 						</ul>
-						</div>
-					</nav>
-				</div>
-			
+					</div>
+				</nav>
+			</div>
 		</header>
 		<main class="page__content">
-		
-				<div class="section__inner  photo-section__inner">
-				    <div class="photo-content">
-				    <h1 class="photo-content__heading">Фотографии
- пользователей</h1>
-					<h2 class="common-heading">Взгляните на фотографии, которые<br>выкладывают пользователи!<br>Видите, как не хватает ваших?</h2>
-					<h2 class="common-heading--tablet">Взгляните на фотографии, которые выкладывают<br> пользователи! Видите, как не хватает ваших?</h2>
-					<h2 class="common-heading--desktop">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</h2>
-					</div>
-					<article class="photo-main">
-						<a class="photo-main__pic" href="#">
-							<img class="mobile-size" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="photo">
-						</a>
-						<div class="photo-main__content">
-						<div class="photo-post__info photo-main__info"><b class="photo-main__username">Анна</b> <span class="photo-post__when">(5 МИНУТ НАЗАД)</span>
-						 </div>
+			<div class="section section--inner">
+				<div class="photo-content">
+					<h1 class="photo-content__heading">Фотографии<br>пользователей</h1>
+					<p class="common-heading">Взгляните на фотографии, которые
+						<br>выкладывают пользователи!
+						<br>Видите, как не хватает ваших?</p>
+					<p class="common-heading--tablet">Взгляните на фотографии, которые выкладывают
+						<br> пользователи! Видите, как не хватает ваших?</p>
+					<p class="common-heading--desktop">Взгляните на фотографии, которые выкладывают пользователи!
+						<br>Видите, как не хватает ваших?</p>
+				</div>
+				<article class="photo-main">
+					<a class="photo-main__pic" href="#"><img class="photo-post__pic-mobile" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="photo"></a>
+					<div class="wrapper wrapper--photo">
+						<div class="photo-main__info"> <b class="photo-main__username">Анна</b> <span class="photo-post__when">(5 МИНУТ НАЗАД)</span> </div>
 						<div class="photo-main__block">
-							<p class="photo-main__usermessage">Прыгать или нет? Напишите в<br>комментарии свой совет и смотрите<br>прямую трансляцию в перископе,<br>задавайте свои вопросы!</p>
-					        <p class="photo-main__usermessage--tablet">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую<br> трансляцию в перископе, задавайте свои вопросы!</p>
-					        <p class="photo-main__usermessage--desktop">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+							<p class="photo-main__usermessage">Прыгать или нет? Напишите в
+								<br>комментарии свой совет и смотрите
+								<br>прямую трансляцию в перископе,
+								<br>задавайте свои вопросы!</p>
+							<p class="photo-main__usermessage photo-main__usermessage--tablet">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
+								<br>трансляцию в перископе, задавайте свои вопросы!</p>
+							<p class="photo-main__usermessage photo-main__usermessage--desktop">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
 						</div>
 						<div class="photo-main__controls">
-							<button class="like-button--main" type="button" title="like"></button>
+							<button class="like-button like-button--main" type="button" title="like"></button>
 							<p class="photo-main__likes-number">НРАВИТСЯ: 215</p>
 						</div>
-						</div>
-					</article>
-					<div class="flex-wrapper">
-					<article class="photo-post">
-						<a class="photo-post__photo pic-1" href="#">
-							<picture><img class="mobile-size" src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="photo"></picture>
-						</a>
-						<div class="photo-post__content">
-						<div class="photo-post__info">
-						<b class="photo-post__username">Левон</b>
-						<span class="photo-post__when">(5 ЧАСОВ НАЗАД)</span> </div>
-						<div class="photo-post__usermessage">
-							<p>Вчера он на луну летал, сегодня в<br>руки к нам попал.</p>
-						</div>
-						<div class="photo-post__controls">
-							<button class="like-button" type="button" title="like"></button>
-							<p class="photo-post__likes-number">НРАВИТСЯ: 356</p>
-						</div>
-						</div>
-					</article>
-					<article class="photo-post">
-						<a class="photo-post__photo pic-2" href="#">
-							<picture><img class="mobile-size" src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="photo"></picture>
-						</a>
-						<div class="photo-post__content">
-						<div class="photo-post__info"> <b class="photo-post__username">Антон</b> <span class="photo-post__when">(12 ЧАСОВ НАЗАД)</span> </div>
-						<div class="photo-post__usermessage">
-							<p>Соседи будут рады!</p>
-						</div>
-						<div class="photo-post__controls">
-							<button class="like-button" type="button" title="like"></button>
-							<p class="photo-post__likes-number">НРАВИТСЯ: 666</p>
-						</div>
-						</div>
-					</article>
-					<article class="photo-post">
-						<a class="photo-post__photo pic-3" href="#">
-							<picture><img class="mobile-size" src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="photo"></picture>
-						</a>
-						<div class="photo-post__content">
-						<div class="photo-post__info"> <b class="photo-post__username">Борис</b> <span class="photo-post__when">(20 ЧАСОВ НАЗАД)</span> </div>
-						<div class="photo-post__usermessage">
-							<p>Здесь могла быть ваша цитата о<br>высоком и вечном.</p>
-						</div>
-						<div class="photo-post__controls">
-							<button class="like-button" type="button" title="like"></button>
-							<p class="photo-post__likes-number">НРАВИТСЯ: 215</p>
-						</div>
-						</div>
-					</article>
-					<article class="photo-post">
-						<a class="photo-post__photo pic-4" href="#">
-							<picture><img class="mobile-size" src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="photo"></picture>
-						</a>
-						<div class="photo-post__content">
-						<div class="photo-post__info"> <b class="photo-post__username">Сергей</b> <span class="photo-post__when">(25 ЧАСОВ НАЗАД)</span> </div>
-						<div class="photo-post__usermessage">
-							<p>Самая кубанская в мире!</p>
-						</div>
-						<div class="photo-post__controls">
-							<button class="like-button" type="button" title="like"></button>
-							<p class="photo-post__likes-number">НРАВИТСЯ: 4</p>
-						</div>
-						</div>
-					</article>
-					<article class="photo-post">
-						<a class="photo-post__photo pic-5" href="#">
-							<picture><img class="mobile-size" src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="photo"></picture>
-						</a>
-						<div class="photo-post__content">
-						<div class="photo-post__info"> <b class="photo-post__username">Максим</b> <span class="photo-post__when">(40 ЧАСОВ НАЗАД)</span> </div>
-						<div class="photo-post__usermessage">
-							<p>Где снег-то?</p>
-						</div>
-						<div class="photo-post__controls">
-							<button class="like-button" type="button" title="like"></button>
-							<p class="photo-post__likes-number">НРАВИТСЯ: 150</p>
-						</div>
-						</div>
-					</article>
-					<article class="photo-post">
-						<a class="photo-post__photo pic-6" href="#">
-							<picture><img class="mobile-size" src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="photo"></picture>
-						</a>
-						<div class="photo-post__content">
-						<div class="photo-post__info"> <b class="photo-post__username">Надежда</b> <span class="photo-post__when">(45 ЧАСОВ НАЗАД)</span> </div>
-						<div class="photo-post__usermessage">
-							<p>Всем GM и взаимные лайки!</p>
-						</div>
-						<div class="photo-post__controls">
-							<button class="like-button" type="button" title="like"></button>
-							<p class="photo-post__likes-number">НРАВИТСЯ: 2560</p>
-						</div>
-						</div>
-					</article>
 					</div>
-					<section class="functional">
-						<h2 class="common-heading">Затмите их всех!<br>Выкладывайте все, что накопилось<br> в телефоне!</h2>
-						<h2 class="common-heading--functional">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</h2>
-						
-						<div class="functional__area--mobile"> <img class="functional__edit-photo" src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="Фото пользователя">
-							<ul class="functional__tool-list">
-								<li class="functional__tool-item">
-									<button class="functional__tool1" type="button"></button>
-								</li>
-								<li class="functional__tool-item">
-									<button class="functional__tool2" type="button"></button>
-								</li>
-								<li class="functional__tool-item">
-									<button class="functional__tool3" type="button"></button>
-								</li>
-							</ul>
-							<div class="functional__toolcontrols">
-								<div class="functional__toolscale"></div>
-								<div class="functional__tooltoggle"></div>
+				</article>
+				<div class="wrapper wrapper--flex wrapper--margin">
+					<article class="photo-post">
+						<a class="photo-post__photo photo-post__photo--pic-1" href="#">
+							<picture><img class="photo-post__pic-mobile" src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="photo"></picture>
+						</a>
+						<div class="photo-post__content">
+							<div class="photo-post__info"> <b class="photo-post__username">Левон</b> <span class="photo-post__when">(5 ЧАСОВ НАЗАД)</span> </div>
+							<div class="photo-post__usermessage">
+								<p>Вчера он на луну летал, сегодня в
+									<br>руки к нам попал.</p>
+							</div>
+							<div class="photo-post__controls">
+								<button class="like-button" type="button" title="like"></button>
+								<p class="photo-post__likes-number">НРАВИТСЯ: 356</p>
 							</div>
 						</div>
-						<div class="functional__tablet-photo"></div>
-						<div class="inlineblock-wrapper">
-						<div class="functional__tool-list--tablet">
-							<div class="tool-item1--tablet">
-								<div class="toolcontrols">
-								<div class="toolscale"></div>
-								<div class="tooltoggle toggle1"></div>
+					</article>
+					<article class="photo-post">
+						<a class="photo-post__photo photo-post__photo--pic-2" href="#">
+							<picture><img class="photo-post__pic-mobile" src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="photo"></picture>
+						</a>
+						<div class="photo-post__content">
+							<div class="photo-post__info"> <b class="photo-post__username">Антон</b> <span class="photo-post__when">(12 ЧАСОВ НАЗАД)</span> </div>
+							<div class="photo-post__usermessage">
+								<p>Соседи будут рады!</p>
 							</div>
+							<div class="photo-post__controls">
+								<button class="like-button" type="button" title="like"></button>
+								<p class="photo-post__likes-number">НРАВИТСЯ: 666</p>
 							</div>
-							<div class="tool-item2--tablet">
-								<div class="toolcontrols">
-								<div class="toolscale"></div>
-								<div class="tooltoggle toggle2"></div>
+						</div>
+					</article>
+					<article class="photo-post">
+						<a class="photo-post__photo photo-post__photo--pic-3" href="#">
+							<picture><img class="photo-post__pic-mobile" src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="photo"></picture>
+						</a>
+						<div class="photo-post__content">
+							<div class="photo-post__info"> <b class="photo-post__username">Борис</b> <span class="photo-post__when">(20 ЧАСОВ НАЗАД)</span> </div>
+							<div class="photo-post__usermessage">
+								<p>Здесь могла быть ваша цитата о
+									<br>высоком и вечном.</p>
 							</div>
+							<div class="photo-post__controls">
+								<button class="like-button" type="button" title="like"></button>
+								<p class="photo-post__likes-number">НРАВИТСЯ: 215</p>
 							</div>
-							<div class="tool-item3--tablet">
-								<div class="toolcontrols">
-								<div class="toolscale"></div>
-								<div class="tooltoggle toggle3"></div>
+						</div>
+					</article>
+					<article class="photo-post">
+						<a class="photo-post__photo photo-post__photo--pic-4" href="#">
+							<picture><img class="photo-post__pic-mobile" src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="photo"></picture>
+						</a>
+						<div class="photo-post__content">
+							<div class="photo-post__info"> <b class="photo-post__username">Сергей</b> <span class="photo-post__when">(25 ЧАСОВ НАЗАД)</span> </div>
+							<div class="photo-post__usermessage">
+								<p>Самая кубанская в мире!</p>
 							</div>
+							<div class="photo-post__controls">
+								<button class="like-button" type="button" title="like"></button>
+								<p class="photo-post__likes-number">НРАВИТСЯ: 4</p>
+							</div>
+						</div>
+					</article>
+					<article class="photo-post">
+						<a class="photo-post__photo photo-post__photo--pic-5" href="#">
+							<picture><img class="photo-post__pic-mobile" src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="photo"></picture>
+						</a>
+						<div class="photo-post__content">
+							<div class="photo-post__info"> <b class="photo-post__username">Максим</b> <span class="photo-post__when">(40 ЧАСОВ НАЗАД)</span> </div>
+							<div class="photo-post__usermessage">
+								<p>Где снег-то?</p>
+							</div>
+							<div class="photo-post__controls">
+								<button class="like-button" type="button" title="like"></button>
+								<p class="photo-post__likes-number">НРАВИТСЯ: 150</p>
+							</div>
+						</div>
+					</article>
+					<article class="photo-post">
+						<a class="photo-post__photo photo-post__photo--pic-6" href="#">
+							<picture><img class="photo-post__pic-mobile" src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="photo"></picture>
+						</a>
+						<div class="photo-post__content">
+							<div class="photo-post__info"> <b class="photo-post__username">Надежда</b> <span class="photo-post__when">(45 ЧАСОВ НАЗАД)</span> </div>
+							<div class="photo-post__usermessage">
+								<p>Всем GM и взаимные лайки!</p>
+							</div>
+							<div class="photo-post__controls">
+								<button class="like-button" type="button" title="like"></button>
+								<p class="photo-post__likes-number">НРАВИТСЯ: 2560</p>
+							</div>
+						</div>
+					</article>
+				</div>
+				<section class="functional">
+					<h2 class="common-heading">Затмите их всех!<br>Выкладывайте все, что накопилось<br> в телефоне!</h2>
+					<h2 class="common-heading common-heading--functional">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</h2>
+					<div class="functional__area-mobile"> <img class="functional__edit-photo" src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="Фото пользователя">
+						<ul class="functional__tool-list">
+							<li class="functional__tool-item">
+								<button class="functional__tool1" type="button"></button>
+							</li>
+							<li class="functional__tool-item">
+								<button class="functional__tool2" type="button"></button>
+							</li>
+							<li class="functional__tool-item">
+								<button class="functional__tool3" type="button"></button>
+							</li>
+						</ul>
+						<div class="functional__toolcontrols">
+							<div class="functional__toolscale"></div>
+							<div class="functional__tooltoggle"></div>
+						</div>
+					</div>
+					<div class="functional__tablet-photo"></div>
+					<div class="wrapper wrapper--functional">
+						<div class="functional__tool-list functional__tool-list--tablet">
+							<div class="functional__tool-item functional__tool-item--tablet1">
+								<div class="functional__toolcontrols functional__toolcontrols--tablet">
+									<div class="functional__toolscale functional__toolscale--tablet"></div>
+									<div class="functional__tooltoggle functional__tooltoggle--position1"></div>
+								</div>
+							</div>
+							<div class="functional__tool-item functional__tool-item--tablet2">
+								<div class="functional__toolcontrols functional__toolcontrols--tablet">
+									<div class="functional__toolscale functional__toolscale--tablet"></div>
+									<div class="functional__tooltoggle functional__tooltoggle--position2"></div>
+								</div>
+							</div>
+							<div class="functional__tool-item functional__tool-item--tablet3">
+								<div class="functional__toolcontrols functional__toolcontrols--tablet">
+									<div class="functional__toolscale functional__toolscale--tablet"></div>
+									<div class="functional__tooltoggle functional__tooltoggle--position3"></div>
+								</div>
 							</div>
 						</div>
 						<div class="functional__btns">
 							<button class="functional__post-btn" type="submit" title="Запостить">Запостить</button>
 							<button class="functional__cancel-btn" type="button" title="Отмена">Отмена</button>
 						</div>
-						</div>
-					</section>
-				</div>
-			
+					</div>
+				</section>
+			</div>
 		</main>
 		<footer class="page__footer">
-		
-				<div class="section__inner standart-footer--tablet standart-footer--desktop">
-					<a class="footer__logo" href="#"><img class="footer__glasses" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип"></a>
-					<ul class="footer-social">
-						<li class="footer-social__item">
-							<a class="footer-social__link  footer-social__link--tw" href="#"></a>
+			<div class="section section--inner">
+				<div class="standart-footer standart-footer--tablet standart-footer--desktop">
+					<a class="standart-footer__logo" href="#"><img class="standart-footer__glasses" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип"></a>
+					<ul class="standart-footer__social">
+						<li class="standart-footer__social-item">
+							<a class="standart-footer__social-link  standart-footer__social-link--tw" href="#"></a>
 						</li>
-						<li class="footer-social__item">
-							<a class="footer-social__link  footer-social__link--fb" href="#"></a>
+						<li class="standart-footer__social-item">
+							<a class="standart-footer__social-link  standart-footer__social-link--fb" href="#"></a>
 						</li>
-						<li class="footer-social__item">
-							<a class="footer-social__link  footer-social__link--yt" href="#"></a>
+						<li class="standart-footer__social-item">
+							<a class="standart-footer__social-link  standart-footer__social-link--yt" href="#"></a>
 						</li>
 					</ul>
-					<a href="#" class="footer-copyright"><p class="footer-copyright__text">Разработано</p> <img class="footer-copyright__logo" src="img/htmlacademy.svg" width="60" height="60" alt="Htmlacademy.SVG"></a>
+					<a href="#" class="standart-footer__copyright">
+						<p class="standart-footer__copyright-text">Разработано</p> <img class="standart-footer__copyright-logo" src="img/htmlacademy.svg" width="60" height="60" alt="Htmlacademy.SVG"></a>
 				</div>
-			
+			</div>
 		</footer>
 	</div>
 	<script>
-    var headerMenu = document.querySelector('.header-menu');
-    var navToggle = document.querySelector('.header-stripe__toggle');
-		
-		
-    window.onload = function (event) {
-	navToggle.classList.remove('header-stripe--closed');
-		 navToggle.classList.add('header-stripe--opened');
-	
-     };
-  
-
-    navToggle.addEventListener('click', function() {
-      if (headerMenu.classList.contains('header-menu--closed')) {
-		  navToggle.classList.add('header-stripe--opened')
-		  navToggle.classList.remove('header-stripe--closed')
-        headerMenu.classList.remove('header-menu--closed');
-        headerMenu.classList.add('header-menu--opened');
-      } else {
-        headerMenu.classList.add('header-menu--closed');
-        headerMenu.classList.remove('header-menu--opened');
-		  navToggle.classList.remove('header-stripe--opened');
-		  navToggle.classList.add('header-stripe--closed');
-      }
-    });
-  </script>
+		var headerMenu = document.querySelector('.header-menu');
+		var navToggle = document.querySelector('.header-stripe__toggle');
+		window.onload = function (event) {
+			navToggle.classList.remove('header-stripe--closed');
+			navToggle.classList.add('header-stripe--opened');
+		};
+		navToggle.addEventListener('click', function () {
+			if (headerMenu.classList.contains('header-menu--closed')) {
+				navToggle.classList.add('header-stripe--opened')
+				navToggle.classList.remove('header-stripe--closed')
+				headerMenu.classList.remove('header-menu--closed');
+				headerMenu.classList.add('header-menu--opened');
+			}
+			else {
+				headerMenu.classList.add('header-menu--closed');
+				headerMenu.classList.remove('header-menu--opened');
+				navToggle.classList.remove('header-stripe--opened');
+				navToggle.classList.add('header-stripe--closed');
+			}
+		});
+	</script>
 </body>
 
 </html>

@@ -1,11 +1,11 @@
-.form__success {
+.form-success {
 	width: 320px;
 	height: 380px;
 	background-image: linear-gradient( #ffffff 57%, #f1f1f1 57%);
 	box-shadow: 0px 3px 20px 0px rgba(50, 50, 50, 0.75);
 }
 
-.form__confirmation {
+.form-success__confirmation {
 	.text-align();
 	.font-bold ();
 	font-size: @font-size + 1;
@@ -13,11 +13,9 @@
 	padding-top: 40px;
 }
 
-.form__confirmation--tablet {
-	display: none;
-}
 
-.form__confirmation-desc {
+
+.form-success__description {
 	.zero-margin();
 	.text-align();
 	font-size: @font-size - 4;
@@ -26,15 +24,15 @@
 	line-height: @line-height - 9px;
 }
 
-.form__confirmation-desc--tablet {
+.form-success__description--tablet {
 	display: none;
 }
 
-.form__confirmation-desc--desktop {
+.form-success__description--desktop {
 	display: none;
 }
 
-.form__close-confirmation {
+.form-success__close {
 	margin: 82px 20px 0 20px;
 	.no-borders();
 	border-radius: 3px;
@@ -48,15 +46,17 @@
 }
 
 @media @tablet-widths {
-	.form__success {
+	.form-success {
 		width: 460px;
 		height: 432px;
 		background-image: linear-gradient( #ffffff 62%, #f1f1f1 62%);
 	}
-	.form__confirmation {
-		display: none;
+	.form-success__confirmation{
+		font-size: 32px;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
-	.form__confirmation--tablet {
+	.form-success__confirmation--tablet {
 		display: block;
 		.text-align();
 		.font-bold ();
@@ -64,10 +64,10 @@
 		.zero-margin();
 		padding-top: 40px;
 	}
-	.form__confirmation-desc {
+	.form-success__description {
 		display: none;
 	}
-	.form__confirmation-desc--tablet {
+	.form-success__description--tablet {
 		display: block;
 		.zero-margin();
 		.text-align();
@@ -76,10 +76,10 @@
 		padding-top: 26px;
 		line-height: 24px;
 	}
-	.form__confirmation-desc--desktop {
+	.form-success__description--desktop {
 		display: none;
 	}
-	.form__close-confirmation{
+	.form-success__close{
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
@@ -88,22 +88,20 @@
 	
 }
 @media @desktop-widths{
-	.form__success{
+	.form-success{
 		width: 780px;
 		height: 377px;
 		background-image: linear-gradient( #ffffff 55%, #f1f1f1 55%);
 	}
-	.form__confirmation--tablet{
+	
+	.form-success__description--tablet{
 		display: none;
 	}
-	.form__confirmation-desc--tablet{
-		display: none;
-	}
-	.form__confirmation{
+	.form-success__confirmation{
 		display: block;
 		font-size: 32px;
 	}
-	.form__confirmation-desc--desktop{
+	.form-success__description--desktop{
 		display: block;
 		.zero-margin();
 		.text-align();
@@ -112,7 +110,7 @@
 		padding-top: 26px;
 		line-height: 24px;
 	}
-	.form__close-confirmation{
+	.form-success__close{
 		    margin-top: 87px;
 		padding: 16px 165px;
 

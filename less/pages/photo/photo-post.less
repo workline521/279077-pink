@@ -45,15 +45,6 @@
 	padding-bottom: 20px;
 }
 
-.like-button {
-	width: 13px;
-	height: 12px;
-	.no-borders();
-	.display-inlineblock();
-	.vertical-align(baseline);
-	background: url("@{img-url}/icon-heart.svg") no-repeat;
-}
-
 .photo-post__likes-number {
 	.display-inlineblock();
 	.vertical-align(baseline);
@@ -64,61 +55,50 @@
 }
 
 @media @tablet-widths {
-	.flex-wrapper {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		margin-top: 30px;
-		padding-right: 40px;
-		padding-left: 40px;
-	}
 	.photo-post {
 		width: 300px;
 		margin-bottom: 20px;
 		padding: 0;
 	}
-	
+	.photo-post__pic-mobile {
+		display: none;
+	}
 	.photo-post__content {
 		margin: 0;
 		width: 300px;
 		height: 155px;
 	}
-	.photo-post__photo{
+	.photo-post__photo {
 		width: 300px;
 		height: 300px;
 	}
-	.pic-1 {
+	.photo-post__photo--pic-1 {
 		display: block;
 		background: url("@{img-url}/photo-1-mobile@1x.jpg") no-repeat 50% 50%;
 		background-size: cover;
 	}
-	.pic-2 {
+	.photo-post__photo--pic-2 {
 		display: block;
-		
 		background: url("@{img-url}/photo-2-mobile@1x.jpg") no-repeat 50% 50%;
 		background-size: cover;
 	}
-	.pic-3 {
+	.photo-post__photo--pic-3 {
 		display: block;
-		
 		background: url("@{img-url}/photo-3-mobile@1x.jpg") no-repeat 50% 50%;
 		background-size: cover;
 	}
-	.pic-4 {
+	.photo-post__photo--pic-4 {
 		display: block;
-		
 		background: url("@{img-url}/photo-4-mobile@1x.jpg") no-repeat 50% 50%;
 		background-size: cover;
 	}
-	.pic-5 {
+	.photo-post__photo--pic-5 {
 		display: block;
-	
 		background: url("@{img-url}/photo-5-mobile@1x.jpg") no-repeat 50% 50%;
 		background-size: cover;
 	}
-	.pic-6 {
+	.photo-post__photo--pic-6 {
 		display: block;
-		
 		background: url("@{img-url}/photo-6-mobile@1x.jpg") no-repeat 50% 50%;
 		background-size: cover;
 	}
@@ -144,25 +124,14 @@
 		padding-left: 27px;
 		padding-top: 5px;
 	}
-	.like-button {
-		order: 2;
-		padding: 0;
-		margin-top: 12px;
-		margin-right: 31px;
-	}
 }
-@media @desktop-widths{
-	.flex-wrapper{
-		margin-top: 3px;
-		padding-left: 130px;
-		padding-right: 130px;
-	}
-	.photo-post{
+
+@media @desktop-widths {
+	.photo-post {
 		margin-top: 27px;
 		margin-bottom: 27px;
 	}
-	.photo-post__photo{
-		
+	.photo-post__photo {
 		height: 400px;
 	}
 }

@@ -1,0 +1,74 @@
+.wrapper {}
+
+.wrapper--header {
+	background: url("@{img-url}/bg-back-mobile@1x.jpg") no-repeat 0 2px;
+}
+
+.wrapper--features {
+	background: @description-bg;
+}
+
+.wrapper--photo {
+	background: #f2f2f2;
+	width: 280px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+@media @tablet-widths {
+	.wrapper--flex {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding: 0 40px;
+	}
+	.wrapper--photo {
+		width: 620px;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.wrapper--margin {
+		margin-top: 30px;
+	}
+	.wrapper--functional {
+		padding-bottom: 52px;
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+@media @desktop-widths {
+	.wrapper--menu {
+		background: rgba(0, 0, 0, 0.3);
+		.flex();
+		justify-content: space-around;
+		width: 100%;
+	}
+	.wrapper--flex {
+		padding: 0 130px;
+	}
+	.wrapper--inline-block {
+		display: inline-block;
+		vertical-align: top;
+	}
+	.wrapper--form {
+		width: 250px;
+		height: 218px;
+		margin-left: 55px;
+	}
+	.wrapper--photo {
+		width: 940px;
+	}
+	.wrapper--center {
+		display: flex;
+		justify-content: center;
+		padding: 0;
+	}
+	.wrapper--margin {
+		margin-top: 3px;
+	}
+	
+}

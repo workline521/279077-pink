@@ -1,26 +1,3 @@
-.fieldset {
-	.no-borders();
-	.zero-margin();
-	padding: 0 20px;
-}
-
-.fieldset__title {
-	.text-align();
-	.margin-top(38px);
-	color: @font-red;
-	font-size: @font-size - 4;
-	line-height: @line-height - 14;
-}
-
-.fieldset__legend {
-	display: none;
-}
-
-.fieldset--bg {
-	background: @description-bg;
-	.margin-top(25px);
-}
-
 .form-field__label {
 	.display-block();
 	font-size: @font-size - 4;
@@ -30,6 +7,10 @@
 	padding-bottom: 5px;
 }
 
+.form-field--margin {
+	margin-top: 30px;
+}
+
 .form-field__origin {
 	width: 280px;
 	box-sizing: border-box;
@@ -37,15 +18,15 @@
 	border: 2px solid #e5e5e5;
 	margin-bottom: 17px;
 }
-.form-field__origin:hover{
+
+.form-field__origin:hover {
 	border-color: @link-bg;
 }
-.form-field__origin:focus{
+
+.form-field__origin:focus {
 	border-color: @font-red;
 }
-:focus{
-	outline-color: transparent;
-}
+
 .form-field__origin::-webkit-input-placeholder {
 	color: @link-bg;
 	font-size: @font-size;
@@ -70,34 +51,6 @@
 }
 
 @media @tablet-widths {
-	.form {
-		margin-bottom: 45px;
-	}
-	.flex-wrapper--form {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		padding: 0 40px;
-	}
-	.fieldset {
-		padding: 0;
-		width: 100%;
-	}
-	.fieldset__title {
-		display: none;
-	}
-	.fieldset__legend {
-		display: block;
-		.text-align();
-		color: @font-red;
-		font-size: 14px;
-		line-height: 18px;
-		padding-left: 30px;
-		padding-right: 30px;
-	}
-	.fieldset--bg {
-		background: transparent;
-	}
 	.form-field--flex {
 		display: flex;
 		justify-content: space-between;
@@ -118,28 +71,6 @@
 	.form-field__origin--tablet {
 		width: 566px;
 	}
-	.fieldset--order1 {
-		order: 1;
-		border: 2px solid @slider-border;
-		margin: 60px 0 30px 0;
-	}
-	.fieldset--order2 {
-		order: 2;
-		border: 2px solid @slider-border;
-		margin-top: 29px;
-	}
-	.fieldset--order3 {
-		order: 3;
-		border: 2px solid @slider-border;
-		margin-top: 57px;
-	}
-	.fieldset--order4 {
-		order: 4;
-		border: 2px solid @slider-border;
-		margin-top: 56px;
-		padding: 0 60px;
-		padding-bottom: 37px;
-	}
 	.form-field--order {
 		display: flex;
 		flex-wrap: wrap;
@@ -148,33 +79,33 @@
 		margin-left: 58px;
 		margin-right: 30px;
 	}
-	.field-margin {
+	.form-field--margin {
 		position: relative;
 		margin-top: 36px;
 	}
-	.field-margin::before {
+	.form-field--margin::before {
 		content: "";
 		position: absolute;
-		top: 0;
+		top: 2px;
 		left: 438px;
 		width: 60px;
-		height: 62px;
+		height: 58px;
 		background: url("@{img-url}/phone-icon.png") no-repeat;
 		background-size: cover;
 		z-index: 1;
 	}
-	.field-margin::after {
+	.form-field--margin::after {
 		content: "";
 		position: absolute;
-		top: 129px;
-		right: 29px;
+		top: 131px;
+		right: 30px;
 		width: 60px;
-		height: 62px;
+		height: 58px;
 		background: url("@{img-url}/mail-icon.png") no-repeat;
 		background-size: cover;
 		z-index: 1;
 	}
-	.order1 {
+	.form-field__origin--order1 {
 		width: 500px;
 		order: 1;
 		margin: 0;
@@ -183,7 +114,7 @@
 		padding-bottom: 17px;
 		padding-left: 15px;
 	}
-	.order2 {
+	.form-field__label--order2 {
 		order: 2;
 		margin: 0;
 		padding-left: 15px;
@@ -193,15 +124,7 @@
 }
 
 @media @desktop-widths {
-	.form {
-		margin-bottom: -25px;
-	}
-	.fieldset--desktop {
-		width: 470px;
-	}
-	.flex-wrapper--form {
-		padding: 0 130px;
-	}
+	
 	.form-field__origin {
 		width: 340px;
 		margin-left: 19px;
@@ -213,32 +136,28 @@
 	.form-field__origin--tablet {
 		width: 382px;
 	}
-	.fieldset--order1 {
-		width: 431px;
-		margin: -10px 0 30px 0;
-	}
 	.form-field--order {
 		margin: 0;
 		width: 410px;
 		margin-top: 34px;
 	}
-	.flex-wrapper--small {
-		display: flex;
-		justify-content: center;
-	}
-	.field-margin {
+	
+	.form-field--margin {
 		margin-right: 30px;
 	}
-	.order2 {
+	.form-field__label--order2 {
 		padding-left: 34px;
 		padding-bottom: 13px;
 	}
-	.field-margin::before {
-		top: 0;
-		left: 330px;
+	.form-field--margin::before {
+		top: 2px;
+		left: 328px;
 	}
-	.field-margin::after {
-		top: 0;
-		left: 774px;
+	.form-field--margin::after {
+		top: 2px;
+		left: 768px;
+	}
+	.form-field__origin--order1{
+		width: 371px;
 	}
 }
