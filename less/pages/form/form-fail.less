@@ -1,5 +1,5 @@
 .form-fail {
-	.margin-top(); //временный маргин, при раелизации через джаваскрипт убрать!!
+	.margin-top(); //временный маргин
 	width: 320px;
 	height: 290px;
 	background-image: @font-color;
@@ -28,25 +28,22 @@
 }
 
 .form-fail__description {
+	display: block;
 	.zero-margin();
 	.text-align();
 	font-size: @font-size - 4;
 	color: @link-bg;
 	padding-top: 26px;
+	padding-left: 20px;
+	padding-right: 20px;
 	line-height: @line-height - 9px;
-}
-
-.form-fail__description--tablet {
-	display: none;
 }
 
 @media @tablet-widths {
 	.form-fail__description {
-		display: none;
-	}
-	.form-fail__description--tablet {
-		display: block;
-		font-size: 19px;
+		font-size: 18px;
+		padding-left: 80px;
+		padding-right: 80px;
 	}
 	.form-fail {
 		width: 460px;

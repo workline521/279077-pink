@@ -13,23 +13,14 @@
 	padding-top: 40px;
 }
 
-
-
 .form-success__description {
+	display: block;
 	.zero-margin();
 	.text-align();
 	font-size: @font-size - 4;
 	color: @link-bg;
 	padding-top: 26px;
 	line-height: @line-height - 9px;
-}
-
-.form-success__description--tablet {
-	display: none;
-}
-
-.form-success__description--desktop {
-	display: none;
 }
 
 .form-success__close {
@@ -51,68 +42,45 @@
 		height: 432px;
 		background-image: linear-gradient( #ffffff 62%, #f1f1f1 62%);
 	}
-	.form-success__confirmation{
+	.form-success__confirmation {
 		font-size: 32px;
 		padding-left: 20px;
 		padding-right: 20px;
 	}
-	.form-success__confirmation--tablet {
-		display: block;
-		.text-align();
-		.font-bold ();
-		font-size: 32px;
-		.zero-margin();
-		padding-top: 40px;
-	}
 	.form-success__description {
-		display: none;
-	}
-	.form-success__description--tablet {
-		display: block;
-		.zero-margin();
-		.text-align();
-		font-size: 19px;
-		color: @link-bg;
+		font-size: 18px;
 		padding-top: 26px;
+		padding-left: 75px;
+		padding-right: 75px;
 		line-height: 24px;
 	}
-	.form-success__description--desktop {
-		display: none;
-	}
-	.form-success__close{
+	.form-success__close {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		    padding: 16px 83px;
+		padding: 16px 83px;
 	}
-	
 }
-@media @desktop-widths{
-	.form-success{
+
+@media @desktop-widths {
+	.form-success {
 		width: 780px;
 		height: 377px;
 		background-image: linear-gradient( #ffffff 55%, #f1f1f1 55%);
 	}
-	
-	.form-success__description--tablet{
-		display: none;
-	}
-	.form-success__confirmation{
+	.form-success__confirmation {
 		display: block;
 		font-size: 32px;
 	}
-	.form-success__description--desktop{
-		display: block;
-		.zero-margin();
-		.text-align();
-		font-size: 19px;
-		color: @link-bg;
+	.form-success__description {
+		font-size: 18px;
 		padding-top: 26px;
+		padding-left: 200px;
+		padding-right: 200px;
 		line-height: 24px;
 	}
-	.form-success__close{
-		    margin-top: 87px;
+	.form-success__close {
+		margin-top: 87px;
 		padding: 16px 165px;
-
 	}
 }
