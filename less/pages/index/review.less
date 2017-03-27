@@ -83,27 +83,40 @@
 	.review__profession {
 		font-size: 18px;
 	}
-	.review__slider {
+	.rewiew__arrow {
 		position: relative;
 	}
-	.review__slider::before {
+	.rewiew__arrow::before {
 		content: "";
 		position: absolute;
-		top: 140px;
+		cursor: pointer;
+		top: 76px;
 		left: 130px;
 		width: 22px;
 		height: 41px;
 		z-index: 1;
 		background: url("@{img-url}/icon-review-arrow-left.svg") no-repeat;
 	}
-	.review__slider::after {
+	.review__slider a:hover::before {
+		background: url("@{img-url}/icon-review-arrow-left-hover.svg") no-repeat;
+	}
+	.review__slider a:active::before {
+		background: url("@{img-url}/icon-review-arrow-left-active.svg") no-repeat;
+	}
+	.rewiew__arrow::after {
 		content: "";
 		position: absolute;
-		top: 140px;
-		right: 130px;
+		top: 76px;
+		left: 1047px;
 		width: 22px;
 		height: 41px;
 		z-index: 1;
 		background: url("@{img-url}/icon-review-arrow-right.svg") no-repeat;
+	}
+	.review__slider a:hover::after {
+		background: url("@{img-url}/icon-review-arrow-right-hover.svg") no-repeat;
+	}
+	.review__slider a:active::after {
+		background: url("@{img-url}/icon-review-arrow-right-active.svg") no-repeat;
 	}
 }

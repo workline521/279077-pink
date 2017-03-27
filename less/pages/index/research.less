@@ -10,10 +10,22 @@
 		padding-bottom: 70px;
 	}
 	.research__image {
+		position: relative;
 		width: 242px;
 		height: 281px;
 		background: url("@{img-url}/icon-timer.svg") no-repeat;
 		background-size: cover;
+	}
+	.research__image::before {
+		content: "";
+		position: absolute;
+		width: 202px;
+		height: 202px;
+		top: 20%;
+		left: 8%;
+		background: url("@{img-url}/icon-editor-diagram-fill.svg") no-repeat;
+		background-size: cover;
+		z-index: 1;
 	}
 	.research__time {
 		display: block;
@@ -66,13 +78,16 @@
 		width: 298px;
 		height: 345px;
 		background: url("@{img-url}/icon-timer.svg") no-repeat;
+		
 	}
-	
-	.research__time{
+	.research__image::before {
+		width: 253px;
+		height: 253px;
+	}
+	.research__time {
 		margin-top: 100px;
 		font-size: 120px;
 		line-height: 186px;
-		
 	}
 	.research__info {
 		margin-top: 138px;

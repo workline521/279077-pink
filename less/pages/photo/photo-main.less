@@ -11,7 +11,21 @@
 	height: 36px;
 	top: 0;
 	right: 20px;
-	background: url("@{img-url}/panoramaold.png") no-repeat;
+	background: @font-red;
+	z-index: 1;
+}
+
+.photo-main::after {
+	content: "ПАНОРАМА ДНЯ";
+	position: absolute;
+	font-size: 12px;
+	line-height: 24px;
+	font-weight: bold;
+	color: #ffffff;
+	width: 140px;
+	height: 36px;
+	top: 7px;
+	right: 0;
 	z-index: 1;
 }
 
@@ -57,12 +71,15 @@
 @media @tablet-widths {
 	.photo-main__pic {
 		height: 509px;
-		background: url("@{img-url}/panorama-mobile@1x.jpg") no-repeat 50% 50%;
-		background-size: cover;
+	
 	}
 	.photo-main::before {
 		top: 57px;
 		right: 40px;
+	}
+	.photo-main::after {
+		top: 64px;
+		right: 20px;
 	}
 	.photo-main__info {
 		padding: 19px 0 0 28px;
@@ -101,6 +118,10 @@
 	.photo-main::before {
 		top: 54px;
 		right: 129px;
+	}
+	.photo-main::after {
+		top: 61px;
+		right: 110px;
 	}
 	.photo-main__usermessage {
 		display: block;

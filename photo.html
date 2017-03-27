@@ -38,7 +38,14 @@
 					<p class="common-heading common-heading--photo">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
 				</div>
 				<article class="photo-main">
-					<a class="photo-main__pic" href="#"><img class="photo-post__pic-mobile" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="photo"></a>
+					<a class="photo-main__pic" href="#">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+							<source media="(min-width: 768px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+							<img class="photo-main__pic-mobile" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" 
+							alt="photo">
+						</picture>
+					</a>
 					<div class="wrapper wrapper--photo">
 						<div class="photo-main__info"> <b class="photo-main__username">Анна</b> <span class="photo-post__when">(5 МИНУТ НАЗАД)</span> </div>
 						<div class="photo-main__block">
@@ -53,7 +60,11 @@
 				<div class="wrapper wrapper--flex wrapper--margin">
 					<article class="photo-post">
 						<a class="photo-post__photo photo-post__photo--pic-1" href="#">
-							<picture><img class="photo-post__pic-mobile" src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="photo"></picture>
+							<picture>
+							<source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+							<source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+							<img class="photo-post__pic-mobile" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="photo">
+							</picture>
 						</a>
 						<div class="photo-post__content">
 							<div class="photo-post__info"> <b class="photo-post__username">Левон</b> <span class="photo-post__when">(5 ЧАСОВ НАЗАД)</span> </div>
@@ -69,7 +80,11 @@
 					</article>
 					<article class="photo-post">
 						<a class="photo-post__photo photo-post__photo--pic-2" href="#">
-							<picture><img class="photo-post__pic-mobile" src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="photo"></picture>
+							<picture>
+							<source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+							<source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+							<img class="photo-post__pic-mobile" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="photo">
+							</picture>
 						</a>
 						<div class="photo-post__content">
 							<div class="photo-post__info"> <b class="photo-post__username">Антон</b> <span class="photo-post__when">(12 ЧАСОВ НАЗАД)</span> </div>
@@ -84,7 +99,11 @@
 					</article>
 					<article class="photo-post">
 						<a class="photo-post__photo photo-post__photo--pic-3" href="#">
-							<picture><img class="photo-post__pic-mobile" src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="photo"></picture>
+							<picture>
+							<source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+							<source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+							<img class="photo-post__pic-mobile" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="photo">
+							</picture>
 						</a>
 						<div class="photo-post__content">
 							<div class="photo-post__info"> <b class="photo-post__username">Борис</b> <span class="photo-post__when">(20 ЧАСОВ НАЗАД)</span> </div>
@@ -100,7 +119,10 @@
 					</article>
 					<article class="photo-post">
 						<a class="photo-post__photo photo-post__photo--pic-4" href="#">
-							<picture><img class="photo-post__pic-mobile" src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="photo"></picture>
+							<picture>
+							<source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+							<source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">			<img class="photo-post__pic-mobile" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="photo">
+							</picture>
 						</a>
 						<div class="photo-post__content">
 							<div class="photo-post__info"> <b class="photo-post__username">Сергей</b> <span class="photo-post__when">(25 ЧАСОВ НАЗАД)</span> </div>
@@ -115,7 +137,11 @@
 					</article>
 					<article class="photo-post">
 						<a class="photo-post__photo photo-post__photo--pic-5" href="#">
-							<picture><img class="photo-post__pic-mobile" src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="photo"></picture>
+							<picture>
+							<source media="(min-width: 1200px)" srcset="img/photo-5-desktop@1x.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+							<source media="(min-width: 768px)" srcset="img/photo-5-tablet@1x.jpg 1x, img/photo-5-tablet@2x.jpg 2x">	
+							<img class="photo-post__pic-mobile" src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@2x.jpg 2x"  alt="photo">
+							</picture>
 						</a>
 						<div class="photo-post__content">
 							<div class="photo-post__info"> <b class="photo-post__username">Максим</b> <span class="photo-post__when">(40 ЧАСОВ НАЗАД)</span> </div>
@@ -130,7 +156,11 @@
 					</article>
 					<article class="photo-post">
 						<a class="photo-post__photo photo-post__photo--pic-6" href="#">
-							<picture><img class="photo-post__pic-mobile" src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="photo"></picture>
+							<picture>
+							<source media="(min-width: 1200px)" srcset="img/photo-6-desktop@1x.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+							<source media="(min-width: 768px)" srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-tablet@2x.jpg 2x">	
+							<img class="photo-post__pic-mobile" src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="photo">
+							</picture>
 						</a>
 						<div class="photo-post__content">
 							<div class="photo-post__info"> <b class="photo-post__username">Надежда</b> <span class="photo-post__when">(45 ЧАСОВ НАЗАД)</span> </div>
@@ -145,11 +175,15 @@
 					</article>
 				</div>
 				<section class="functional">
-					<p class="common-heading common-heading--functional">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
-					<div class="functional__area-mobile"> <img class="functional__edit-photo" src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="Фото пользователя">
+					<p class="common-heading common-heading--functional">Затмите их всех!
+						<br>Выкладывайте все, что накопилось в телефоне!</p>
+					<div class="functional__area-mobile"> 
+					<picture>
+					<img class="functional__edit-photo functional__edit-photo--margin" src="img/photo-7-mobile@1x.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" alt="Фото пользователя">
+					</picture>
 						<ul class="functional__tool-list">
 							<li class="functional__tool-item">
-								<button class="functional__tool1" type="button"></button>
+								<button class="functional__tool1 functional__tool1--active" type="button"></button>
 							</li>
 							<li class="functional__tool-item">
 								<button class="functional__tool2" type="button"></button>
@@ -163,7 +197,12 @@
 							<div class="functional__tooltoggle"></div>
 						</div>
 					</div>
-					<div class="functional__tablet-photo"></div>
+					<div class="functional__tablet-photo">
+						<picture>
+				         <source media="(min-width: 1200px)" srcset="img/photo-7-desktop@1x.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
+						 <img class="functional__edit-photo" src="img/photo-7-tablet@1x.jpg" srcset="img/photo-7-tablet@2x.jpg 2x" alt="Фото пользователя">
+					    </picture>
+					</div>
 					<div class="wrapper wrapper--functional">
 						<div class="functional__tool-list functional__tool-list--tablet">
 							<div class="functional__tool-item functional__tool-item--tablet1">
@@ -196,7 +235,7 @@
 		<footer class="page__footer">
 			<div class="section section--inner">
 				<div class="standart-footer standart-footer--tablet standart-footer--desktop">
-					<a class="standart-footer__logo" href="#"><img class="standart-footer__glasses" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип"></a>
+					<a class="standart-footer__logo" href="#"></a>
 					<ul class="standart-footer__social">
 						<li class="standart-footer__social-item">
 							<a class="standart-footer__social-link  standart-footer__social-link--tw" href="#"></a>
@@ -209,7 +248,7 @@
 						</li>
 					</ul>
 					<a href="#" class="standart-footer__copyright">
-						<p class="standart-footer__copyright-text">Разработано</p> <img class="standart-footer__copyright-logo" src="img/htmlacademy.svg" width="60" height="60" alt="Htmlacademy.SVG"></a>
+						<p class="standart-footer__copyright-text">Разработано</p> <img class="standart-footer__copyright-logo" src="img/htmlacademy.svg" width="42" height="49" alt="Htmlacademy.SVG"></a>
 				</div>
 			</div>
 		</footer>

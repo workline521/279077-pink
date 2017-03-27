@@ -6,9 +6,14 @@
 .functional__edit-photo {
 	.centerize();
 	.display-block();
-	.margin-top(20px);
+	
 }
-
+.functional__edit-photo--margin{
+	margin-top: 20px;
+}
+.functional__tablet-photo{
+	display: none;
+}
 .functional__tool-list {
 	.list-style();
 	.zero-margin();
@@ -35,7 +40,7 @@
 }
 
 .functional__tool2 {
-	background: url("@{img-url}/icon-editor-fill.svg") no-repeat;
+	background: url("@{img-url}/icon-editor-fill-disabled.svg") no-repeat;
 	.no-borders();
 	width: 48px;
 	height: 48px;
@@ -43,7 +48,7 @@
 }
 
 .functional__tool3 {
-	background: url("@{img-url}/icon-editor-contrast.svg") no-repeat;
+	background: url("@{img-url}/icon-editor-contrast-disabled.svg") no-repeat;
 	.no-borders();
 	width: 32px;
 	height: 32px;
@@ -154,8 +159,7 @@
 		margin-right: 40px;
 		width: 300px;
 		height: 400px;
-		background: url("@{img-url}/photo-7-mobile@1x.jpg");
-		background-size: cover;
+	
 	}
 	
 	.functional__tool-list--tablet {
@@ -177,7 +181,7 @@
 	}
 	.functional__tool-item--tablet3 {
 		height: 72px;
-		background: url("@{img-url}/icon-editor-contrast.svg") no-repeat 0 50%;
+		background: url("@{img-url}/icon-editor-contrast.svg") no-repeat 8px 50%;
 		margin-top: 0;
 	}
 	.functional__toolcontrols--tablet{
@@ -255,15 +259,15 @@
 		padding: 36px 24px 34px 98px;
 		margin: 0;
 	}
-	.toggle1 {
+	.functional__tooltoggle--position1 {
 		top: 31px;
 		right: 226px;
 	}
-	.toggle2 {
+	.functional__tooltoggle--position2 {
 		top: 31px;
 		right: 50px;
 	}
-	.toggle3 {
+	.functional__tooltoggle--position3{
 		top: 30px;
 		right: 138px;
 	}

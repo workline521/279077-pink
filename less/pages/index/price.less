@@ -50,6 +50,21 @@
 	background: url("@{img-url}/bg-hit.svg") no-repeat;
 }
 
+.price__stripe:after {
+	content: "ХИТ";
+	top: 5px;
+	left: 14px;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 30px;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	z-index: 1;
+	background: transparent;
+	transform: rotate(-45deg);
+}
+
 .price__slider-heading {
 	.text-align();
 	font-family: @font-regular;
@@ -87,9 +102,6 @@
 	.zero-margin();
 }
 
-
-
-
 @media @tablet-widths {
 	.price {
 		margin-top: 110px;
@@ -103,7 +115,6 @@
 	.price__slider {
 		display: none;
 	}
-	
 }
 
 @media @desktop-widths {
@@ -114,5 +125,4 @@
 	.price:after {
 		top: -42px;
 	}
-	
 }
