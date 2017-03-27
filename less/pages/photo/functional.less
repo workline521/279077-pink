@@ -6,20 +6,23 @@
 .functional__edit-photo {
 	.centerize();
 	.display-block();
-	
 }
-.functional__edit-photo--margin{
+
+.functional__edit-photo--margin {
 	margin-top: 20px;
 }
-.functional__tablet-photo{
+
+.functional__tablet-photo {
 	display: none;
 }
+
 .functional__tool-list {
 	.list-style();
 	.zero-margin();
 	padding: 0;
 }
-.functional__tool-list--tablet{
+
+.functional__tool-list--tablet {
 	display: none;
 }
 
@@ -47,12 +50,20 @@
 	cursor: pointer;
 }
 
+.functional__tool2:hover {
+	background: url("@{img-url}/icon-editor-fill-hover.svg") no-repeat;
+}
+
 .functional__tool3 {
 	background: url("@{img-url}/icon-editor-contrast-disabled.svg") no-repeat;
 	.no-borders();
 	width: 32px;
 	height: 32px;
 	cursor: pointer;
+}
+
+.functional__tool3:hover {
+	background: url("@{img-url}/icon-editor-contrast-hover.svg") no-repeat;
 }
 
 .functional__toolcontrols {
@@ -147,7 +158,6 @@
 }
 
 @media @tablet-widths {
-	
 	.functional__area-mobile {
 		display: none;
 	}
@@ -159,9 +169,7 @@
 		margin-right: 40px;
 		width: 300px;
 		height: 400px;
-	
 	}
-	
 	.functional__tool-list--tablet {
 		display: block;
 		margin-top: 39px;
@@ -170,6 +178,7 @@
 	.functional__tool-item--tablet1 {
 		height: 72px;
 		background: url("@{img-url}/icon-editor-crop.svg") no-repeat 0 50%;
+		background-size: 25px 25px;
 		margin-top: 0;
 	}
 	.functional__tool-item--tablet2 {
@@ -177,14 +186,16 @@
 		border-bottom: 1px solid #dddfe0;
 		height: 72px;
 		background: url("@{img-url}/icon-editor-fill.svg") no-repeat 0 50%;
+		background-size: 25px 25px;
 		margin-top: 0;
 	}
 	.functional__tool-item--tablet3 {
 		height: 72px;
 		background: url("@{img-url}/icon-editor-contrast.svg") no-repeat 8px 50%;
+		background-size: 16px 16px;
 		margin-top: 0;
 	}
-	.functional__toolcontrols--tablet{
+	.functional__toolcontrols--tablet {
 		position: relative;
 		padding: 36px 18px 34px 55px;
 		margin: 0;
@@ -194,7 +205,6 @@
 		height: 2px;
 		background: @link-bg;
 	}
-	
 	.tooltoggle:hover {
 		background: @font-red;
 	}
@@ -229,7 +239,6 @@
 	.functional {
 		width: 940px;
 	}
-	
 	.inlineblock-wrapper {
 		padding-bottom: 55px;
 	}
@@ -267,7 +276,7 @@
 		top: 31px;
 		right: 50px;
 	}
-	.functional__tooltoggle--position3{
+	.functional__tooltoggle--position3 {
 		top: 30px;
 		right: 138px;
 	}
