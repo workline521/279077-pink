@@ -53,28 +53,45 @@
 						<h2 class="features__heading">Нам есть, что вам<br>предложить!</h2> </div>
 					<div class="wrapper wrapper--features">
 						<div class="features__description">
-							<div class="features__block"> <img class="features__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="">
+							<div class="features__block">
+								<picture>
+									<source media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
+									<img class="features__image" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" alt=""> 
+								</picture>
 								<h2 class="features__item-heading">Поднимает настроение</h2>
 								<p class="features__item">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
 							</div>
-							<div class="features__block"> <img class="features__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="">
-								<h2 class="features__item-heading">Меняет мир вокруг</h2>
+							<div class="features__block">
+							    <picture>
+									<source media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
+									<img class="features__image" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt=""> 
+								</picture>
+							 	<h2 class="features__item-heading">Меняет мир вокруг</h2>
 								<p class="features__item">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
 							</div>
-							<div class="features__block"> <img class="features__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="">
-								<h2 class="features__item-heading">Заводит новых друзей</h2>
+							<div class="features__block">
+							    <picture>
+									<source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+									<img class="features__image" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" alt=""> 
+								</picture>
+							   	<h2 class="features__item-heading">Заводит новых друзей</h2>
 								<p class="features__item">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-							</div> <img class="features__pic" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt=""> </div>
+							</div>
+							    <picture>
+									<source media="(min-width: 320px)" srcset="img/iphone-screen-mobile@1x.png 1x, img/iphone-screen-mobile@2x.png 2x">
+									<img class="features__pic" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt=""> 
+							    </picture>
+						 </div>
 					</div>
 				</section>
 				<section class="research">
-					<div class="research__image"></div>
+					<div class="research__image"><p class="research__time">24</p></div>
 					<div class="research__info">
 						<p class="research__heading">Эффект на 24 часа!</p>
 						<p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p> <a class="research__link" href="#">Узнать больше об исследовании</a> </div>
 				</section>
 				<section class="review">
-					<div class="review__slider"> <img class="review__quotes" src="img/quotesold.png" width="79" height="63" alt="">
+					<div class="review__slider"> <img class="review__quotes" src="img/icon-quotes.svg" width="79" height="63" alt="">
 						<div class="review__slide">
 							<p class="review__username review__username--order2">Николай Петров</p>
 							<p class="review__profession review__profession--order3">25 лет, водитель трамвая</p>
@@ -128,9 +145,9 @@
 						<table class="table__price">
 							<tr>
 								<td class="table__col-empty"></td>
-								<td class="table__col-head"><span class="bold">БАЗА</span>
+								<td class="table__col-head"><span class="table__text">БАЗА</span>
 									<br>1,99 USD</td>
-								<td class="table__col-head table__col-head--border"><span class="bold">СТАНДАРТ</span>
+								<td class="table__col-head table__col-head--border"><span class="table__text">СТАНДАРТ</span>
 									<br>3,99 USD</td>
 								<td class="table__col-head"><span class="table__text">АНЛИМ</span>
 									<br>9,99 USD</td>
@@ -177,7 +194,7 @@
 			</div>
 			<div class="section section--inner">
 				<div class="standart-footer standart-footer--index standart-footer--tablet standart-footer--desktop">
-					<a class="standart-footer__logo" href="#"><img class="standart-footer__glasses" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип"></a>
+					<a class="standart-footer__logo" href="#"></a>
 					<ul class="standart-footer__social">
 						<li class="standart-footer__social-item">
 							<a class="standart-footer__social-link  standart-footer__social-link--tw" href="#"></a>
