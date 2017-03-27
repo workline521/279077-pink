@@ -5,96 +5,54 @@
 	line-height: @line-height - 2;
 	color: @link-bg;
 	background: @font-color;
+	padding: 30px;
+}
+.common-heading--functional{
 	padding-top: 20px;
-	padding-bottom: 40px;
+	padding-bottom: 42px;
 }
-.common-heading--functional {
-	display: none;
-}
-.common-heading--tablet {
-	.display-none();
-}
-
-.common-heading--desktop {
-	.display-none();
+.common-heading--photo {
+	padding: 45px 35px 49px 35px;
 }
 
 .common-heading--form {
-	   padding-bottom: 34px;
-	padding-top: 44px;
+	padding: 44px 5px 34px 5px;
+	
 }
 
-.common-heading--form-tablet {
-	.display-none();
-}
-
-.common-heading--form-desktop {
-	.display-none();
-}
 
 @media @tablet-widths {
-	.common-heading {
-		.display-none();
-	}
-	.common-heading--tablet {
+	.common-heading--photo {
 		.display-block();
 		font-size: 18px;
-		line-height: @line-height - 2;
-		color: @link-bg;
-		background: @font-color;
-		.text-align();
-		.zero-margin();
-		/* все сверху убрать*/
-		padding-top: 91px;
-		padding-bottom: 77px;
+		padding: 91px 100px 79px 100px;
 	}
 	.common-heading--functional {
 		display: block;
-		.zero-margin();
-		.text-align();
 		font-size: 18px;
-		line-height: @line-height - 2;
-		color: @link-bg;
-		background: @font-color;
 		padding-top: 44px;
 		padding-bottom: 70px;
 	}
-	.common-heading--form-tablet {
+	.common-heading--form {
 		font-size: 18px;
-		.display-block();
-		.zero-margin();
-		padding-top: 90px;
-		padding-bottom: 70px;
+	padding: 90px 70px 70px 70px;
+		
 	}
 }
 
 @media @desktop-widths {
-	.common-heading--tablet {
-		.display-none();
-	}
 	.common-heading--functional {
 		padding-top: 33px;
 		padding-bottom: 65px;
 	}
-	.common-heading--desktop {
+	.common-heading--photo {
 		.display-block();
-		font-size: 18px;
-		line-height: @line-height - 2;
-		color: @link-bg;
-		background: @font-color;
-		.text-align();
-		padding-top: 91px;
-		padding-bottom: 89px;
-		margin: 0;
+		padding: 91px 300px 89px 300px;
 	}
-	.common-heading--form-tablet {
-		.display-none();
-	}
-	.common-heading--form-desktop {
-		.display-block();
-		.zero-margin();
-		padding-top: 90px;
-		padding-bottom: 84px;
-		font-size: 18px;
+	
+	.common-heading--form {
+		padding: 90px 200px 84px 200px;
+		
+		
 	}
 }
