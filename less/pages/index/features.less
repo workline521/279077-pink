@@ -112,12 +112,17 @@
 		content: "";
 		top: -62px;
 		left: 40px;
-		width: 38%;
-		height: 114%;
+		width: 268px;
+		height: 481px;
 		position: absolute;
-		background: url("@{img-url}/iphone-screen-mobile@1x.png") no-repeat;
+		background: url("@{img-url}/iphone-screen-3-tablet@1x.png") no-repeat;
 		z-index: 1;
-		background-size: cover;
+	}
+	@media (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx){
+		.features__description::before{
+			background: url("@{img-url}/iphone-screen-3-tablet@2x.png") no-repeat;
+			background-size: cover;
+		}
 	}
 }
 
