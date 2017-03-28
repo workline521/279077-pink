@@ -13,10 +13,11 @@
 	border-bottom: 1px solid @font-black;
 	border-top: 1px solid #485461;
 }
-
-.header-menu__item:first-child {
-	box-shadow: inset 0 1px 1px 0 #485461;
-	border-top: 1px solid @font-black;
+.header-menu__item--margin{
+	border: none;
+}
+.header-menu__item--border{
+	border-top: 1px solid #000000;
 }
 
 .header-menu__link {
@@ -56,8 +57,14 @@
 		padding: 20px 20px;
 		background: url('@{img-url}/logo-pink-white-desktop.svg') no-repeat;
 		cursor: pointer;
-		margin-top: 27px;
-		margin-left: 65px;
+		margin-top: 15px;
+		
+	}
+	.desktop-logo:hover{
+		background: url('@{img-url}/logo-pink-white-desktop-hover.svg') no-repeat;
+	}
+	.desktop-logo:active{
+		background: url('@{img-url}/logo-pink-white-desktop-active.svg') no-repeat;
 	}
 	.desktop-logo__wrapper {
 		display: block;
@@ -74,20 +81,24 @@
 		background: rgba(0, 0, 0, 0);
 		align-items: center;
 		justify-content: space-between;
-		margin-right: 28px;
+		
+	}
+	.header-menu__item--margin{
+		margin-right: 120px;
 	}
 	.header-menu__item {
 		.no-borders();
 	}
-	.header-menu__item:first-child {
+	/*.header-menu__item:nth-child(2) {
 		.no-borders();
 		box-shadow: none;
-	}
+	}*/
 	.header-menu__link {
 		font-size: 18px;
 		line-height: 18px;
 		text-transform: none;
 		padding: 15px 40px;
+		font-weight: 300;
 	}
 	.header-menu__link--active {
 		position: relative;

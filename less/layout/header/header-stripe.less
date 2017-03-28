@@ -6,17 +6,25 @@
 	height: 65px;
 	background: rgba(0, 0, 0, 0.3);
 }
+.header-stripe--bg{
+	background: @link-bg;
+}
 
 .header-logo {
 	.margin-top(20px);
 	padding: 0px 40px 0px 40px;
 	background: url('@{img-url}/logo-pink-white-mobile.svg') no-repeat;
 }
-
+.header-logo:hover{
+	background: url('@{img-url}/logo-pink-white-mobile-hover.svg') no-repeat;
+}
+.header-logo:active{
+	background: url('@{img-url}/logo-pink-white-mobile-active.svg') no-repeat;
+}
 .header-stripe__toggle {
 	cursor: pointer;
 	.margin-top(21px);
-	width: 21px;
+	width: 40px;
 	height: 21px;
 	font-size: 0;
 	border: 0;
@@ -41,11 +49,20 @@
 		padding-right: 40px;
 		background: rgba(0, 0, 0, 0.3);
 	}
+	.header-stripe--bg{
+	background: @link-bg;
+}
 	.header-logo {
 		.margin-top(27px);
 		padding: 21px 76px;
 		font-size: 0;
-		background: url(../img/logo-pink-white-tablet.svg) no-repeat;
+		background: url("@{img-url}/logo-pink-white-tablet.svg") no-repeat;
+	}
+	.header-logo:hover{
+		background: url("@{img-url}/logo-pink-white-tablet-hover.svg") no-repeat;
+	}
+	.header-logo:active{
+		background: url("@{img-url}/logo-pink-white-tablet-active.svg") no-repeat;
 	}
 	.header-stripe--background {
 		background: url("@{img-url}/bg-back-mobile@1x.jpg") no-repeat;

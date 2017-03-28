@@ -4,6 +4,13 @@
 	background: url("@{img-url}/bg-map-mobile@1x.png") no-repeat 0 152px;
 }
 
+@media @retinaMobile {
+	.index-footer {
+		background: url("@{img-url}/bg-map-mobile@2x.jpg") no-repeat;
+		background-size: cover;
+	}
+}
+
 .index-footer__contact {
 	.background-white();
 	.zero-margin();
@@ -11,6 +18,7 @@
 
 .index-footer__section {
 	background: #ffffff;
+	padding-top: 19px;
 }
 
 .index-footer__text {
@@ -63,6 +71,32 @@
 }
 
 @media @tablet-widths {
+	.index-footer {
+		background: url("@{img-url}/bg-map-tablet@1x.jpg") no-repeat center center;
+	}
+	@media @retinaTablet {
+		.index-footer {
+			background: url("@{img-url}/bg-map-tablet@2x.jpg") no-repeat center center;
+			background-size: cover;
+		}
+	}
+	.index-footer__section {
+		background: #ffffff;
+		padding-top: 8px;
+	}
+	.index-footer__contact--order {
+		position: relative;
+	}
+	.index-footer__contact--order::before {
+		content: "";
+		position: absolute;
+		left: -53px;
+		top: 432px;
+		width: 35px;
+		height: 35px;
+		background: url("@{img-url}/icon-map-marker.svg") no-repeat center center;
+		z-index: 1;
+	}
 	.index-footer__contact {
 		display: inline-block;
 		vertical-align: top;
@@ -98,7 +132,15 @@
 
 @media @desktop-widths {
 	.index-footer {
+		margin-top: 65px;
 		height: 798px;
+		background: url("@{img-url}/bg-map-desktop@1x.jpg") no-repeat center center;
+	}
+	@media @retinaDesktop {
+		.index-footer {
+			background: url("@{img-url}/bg-map-desktop@2x.jpg") no-repeat center center;
+			background-size: cover;
+		}
 	}
 	.index-footer__contact {
 		margin: 0;
@@ -109,12 +151,16 @@
 		margin-top: 40px;
 	}
 	.index-footer__contact--order::before {
+		left: -223px;
+		top: 408px;
+	}
+	.index-footer__contact--order::after {
 		content: "";
 		position: absolute;
 		width: 400px;
 		height: 40px;
-		top: 35%;
-		left: 33%;
+		top: 90%;
+		left: -160%;
 		background: #ffffff;
 		z-index: 2;
 	}
@@ -134,16 +180,16 @@
 	.index-footer__contact--triangle::after {
 		background: #ffffff;
 		width: 622px;
-		height: 87px;
-		bottom: 450px;
+		height: 75px;
+		bottom: 447px;
 		left: -10px;
 		transform: rotate(10deg);
 	}
 	.index-footer__contact--triangle::before {
 		background: #ffffff;
 		width: 622px;
-		height: 80px;
-		bottom: 450px;
+		height: 75px;
+		bottom: 447px;
 		right: -10px;
 		transform: rotate(-10deg);
 	}

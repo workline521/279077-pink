@@ -19,9 +19,9 @@
 				</div>
 				<nav class="header-menu header-menu--closed">
 					<div class="wrapper wrapper--menu">
-						<a class="desktop-logo"></a>
 						<ul class="header-menu__list  ">
-							<li class="header-menu__item"><a class="header-menu__link header-menu__link--active">Главная</a></li>
+						    <li class="header-menu__item header-menu__item--margin"><a class="desktop-logo"></a></li>
+							<li class="header-menu__item header-menu__item--border"><a class="header-menu__link header-menu__link--active">Главная</a></li>
 							<li class="header-menu__item"><a class="header-menu__link" href="photo.html">Фотографии</a></li>
 							<li class="header-menu__item"><a class="header-menu__link" href="form.html">Конкурс</a></li>
 							<li class="header-menu__item"><a class="header-menu__link" href="http://htmlacademy.ru">HTML Academy</a></li>
@@ -216,18 +216,21 @@
 	<script>
 		var headerMenu = document.querySelector('.header-menu');
 		var navToggle = document.querySelector('.header-stripe__toggle');
+		var headerStripe = document.querySelector('.header-stripe');
 		navToggle.addEventListener('click', function () {
 			if (headerMenu.classList.contains('header-menu--closed')) {
 				navToggle.classList.add('header-stripe--opened')
 				navToggle.classList.remove('header-stripe--closed')
 				headerMenu.classList.remove('header-menu--closed');
 				headerMenu.classList.add('header-menu--opened');
+				headerStripe.classList.add('header-stripe--bg');
 			}
 			else {
 				headerMenu.classList.add('header-menu--closed');
 				headerMenu.classList.remove('header-menu--opened');
 				navToggle.classList.remove('header-stripe--opened');
 				navToggle.classList.add('header-stripe--closed');
+				headerStripe.classList.remove('header-stripe--bg');
 			}
 		});
 	</script>
