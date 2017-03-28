@@ -1,12 +1,12 @@
 .wrapper {}
 
 .wrapper--header {
-	background: url("@{img-url}/bg-back-mobile@1x.jpg") no-repeat 0 2px;
+	background: url("@{img-url}/bg-back-mobile@1x.jpg") top center no-repeat; 
 }
 @media @retinaMobile{
 		.wrapper--header{
-			background:  url(../img/bg-back-mobile@2x.jpg) no-repeat;
-			    background-size: 320px 396px;
+			background:  url("@{img-url}/bg-back-mobile@2x.jpg") top center no-repeat; 
+			 
 		}
 	}
 .wrapper--features {
@@ -24,12 +24,12 @@
 
 @media @tablet-widths {
 	.wrapper--header {
-	background: url("@{img-url}/bg-back-tablet@1x.jpg") no-repeat ;
+	background: url("@{img-url}/bg-back-tablet@1x.jpg") top center no-repeat; 
 }
 	@media @retinaTablet{
 		.wrapper--header{
-			background:  url(../img/bg-back-tablet@2x.jpg) no-repeat;
-			    background-size: cover;
+			background:  url("@{img-url}/bg-back-tablet@2x.jpg") top center no-repeat;
+			  
 		}
 	}
 	.wrapper--flex {

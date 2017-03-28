@@ -70,6 +70,21 @@
 	transform: rotate(-11deg);
 }
 
+.index-footer__contact--order {
+	position: relative;
+}
+
+.index-footer__contact--order::before {
+	content: "";
+	position: absolute;
+	left: 140px;
+	top: 320px;
+	width: 35px;
+	height: 35px;
+	background: url("@{img-url}/icon-map-marker.svg") no-repeat center center;
+	z-index: 1;
+}
+
 @media @tablet-widths {
 	.index-footer {
 		background: url("@{img-url}/bg-map-tablet@1x.jpg") no-repeat center center;
@@ -84,18 +99,9 @@
 		background: #ffffff;
 		padding-top: 8px;
 	}
-	.index-footer__contact--order {
-		position: relative;
-	}
 	.index-footer__contact--order::before {
-		content: "";
-		position: absolute;
 		left: -53px;
-		top: 432px;
-		width: 35px;
-		height: 35px;
-		background: url("@{img-url}/icon-map-marker.svg") no-repeat center center;
-		z-index: 1;
+		top: 355px;
 	}
 	.index-footer__contact {
 		display: inline-block;
@@ -134,11 +140,11 @@
 	.index-footer {
 		margin-top: 65px;
 		height: 798px;
-		background: url("@{img-url}/bg-map-desktop@1x.jpg") no-repeat center center;
+		background: url("@{img-url}/bg-map-desktop@1x.jpg") no-repeat center 25px;
 	}
 	@media @retinaDesktop {
 		.index-footer {
-			background: url("@{img-url}/bg-map-desktop@2x.jpg") no-repeat center center;
+			background: url("@{img-url}/bg-map-desktop@2x.jpg") no-repeat center 25px;
 			background-size: cover;
 		}
 	}

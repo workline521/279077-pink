@@ -1,11 +1,11 @@
 .form-content {
-	background: @link-bg url("@{img-url}/bg-back-mobile@1x.jpg") no-repeat 50% 50%;
+	background: url("@{img-url}/bg-back-mobile@1x.jpg") center -65px no-repeat;
 }
 
 @media @retinaMobile {
 	.form-content {
-		background: url(../img/bg-back-mobile@2x.jpg) no-repeat 50% 50%;
-		background-size: 320px 170px;
+		background: url("@{img-url}/bg-back-mobile@2x.jpg") center -65px no-repeat;
+		
 	}
 }
 
@@ -23,15 +23,15 @@
 @media @tablet-widths {
 	.form-content {
 		height: 330px;
-		background: @link-bg url("@{img-url}/bg-back-tablet@1x.jpg") no-repeat 50% 50%;
-		background-size: cover;
+		background: url("@{img-url}/bg-back-tablet@1x.jpg")  center -110px no-repeat;
+		
 	}
 	@media @retinaTablet {
-	.form-content {
-		background: url(../img/bg-back-tablet@2x.jpg) no-repeat 50% 50%;
-		background-size: cover;
+		.form-content {
+			background: url(../img/bg-back-tablet@2x.jpg)  center -110px no-repeat;
+			
+		}
 	}
-}
 	.form-content__heading {
 		font-size: 48px;
 		line-height: 60px;
@@ -44,15 +44,15 @@
 @media @desktop-widths {
 	.form-content {
 		height: 284px;
-		background: url(../img/bg-back-desktop@1x.jpg) no-repeat 50% 50%;
-		background-size: cover;
+		background: url(../img/bg-back-desktop@1x.jpg) center -110px no-repeat;
+		
 	}
-	@media @retinaDesktop{
-	.form-content {
-		background: url(../img/bg-back-desktop@2x.jpg) no-repeat 50% 50%;
-		background-size: cover;
+	@media @retinaDesktop {
+		.form-content {
+			background: url(../img/bg-back-desktop@2x.jpg) center -110px no-repeat;
+			
+		}
 	}
-}
 	.form-content__heading {
 		.display-block();
 		font-size: 48px;
@@ -61,6 +61,8 @@
 		.font-light();
 		.text-align();
 		.zero-margin();
+		padding-left: 150px;
 		padding-top: 65px;
+		padding-right: 150px;
 	}
 }
