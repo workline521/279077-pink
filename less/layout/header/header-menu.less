@@ -12,12 +12,12 @@
 .header-menu__item {
 	border-bottom: 1px solid @font-black;
 	border-top: 1px solid #485461;
-}
-.header-menu__item--margin{
-	border: none;
-}
-.header-menu__item--border{
-	border-top: 1px solid #000000;
+	&--margin {
+		border: none;
+	}
+	&--border {
+		border-top: 1px solid #000000;
+	}
 }
 
 .header-menu__link {
@@ -31,14 +31,12 @@
 	line-height: @line-height;
 	padding: 15px 50px;
 	text-transform: uppercase;
-}
-
-.header-menu__link:hover {
-	color: @hover;
-}
-
-.header-menu__link:active {
-	color: @active;
+	&:hover {
+		color: @hover;
+	}
+	&:active {
+		color: @active;
+	}
 }
 
 .header-menu--closed {
@@ -58,13 +56,12 @@
 		background: url('@{img-url}/logo-pink-white-desktop.svg') no-repeat;
 		cursor: pointer;
 		margin-top: 15px;
-		
-	}
-	.desktop-logo:hover{
-		background: url('@{img-url}/logo-pink-white-desktop-hover.svg') no-repeat;
-	}
-	.desktop-logo:active{
-		background: url('@{img-url}/logo-pink-white-desktop-active.svg') no-repeat;
+		&:hover {
+			background: url('@{img-url}/logo-pink-white-desktop-hover.svg') no-repeat;
+		}
+		&:active {
+			background: url('@{img-url}/logo-pink-white-desktop-active.svg') no-repeat;
+		}
 	}
 	.desktop-logo__wrapper {
 		display: block;
@@ -74,12 +71,10 @@
 		.flex();
 		height: 110px;
 		background: url("@{img-url}/bg-back-desktop@1x.jpg") top center no-repeat;
-	
 	}
-	@media @retinaDesktop{
-		.header-menu--closed{
-			background:  url("@{img-url}/bg-back-desktop@2x.jpg") top center no-repeat;
-			     
+	@media @retinaDesktop {
+		.header-menu--closed {
+			background: url("@{img-url}/bg-back-desktop@2x.jpg") top center no-repeat;
 		}
 	}
 	.header-menu__list {
@@ -87,25 +82,26 @@
 		background: rgba(0, 0, 0, 0);
 		align-items: center;
 		justify-content: space-between;
-		
-	}
-	.header-menu__item--margin{
-		margin-right: 120px;
-	}
-	.header-menu__item {
-		.no-borders();
 	}
 	
+	.header-menu__item {
+		.no-borders();
+		&--margin {
+		margin-right: 120px;
+	}
+	}
 	.header-menu__link {
 		font-size: 18px;
 		line-height: 18px;
 		text-transform: none;
 		padding: 15px 40px;
 		font-weight: 300;
-	}
-	.header-menu__link--active {
+		&--active {
 		position: relative;
 	}
+		
+	}
+	
 	.header-menu__link--active::after {
 		content: "";
 		position: absolute;

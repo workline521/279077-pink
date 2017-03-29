@@ -87,12 +87,11 @@
 
 @media @tablet-widths {
 	.index-footer {
-		background: url("@{img-url}/bg-map-tablet@1x.jpg") no-repeat center center;
+		background: url("@{img-url}/bg-map-tablet@1x.jpg") no-repeat center -74%;
 	}
 	@media @retinaTablet {
 		.index-footer {
-			background: url("@{img-url}/bg-map-tablet@2x.jpg") no-repeat center center;
-			background-size: cover;
+			background: url("@{img-url}/bg-map-tablet@2x.jpg") no-repeat center 55%;
 		}
 	}
 	.index-footer__section {
@@ -101,13 +100,16 @@
 	}
 	.index-footer__contact--order::before {
 		left: -53px;
-		top: 355px;
+		top: 428px;
 	}
 	.index-footer__contact {
 		display: inline-block;
 		vertical-align: top;
 		margin-top: 21px;
-		margin-left: 92px;
+		margin-left: 72px;
+		&--order{
+			margin-left: 92px;
+		}
 	}
 	.index-footer__info--padding {
 		padding-bottom: 30px;
@@ -123,16 +125,16 @@
 	}
 	.index-footer__contact--triangle::after {
 		background: #ffffff;
-		width: 361px;
+		width: 340px;
 		height: 75px;
-		bottom: 339px;
+		bottom: 334px;
 		left: 1px;
 	}
 	.index-footer__contact--triangle::before {
 		background: #ffffff;
-		width: 360px;
+		width: 340px;
 		height: 75px;
-		bottom: 339px;
+		bottom: 334px;
 	}
 }
 

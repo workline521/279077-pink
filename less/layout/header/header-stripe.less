@@ -5,22 +5,23 @@
 	padding-right: 20px;
 	height: 65px;
 	background: rgba(0, 0, 0, 0.3);
-}
-.header-stripe--bg{
-	background: @link-bg;
+	&--bg {
+		background: @link-bg;
+	}
 }
 
 .header-logo {
 	.margin-top(20px);
 	padding: 0px 40px 0px 40px;
 	background: url('@{img-url}/logo-pink-white-mobile.svg') no-repeat;
+	&:hover {
+		background: url('@{img-url}/logo-pink-white-mobile-hover.svg') no-repeat;
+	}
+	&:active {
+		background: url('@{img-url}/logo-pink-white-mobile-active.svg') no-repeat;
+	}
 }
-.header-logo:hover{
-	background: url('@{img-url}/logo-pink-white-mobile-hover.svg') no-repeat;
-}
-.header-logo:active{
-	background: url('@{img-url}/logo-pink-white-mobile-active.svg') no-repeat;
-}
+
 .header-stripe__toggle {
 	cursor: pointer;
 	.margin-top(17px);
@@ -33,57 +34,68 @@
 	outline: none;
 }
 
-.header-stripe--closed {
+.header-stripe__toggle--closed {
+	
 	background: transparent url("@{img-url}/icon-menu-burger.svg") no-repeat;
 }
-.header-stripe--closed:hover{
+
+.header-stripe__toggle--closed:hover {
 	background: transparent url("@{img-url}/icon-menu-burger-hover.svg") no-repeat;
 }
-.header-stripe--closed:active{
+
+.header-stripe__toggle--closed:active {
 	background: transparent url("@{img-url}/icon-menu-burger-active.svg") no-repeat;
 }
-.header-stripe--opened {
+
+.header-stripe__toggle--opened {
 	background: transparent url("@{img-url}/icon-menu-cross.svg") 27px 0px no-repeat;
-	    margin-top: 44px;
+	margin-top: 20px;
+	&:hover {
+		background: transparent url("@{img-url}/icon-menu-cross-hover.svg") 27px 0px no-repeat;
+	}
+	&:active {
+		background: transparent url("@{img-url}/icon-menu-cross-active.svg") 27px 0px no-repeat;
+	}
 }
-.header-stripe--opened:hover{
-	background: transparent url("@{img-url}/icon-menu-cross-hover.svg") 27px 0px no-repeat;
-}
-.header-stripe--opened:active{
-	background: transparent url("@{img-url}/icon-menu-cross-active.svg") 27px 0px no-repeat;
-}
+
 @media @tablet-widths {
 	.header-stripe {
 		.flex();
 		height: 110px;
-		padding-left: 40px;
-		padding-right: 40px;
+		padding-left: 20px;
+		padding-right: 20px;
 		background: rgba(0, 0, 0, 0.3);
+		&--bg {
+			background: @link-bg;
+		}
+		&--background {
+		background: url("@{img-url}/bg-back-mobile@1x.jpg") no-repeat;
+		background-size: cover;
 	}
-	.header-stripe--bg{
-	background: @link-bg;
-}
+	}
+	.header-stripe__toggle--closed{
+		margin-top: 45px;
+	}
+	.header-stripe__toggle--opened{
+		margin-top: 45px;
+	}
 	.header-logo {
 		.margin-top(27px);
 		padding: 21px 76px;
 		font-size: 0;
 		background: url("@{img-url}/logo-pink-white-tablet.svg") no-repeat;
+		&:hover {
+			background: url("@{img-url}/logo-pink-white-tablet-hover.svg") no-repeat;
+		}
+		&:active {
+			background: url("@{img-url}/logo-pink-white-tablet-active.svg") no-repeat;
+		}
 	}
-	.header-logo:hover{
-		background: url("@{img-url}/logo-pink-white-tablet-hover.svg") no-repeat;
-	}
-	.header-logo:active{
-		background: url("@{img-url}/logo-pink-white-tablet-active.svg") no-repeat;
-	}
-	.header-stripe--background {
-		background: url("@{img-url}/bg-back-mobile@1x.jpg") no-repeat;
-		background-size: cover;
-	}
+	
 }
 
 @media @desktop-widths {
 	.header-stripe {
 		display: none;
 	}
-	
 }
