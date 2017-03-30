@@ -1,69 +1,46 @@
 .functional {
 	background: @description-bg;
 	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
 }
 
 .functional__edit-photo {
 	.centerize();
 	.display-block();
-}
-
-.functional__edit-photo--margin {
-	margin-top: 20px;
-}
-
-.functional__tablet-photo {
-	display: none;
+	&--margin {
+		margin-top: 20px;
+	}
 }
 
 .functional__tool-list {
-	.list-style();
-	.zero-margin();
-	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
-.functional__tool-list--tablet {
+.functional__icon {
+	width: 48px;
+	height: 48px;
+	margin-top: 40px;
+	&--crop {
+		margin-left: 55px;
+	}
+	&--contrast {
+		margin-right: 52px;
+		margin-top: 49px;
+		width: 32px;
+		height: 32px;
+	}
+}
+
+.functional__tool-item--1 {
+	order: 5;
+}
+
+.functional__tool-item--2,
+.functional__tool-item--3 {
 	display: none;
-}
-
-.functional__tool-item {
-	.display-inlineblock();
-	.vertical-align(middle);
-	margin-right: 34px;
-	.margin-top(42px);
-}
-
-.functional__tool1 {
-	background: url("@{img-url}/icon-editor-crop.svg") no-repeat;
-	.no-borders();
-	width: 48px;
-	height: 48px;
-	cursor: pointer;
-	margin-left: 55px;
-}
-
-.functional__tool2 {
-	background: url("@{img-url}/icon-editor-fill-disabled.svg") no-repeat;
-	.no-borders();
-	width: 48px;
-	height: 48px;
-	cursor: pointer;
-}
-
-.functional__tool2:hover {
-	background: url("@{img-url}/icon-editor-fill-hover.svg") no-repeat;
-}
-
-.functional__tool3 {
-	background: url("@{img-url}/icon-editor-contrast-disabled.svg") no-repeat;
-	.no-borders();
-	width: 32px;
-	height: 32px;
-	cursor: pointer;
-}
-
-.functional__tool3:hover {
-	background: url("@{img-url}/icon-editor-contrast-hover.svg") no-repeat;
 }
 
 .functional__toolcontrols {
@@ -108,7 +85,7 @@
 	.margin-top(38px);
 	margin-left: 20px;
 	margin-right: 20px;
-	padding: 15px 92px;
+	padding: 15px 87px;
 	border: 3px solid @font-red;
 	border-radius: 30px;
 	color: @font-red;
@@ -116,16 +93,14 @@
 	line-height: @line-height - 14;
 	background: transparent;
 	cursor: pointer;
-}
-
-.functional__post-btn:hover {
-	background: @font-red;
-	color: white;
-}
-
-.functional__post-btn:active {
-	background: @font-red;
-	color: #e06989;
+	&:hover {
+		background: @font-red;
+		color: white;
+	}
+	&:active {
+		background: @font-red;
+		color: #e06989;
+	}
 }
 
 .functional__cancel-btn {
@@ -138,72 +113,94 @@
 	.margin-top(12px);
 	margin-left: 20px;
 	margin-right: 20px;
-	padding: 15px 103px;
+	padding: 15px 100px;
 	border: 3px solid #dddfe0;
 	border-radius: 30px;
 	color: #dddfe0;
 	font-size: @font-size;
 	line-height: @line-height - 14;
 	background: transparent;
-}
-
-.functional__cancel-btn:hover {
-	color: #b5b9be;
-	border: 3px solid #b5b9be;
-}
-
-.functional__cancel-btn:active {
-	color: #cbced2;
-	background: #b5b9be;
+	&:hover {
+		color: #b5b9be;
+		border: 3px solid #b5b9be;
+	}
+	&:active {
+		color: #cbced2;
+		background: #b5b9be;
+		border: 3px solid #b5b9be;
+	}
 }
 
 @media @tablet-widths {
-	.functional__area-mobile {
-		display: none;
+	.functional {
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
-	.functional__tablet-photo {
-		.display-inlineblock();
-		.vertical-align;
-		margin-top: 57px;
-		margin-left: 40px;
-		margin-right: 40px;
+	.functional__photo {
+		margin-top: 37px;
+		margin-left: 20px;
+		margin-right: 46px;
 		width: 300px;
 		height: 400px;
 	}
-	.functional__tool-list--tablet {
-		display: block;
+	.functional__tool-list {
 		margin-top: 39px;
 		width: 275px;
+		height: 200px;
 	}
-	.functional__tool-item--tablet1 {
+	.functional__tool-item {
 		height: 72px;
-		background: url("@{img-url}/icon-editor-crop.svg") no-repeat 0 50%;
-		background-size: 25px 25px;
-		margin-top: 0;
 	}
-	.functional__tool-item--tablet2 {
-		border-top: 1px solid #dddfe0;
-		border-bottom: 1px solid #dddfe0;
-		height: 72px;
-		background: url("@{img-url}/icon-editor-fill.svg") no-repeat 0 50%;
-		background-size: 25px 25px;
-		margin-top: 0;
+	.functional__tool-item--1 {
+		order: initial;
 	}
-	.functional__tool-item--tablet3 {
-		height: 72px;
-		background: url("@{img-url}/icon-editor-contrast.svg") no-repeat 8px 50%;
-		background-size: 16px 16px;
-		margin-top: 0;
+	.functional__tool-item--2,
+	.functional__tool-item--3 {
+		display: block;
 	}
-	.functional__toolcontrols--tablet {
+	.functional__tool-item--2 {
 		position: relative;
-		padding: 36px 18px 34px 55px;
+	}
+	.functional__tool-item--2:before {
+		content: "";
+		position: absolute;
+		width: 275px;
+		height: 1px;
+		top: 1px;
+		left: -40px;
+		background: #dddfe0;
+		z-index: 1;
+	}
+	.functional__tool-item--2:after {
+		content: "";
+		position: absolute;
+		width: 275px;
+		height: 1px;
+		bottom: -4px;
+		left: -40px;
+		background: #dddfe0;
+		z-index: 1;
+	}
+	.functional__icon {
+		margin: 0;
+		width: 24px;
+		height: 24px;
+		margin-top: 27px;
+		&--contrast {
+			width: 17px;
+			height: 17px;
+			margin-top: 24px;
+			margin-left: 3px;
+		}
+	}
+	.functional__toolcontrols {
+		position: relative;
+		padding: 36px 18px 34px 18px;
 		margin: 0;
 	}
-	.functional__toolscale--tablet {
+	.functional__toolscale{
 		width: 202px;
-		height: 2px;
-		background: @link-bg;
+		
 	}
 	.tooltoggle:hover {
 		background: @font-red;
@@ -222,6 +219,7 @@
 	}
 	.functional__btns {
 		width: 275px;
+		margin-top: 18px;
 	}
 	.functional__post-btn {
 		margin-top: 65px;
@@ -239,33 +237,40 @@
 	.functional {
 		width: 940px;
 	}
-	.inlineblock-wrapper {
-		padding-bottom: 55px;
+	.functional__icon {
+		width: 48px;
+		height: 48px;
+		margin-top: 15px;
+		&--contrast {
+			width: 32px;
+			height: 32px;
+			margin-top: 21px;
+			margin-left: 10px;
+		}
 	}
-	.functional__tablet-photo {
+	.functional__photo {
 		margin-left: 80px;
-		margin-right: 80px;
+		margin-right: 85px;
+	}
+	.functional__tool-item--2:before {
+		width: 420px;
+		left: -80px;
+	}
+	.functional__tool-item--2:after {
+		width: 420px;
+		left: -80px;
 	}
 	.functional__btns {
 		width: 410px;
 	}
-	.functional__tool-list--tablet {
+	.functional__tool-list {
 		width: 410px;
 	}
-	.tool-item1--tablet {
-		background-position: 1% 57%;
-	}
-	.tool-item2--tablet {
-		background-position: 2% 65%;
-	}
-	.tool-item3--tablet {
-		background-position: 3% 50%;
-	}
-	.functional__toolscale--tablet {
+	.functional__toolscale{
 		width: 288px;
 	}
-	.functional__toolcontrols--tablet {
-		padding: 36px 24px 34px 98px;
+	.functional__toolcontrols {
+		padding: 36px 24px 34px 18px;
 		margin: 0;
 	}
 	.functional__tooltoggle--position1 {

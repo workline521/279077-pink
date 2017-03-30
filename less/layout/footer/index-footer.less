@@ -10,7 +10,17 @@
 		background-size: cover;
 	}
 }
-
+.index-footer__heading{
+	font-size: 24px;
+    line-height: 26px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 300;
+    margin: 0;
+    margin-top: 40px;
+    text-align: center;
+    color: #283645;
+    background: #ffffff;
+}
 .index-footer__contact {
 	.background-white();
 	.zero-margin();
@@ -94,6 +104,11 @@
 			background: url("@{img-url}/bg-map-tablet@2x.jpg") no-repeat center 55%;
 		}
 	}
+	.index-footer__heading{
+		margin: 0;
+    font-size: 40px;
+    line-height: 50px;
+	}
 	.index-footer__section {
 		background: #ffffff;
 		padding-top: 8px;
@@ -146,17 +161,25 @@
 	}
 	@media @retinaDesktop {
 		.index-footer {
-			background: url("@{img-url}/bg-map-desktop@2x.jpg") no-repeat center 25px;
-			background-size: cover;
+			background: url("@{img-url}/bg-map-desktop@2x.jpg") no-repeat 50% 46%;
+			
 		}
 	}
-	.index-footer__contact {
+	.index-footer__heading{
 		margin: 0;
-		margin-top: 40px;
+    font-size: 50px;
+    line-height: 56px;
+	}
+	.index-footer__contact {
+		margin: 40px 0 0 55px;
+		
 	}
 	.index-footer__contact--order {
 		order: 2;
 		margin-top: 40px;
+		margin-right: 35px;
+    margin-left: 30px;
+
 	}
 	.index-footer__contact--order::before {
 		left: -223px;
@@ -167,15 +190,14 @@
 		position: absolute;
 		width: 400px;
 		height: 40px;
-		top: 90%;
+		top: 100%;
 		left: -160%;
 		background: #ffffff;
 		z-index: 2;
 	}
 	.index-footer__section {
 		display: flex;
-		padding-right: 152px;
-		padding-left: 177px;
+		padding: 0;
 		justify-content: space-between;
 	}
 	.index-footer__contact--triangle {
@@ -183,21 +205,21 @@
 		margin-top: 40px;
 	}
 	.index-footer__text {
-		margin-bottom: 21px;
+		margin-bottom: 26px;
 	}
 	.index-footer__contact--triangle::after {
 		background: #ffffff;
-		width: 622px;
+		width: 500px;
 		height: 75px;
-		bottom: 447px;
+		bottom: 436px;
 		left: -10px;
 		transform: rotate(10deg);
 	}
 	.index-footer__contact--triangle::before {
 		background: #ffffff;
-		width: 622px;
+		width: 500px;
 		height: 75px;
-		bottom: 447px;
+		bottom: 436px;
 		right: -10px;
 		transform: rotate(-10deg);
 	}

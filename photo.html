@@ -5,7 +5,6 @@
 	<meta charset="UTF-8">
 	<meta content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
 	<title>Pink - фотографии пользователей</title>
-	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css"> </head>
 
 <body>
@@ -14,18 +13,20 @@
 			<div class="section section--inner">
 				<div class="wrapper wrapper--header">
 					<div class="header-stripe">
-						<a class="header-logo" href="index.html"></a>
+						<a class="header-stripe__logo" href="index.html"></a>
 						<button class="header-stripe__toggle header-stripe__toggle--closed " type="button" title="Закрыть">Закрыть</button>
 					</div>
 				</div>
 				<nav class="header-menu header-menu--closed">
 					<div class="wrapper wrapper--menu">
 						<ul class="header-menu__list">
-						    <li class="header-menu__item header-menu__item--margin"><a class="desktop-logo" href="index.html"></a></li>
+							<li class="header-menu__item header-menu__item--margin">
+								<a class="header-menu__logo" href="index.html"></a>
+							</li>
 							<li class="header-menu__item header-menu__item--border"><a class="header-menu__link" href="index.html">Главная</a></li>
 							<li class="header-menu__item"><a class="header-menu__link header-menu__link--active">Фотографии</a></li>
 							<li class="header-menu__item"><a class="header-menu__link" href="form.html">Конкурс</a></li>
-							<li class="header-menu__item"><a class="header-menu__link" href="http://htmlacademy.ru">HTML Academy</a></li>
+							<li class="header-menu__item"><a class="header-menu__link header-menu__link--last" href="http://htmlacademy.ru">HTML Academy</a></li>
 						</ul>
 					</div>
 				</nav>
@@ -34,18 +35,13 @@
 		<main class="page__content">
 			<div class="section section--inner">
 				<div class="photo-content">
-					<h1 class="photo-content__heading">Фотографии<br>пользователей</h1>
-					
-				</div>
+					<h1 class="photo-content__heading">Фотографии<br>пользователей</h1> </div>
 				<p class="common-heading common-heading--photo">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
 				<article class="photo-main">
 					<a class="photo-main__pic" href="#">
 						<picture>
-							<source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-							<source media="(min-width: 768px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-							<img class="photo-main__pic-mobile" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" 
-							alt="photo">
-						</picture>
+							<source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+							<source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x"> <img class="photo-main__pic--size" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="photo"> </picture>
 					</a>
 					<div class="wrapper wrapper--photo">
 						<div class="photo-main__info"> <b class="photo-main__username">Анна</b> <span class="photo-post__when">(5 МИНУТ НАЗАД)</span> </div>
@@ -62,10 +58,8 @@
 					<article class="photo-post">
 						<a class="photo-post__photo photo-post__photo--pic-1" href="#">
 							<picture>
-							<source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
-							<source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-							<img class="photo-post__pic-mobile" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="photo">
-							</picture>
+								<source media="(min-width: 960px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+								<source media="(min-width: 660px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x"> <img class="photo-post__pic-mobile" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="photo"> </picture>
 						</a>
 						<div class="photo-post__content">
 							<div class="photo-post__info"> <b class="photo-post__username">Левон</b> <span class="photo-post__when">(5 ЧАСОВ НАЗАД)</span> </div>
@@ -82,10 +76,8 @@
 					<article class="photo-post">
 						<a class="photo-post__photo photo-post__photo--pic-2" href="#">
 							<picture>
-							<source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
-							<source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-							<img class="photo-post__pic-mobile" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="photo">
-							</picture>
+								<source media="(min-width: 960px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+								<source media="(min-width: 660px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x"> <img class="photo-post__pic-mobile" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="photo"> </picture>
 						</a>
 						<div class="photo-post__content">
 							<div class="photo-post__info"> <b class="photo-post__username">Антон</b> <span class="photo-post__when">(12 ЧАСОВ НАЗАД)</span> </div>
@@ -101,10 +93,8 @@
 					<article class="photo-post">
 						<a class="photo-post__photo photo-post__photo--pic-3" href="#">
 							<picture>
-							<source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
-							<source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-							<img class="photo-post__pic-mobile" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="photo">
-							</picture>
+								<source media="(min-width: 960px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+								<source media="(min-width: 660px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x"> <img class="photo-post__pic-mobile" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="photo"> </picture>
 						</a>
 						<div class="photo-post__content">
 							<div class="photo-post__info"> <b class="photo-post__username">Борис</b> <span class="photo-post__when">(20 ЧАСОВ НАЗАД)</span> </div>
@@ -121,9 +111,8 @@
 					<article class="photo-post">
 						<a class="photo-post__photo photo-post__photo--pic-4" href="#">
 							<picture>
-							<source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
-							<source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">			<img class="photo-post__pic-mobile" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="photo">
-							</picture>
+								<source media="(min-width: 960px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+								<source media="(min-width: 660px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x"> <img class="photo-post__pic-mobile" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="photo"> </picture>
 						</a>
 						<div class="photo-post__content">
 							<div class="photo-post__info"> <b class="photo-post__username">Сергей</b> <span class="photo-post__when">(25 ЧАСОВ НАЗАД)</span> </div>
@@ -139,10 +128,8 @@
 					<article class="photo-post">
 						<a class="photo-post__photo photo-post__photo--pic-5" href="#">
 							<picture>
-							<source media="(min-width: 1200px)" srcset="img/photo-5-desktop@1x.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
-							<source media="(min-width: 768px)" srcset="img/photo-5-tablet@1x.jpg 1x, img/photo-5-tablet@2x.jpg 2x">	
-							<img class="photo-post__pic-mobile" src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@2x.jpg 2x"  alt="photo">
-							</picture>
+								<source media="(min-width: 960px)" srcset="img/photo-5-desktop@1x.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+								<source media="(min-width: 660px)" srcset="img/photo-5-tablet@1x.jpg 1x, img/photo-5-tablet@2x.jpg 2x"> <img class="photo-post__pic-mobile" src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="photo"> </picture>
 						</a>
 						<div class="photo-post__content">
 							<div class="photo-post__info"> <b class="photo-post__username">Максим</b> <span class="photo-post__when">(40 ЧАСОВ НАЗАД)</span> </div>
@@ -158,10 +145,8 @@
 					<article class="photo-post">
 						<a class="photo-post__photo photo-post__photo--pic-6" href="#">
 							<picture>
-							<source media="(min-width: 1200px)" srcset="img/photo-6-desktop@1x.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
-							<source media="(min-width: 768px)" srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-tablet@2x.jpg 2x">	
-							<img class="photo-post__pic-mobile" src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="photo">
-							</picture>
+								<source media="(min-width: 960px)" srcset="img/photo-6-desktop@1x.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+								<source media="(min-width: 660px)" srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-tablet@2x.jpg 2x"> <img class="photo-post__pic-mobile" src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="photo"> </picture>
 						</a>
 						<div class="photo-post__content">
 							<div class="photo-post__info"> <b class="photo-post__username">Надежда</b> <span class="photo-post__when">(45 ЧАСОВ НАЗАД)</span> </div>
@@ -178,49 +163,44 @@
 				<section class="functional">
 					<p class="common-heading common-heading--functional">Затмите их всех!
 						<br>Выкладывайте все, что накопилось в телефоне!</p>
-					<div class="functional__area-mobile"> 
-					<picture>
-					<img class="functional__edit-photo functional__edit-photo--margin" src="img/photo-7-mobile@1x.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" alt="Фото пользователя">
-					</picture>
-						<ul class="functional__tool-list">
-							<li class="functional__tool-item">
-								<button class="functional__tool1 functional__tool1--active" type="button"></button>
-							</li>
-							<li class="functional__tool-item">
-								<button class="functional__tool2" type="button"></button>
-							</li>
-							<li class="functional__tool-item">
-								<button class="functional__tool3" type="button"></button>
-							</li>
-						</ul>
-						<div class="functional__toolcontrols">
-							<div class="functional__toolscale"></div>
-							<div class="functional__tooltoggle"></div>
-						</div>
-					</div>
-					<div class="functional__tablet-photo">
+					<div class="functional__photo">
 						<picture>
-				         <source media="(min-width: 1200px)" srcset="img/photo-7-desktop@1x.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
-						 <img class="functional__edit-photo" src="img/photo-7-tablet@1x.jpg" srcset="img/photo-7-tablet@2x.jpg 2x" alt="Фото пользователя">
-					    </picture>
+							<source media="(min-width: 960px)" srcset="img/photo-7-desktop@1x.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
+							<source media="(min-width: 660px)" srcset="img/photo-7-tablet@1x.jpg 1x, img/photo-7-tablet@2x.jpg 2x"> <img class=" functional__edit-photo functional__edit-photo--margin" src="img/photo-7-mobile@1x.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" alt="photo"> </picture>
 					</div>
 					<div class="wrapper wrapper--functional">
-						<div class="functional__tool-list functional__tool-list--tablet">
-							<div class="functional__tool-item functional__tool-item--tablet1">
-								<div class="functional__toolcontrols functional__toolcontrols--tablet">
-									<div class="functional__toolscale functional__toolscale--tablet"></div>
+						<div class="functional__tool-list">
+							<div class="functional__icon functional__icon--crop functional__icon--active">
+								<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+									<path fill="none" d="M0,0h48v48H0V0z" />
+									<path fill="#d22856" d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z" /> </svg>
+							</div>
+							<div class="functional__tool-item functional__tool-item--1">
+								<div class="functional__toolcontrols">
+									<div class="functional__toolscale"></div>
 									<div class="functional__tooltoggle functional__tooltoggle--position1"></div>
 								</div>
 							</div>
-							<div class="functional__tool-item functional__tool-item--tablet2">
-								<div class="functional__toolcontrols functional__toolcontrols--tablet">
-									<div class="functional__toolscale functional__toolscale--tablet"></div>
+							<div class="functional__icon functional__icon--fill">
+								<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+									<path fill="none" d="M0,0h48v48H0V0z" />
+									<path fill="#d22856" d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z" />
+									<rect fill="#d22856" y="40" width="48" height="3" /> </svg>
+							</div>
+							<div class="functional__tool-item functional__tool-item--2">
+								<div class="functional__toolcontrols">
+									<div class="functional__toolscale"></div>
 									<div class="functional__tooltoggle functional__tooltoggle--position2"></div>
 								</div>
 							</div>
-							<div class="functional__tool-item functional__tool-item--tablet3">
-								<div class="functional__toolcontrols functional__toolcontrols--tablet">
-									<div class="functional__toolscale functional__toolscale--tablet"></div>
+							<div class="functional__icon functional__icon--contrast">
+								<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+									<path fill="#d22856" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z" />
+									<path fill="#d22856" d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519" /> </svg>
+							</div>
+							<div class="functional__tool-item functional__tool-item--3">
+								<div class="functional__toolcontrols">
+									<div class="functional__toolscale"></div>
 									<div class="functional__tooltoggle functional__tooltoggle--position3"></div>
 								</div>
 							</div>
@@ -247,9 +227,7 @@
 						<li class="standart-footer__social-item">
 							<a class="standart-footer__social-link  standart-footer__social-link--yt" href="#"></a>
 						</li>
-					</ul>
-					<a href="#" class="standart-footer__copyright">Разработано</a>
-				</div>
+					</ul> <a href="#" class="standart-footer__copyright">Разработано</a> </div>
 			</div>
 		</footer>
 	</div>

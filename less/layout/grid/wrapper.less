@@ -1,14 +1,15 @@
 .wrapper {}
 
 .wrapper--header {
-	background: url("@{img-url}/bg-back-mobile@1x.jpg") top center no-repeat; 
+	background: url("@{img-url}/bg-back-mobile@1x.jpg") top center no-repeat;
 }
-@media @retinaMobile{
-		.wrapper--header{
-			background:  url("@{img-url}/bg-back-mobile@2x.jpg") top center no-repeat; 
-			 
-		}
+
+@media @retinaMobile {
+	.wrapper--header {
+		background: url("@{img-url}/bg-back-mobile@2x.jpg") top center no-repeat;
 	}
+}
+
 .wrapper--features {
 	background: @description-bg;
 }
@@ -24,19 +25,18 @@
 
 @media @tablet-widths {
 	.wrapper--header {
-	background: url("@{img-url}/bg-back-tablet@1x.jpg") top center no-repeat; 
-}
-	@media @retinaTablet{
-		.wrapper--header{
-			background:  url("@{img-url}/bg-back-tablet@2x.jpg") top center no-repeat;
-			  
+		background: url("@{img-url}/bg-back-tablet@1x.jpg") top center no-repeat;
+	}
+	@media @retinaTablet {
+		.wrapper--header {
+			background: url("@{img-url}/bg-back-tablet@2x.jpg") top center no-repeat;
 		}
 	}
 	.wrapper--flex {
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		padding: 0 40px;
+		padding: 0 20px;
 	}
 	.wrapper--photo {
 		width: 620px;
@@ -49,8 +49,7 @@
 	}
 	.wrapper--functional {
 		padding-bottom: 52px;
-		display: inline-block;
-		vertical-align: top;
+		
 	}
 }
 
@@ -60,11 +59,9 @@
 		.flex();
 		justify-content: space-between;
 		width: 100%;
-		padding-left: 130px;
-		padding-right: 103px;
 	}
 	.wrapper--flex {
-		padding: 0 130px;
+		padding: 0 10px;
 	}
 	.wrapper--inline-block {
 		display: inline-block;
@@ -86,5 +83,8 @@
 	.wrapper--margin {
 		margin-top: 3px;
 	}
-	
 }
+
+
+
+
