@@ -14,15 +14,12 @@
 				<div class="wrapper wrapper--header">
 					<div class="header-stripe">
 						<a class="header-stripe__logo" href="index.html"></a>
-						<button class="header-stripe__toggle header-stripe__toggle--closed " type="button" title="Закрыть">Закрыть</button>
 					</div>
 				</div>
-				<nav class="header-menu header-menu--closed">
+				<nav class="header-menu header-menu--closed header-menu--nojs">
+					<button class="header-menu__toggle" type="button" title="Открыть меню"></button>
 					<div class="wrapper wrapper--menu">
-						<ul class="header-menu__list">
-							<li class="header-menu__item header-menu__item--margin">
-								<a class="header-menu__logo" href="index.html"></a>
-							</li>
+						<ul class="header-menu__list  ">
 							<li class="header-menu__item header-menu__item--border"><a class="header-menu__link" href="index.html">Главная</a></li>
 							<li class="header-menu__item"><a class="header-menu__link" href="photo.html">Фотографии</a></li>
 							<li class="header-menu__item"><a class="header-menu__link header-menu__link--active">Конкурс</a></li>
@@ -52,8 +49,6 @@
 						</fieldset>
 						<fieldset class="fieldset fieldset--bg fieldset--order3">
 							<legend class="fieldset__legend">ВАШИ БЕЗБАШЕННЫЕ ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ</legend>
-							<p class="fieldset__title">ВАШИ БЕЗБАШЕННЫЕ
-								<br>ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ</p>
 							<div class="wrapper wrapper--inline-block wrapper--form">
 								<div class="form-checkbox">
 									<label for="shark" class="form-checkbox__label">
@@ -86,7 +81,7 @@
 							</div>
 						</fieldset>
 						<fieldset class="fieldset fieldset--order2">
-							<legend class="fieldset__legend ">КОНТАКТНАЯ ИНФОРМАЦИЯ</legend>
+							<legend class="fieldset__legend fieldset__legend--hidden">КОНТАКТНАЯ ИНФОРМАЦИЯ</legend>
 							<div class="wrapper wrapper--center">
 								<div class="form-field form-field--order form-field--margin">
 									<label for="phone" class="form-field__label form-field__label--order2">НОМЕР ТЕЛЕФОНА</label>
@@ -98,7 +93,6 @@
 						</fieldset>
 						<fieldset class="fieldset fieldset--bg fieldset--order1 ">
 							<legend class="fieldset__legend">С КАКИМ ПРИЛОЖЕНИЕМ ПУТЕШЕСТВОВАЛИ?</legend>
-							<p class="fieldset__title">С КАКИМ ПРИЛОЖЕНИЕМ ПУТЕШЕСТВОВАЛИ?</p>
 							<div class="form-radio">
 								<label for="ios" class="form-radio__label">
 									<input id="ios" class="form-radio__input" type="radio" checked name="toggle"> Pink для iOS <span class="form-radio__indicator"></span> </label>
@@ -113,8 +107,7 @@
 							</div>
 						</fieldset>
 						<fieldset class="fieldset fieldset--order4">
-							<legend class="fieldset__legend">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
-							<p class="fieldset__title">ОПИШИТЕ СВОИ ЭМОЦИИ</p>
+							<legend class="fieldset__legend fieldset__legend--margin">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
 							<div class="form-textarea">
 								<label for="comments"></label>
 								<textarea class="form-textarea__textarea" name="comments" id="comments" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
