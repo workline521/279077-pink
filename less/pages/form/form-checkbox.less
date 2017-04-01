@@ -10,9 +10,11 @@
 	font-size: @font-size - 1;
 	padding-left: 70px;
 }
+
 .form-checkbox__label input[type="checkbox"] {
 	display: none;
 }
+
 .form-checkbox__label input[type="checkbox"] + .form-checkbox__indicator {
 	position: absolute;
 	top: -7px;
@@ -22,12 +24,15 @@
 	border: 2px solid #e5e5e5;
 	background: #ffffff;
 }
-.form-checkbox__label input[type="checkbox"]:hover + .form-checkbox__indicator:hover{
+
+.form-checkbox__label input[type="checkbox"]:hover + .form-checkbox__indicator:hover {
 	border: 2px solid #283645;
 }
-.form-checkbox__label input[type="checkbox"]:active + .form-checkbox__indicator:active{
+
+.form-checkbox__label input[type="checkbox"]:active + .form-checkbox__indicator:active {
 	border: 2px solid #d22856;
 }
+
 .form-checkbox__label input[type="checkbox"]:checked + .form-checkbox__indicator {
 	position: absolute;
 	top: -7px;
@@ -36,10 +41,12 @@
 	height: 35px;
 	background: #ffffff url("@{img-url}/icon-yes-checkbox.svg") no-repeat 50% 50%;
 }
-.form-checkbox__label input[type="checkbox"]:hover:checked + .form-checkbox__indicator:hover{
+
+.form-checkbox__label input[type="checkbox"]:hover:checked + .form-checkbox__indicator:hover {
 	border: 2px solid #283645;
 }
-.form-checkbox__label input[type="checkbox"]:active:checked + .form-checkbox__indicator:active{
+
+.form-checkbox__label input[type="checkbox"]:active:checked + .form-checkbox__indicator:active {
 	border: 2px solid #d22856;
 }
 
@@ -50,12 +57,10 @@
 }
 
 @media @desktop-widths {
-	.fieldset--order3 {}
 	.form-checkbox {
 		width: 250px;
 		margin: 51px 0;
 		font-size: 18px;
 		line-height: 30px;
 	}
-	.form-checkbox__label {}
 }

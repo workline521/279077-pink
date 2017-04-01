@@ -1,4 +1,4 @@
-	.download {
+.download {
 	background: @link-bg;
 	position: relative;
 }
@@ -55,15 +55,13 @@
 	color: @font-color;
 	font-size: @font-size;
 	line-height: @line-height - 14;
-}
-
-.download__btn:hover {
-	background: @font-color;
-	color: @font-red;
-}
-
-.download__btn:active {
-	color: @activebtn;
+	&:hover {
+		background: @font-color;
+		color: @font-red;
+	}
+	&:active {
+		color: @activebtn;
+	}
 }
 
 .download__icon {
@@ -71,10 +69,9 @@
 	vertical-align: baseline;
 	margin-right: 31px;
 	.margin-top(5px);
-}
-
-.download__icon--margin {
-	margin-left: 57px;
+	&--margin {
+		margin-left: 57px;
+	}
 }
 
 .download__description {
@@ -167,42 +164,41 @@
 	.download::before {
 		top: 98px;
 		left: 145px;
-		width: 812px;;
+		width: 812px;
+		;
 		height: 645px;
 		background: url("@{img-url}/iphone-hand-desktop@1x.png") center center no-repeat;
 	}
 	@media @retinaDesktop {
 		.download::before {
-			
 			background: url("@{img-url}/iphone-hand-desktop@2x.png") center center no-repeat;
 			background-size: cover;
 		}
 	}
-		.download__heading {
-			display: block;
-			font-size: 45px;
-			line-height: 59px;
-			padding-top: 109px;
-			padding-left: 37px;
-			padding-bottom: 53px;
-			width: 230px;
-		}
-		.download__btn {
-			padding: 15px 24px;
-			letter-spacing: 2.5px;
-		}
-		.download__controls {
-			background: transparent;
-			margin: 0;
-			    padding-left: 10px;
-			
-		}
-		.download__links {
-			.margin-top(63px);
-		}
-		.download__description {
-			.margin-top(46px);
-			text-align: center;
-			width: 300px;
-		}
+	.download__heading {
+		display: block;
+		font-size: 45px;
+		line-height: 59px;
+		padding-top: 109px;
+		padding-left: 37px;
+		padding-bottom: 53px;
+		width: 230px;
 	}
+	.download__btn {
+		padding: 15px 24px;
+		letter-spacing: 2.5px;
+	}
+	.download__controls {
+		background: transparent;
+		margin: 0;
+		padding-left: 10px;
+	}
+	.download__links {
+		.margin-top(63px);
+	}
+	.download__description {
+		.margin-top(46px);
+		text-align: center;
+		width: 300px;
+	}
+}

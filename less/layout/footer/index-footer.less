@@ -10,24 +10,26 @@
 		background-size: cover;
 	}
 }
-.index-footer__heading{
+
+.index-footer__heading {
 	font-size: 24px;
-    line-height: 26px;
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-weight: 300;
-    margin: 0;
-    margin-top: 40px;
-    text-align: center;
-    color: #283645;
-    background: #ffffff;
+	line-height: 26px;
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-weight: 300;
+	margin: 0;
+	.margin-top();
+	.text-align();
+	color: #283645;
+	.background-white();
 }
+
 .index-footer__contact {
 	.background-white();
 	.zero-margin();
 }
 
 .index-footer__section {
-	background: #ffffff;
+	.background-white();
 	padding-top: 19px;
 }
 
@@ -45,15 +47,13 @@
 	color: @font-red;
 	font-size: @font-size + 5;
 	line-height: 25px;
-}
-
-.index-footer__info--link {
-	.display-block();
-	.text-decoration();
-}
-
-.index-footer__info--padding {
-	padding-bottom: 45px;
+	&--link {
+		.display-block();
+		.text-decoration();
+	}
+	&--padding {
+		padding-bottom: 45px;
+	}
 }
 
 .index-footer__contact--triangle::after {
@@ -63,7 +63,7 @@
 	height: 40px;
 	bottom: 184px;
 	left: 0;
-	background: #ffffff;
+	.background-white();
 	z-index: 1;
 	transform: rotate(11deg);
 }
@@ -75,7 +75,7 @@
 	height: 40px;
 	bottom: 185px;
 	right: 0;
-	background: #ffffff;
+	.background-white();
 	z-index: 1;
 	transform: rotate(-11deg);
 }
@@ -97,6 +97,7 @@
 
 @media @tablet-widths {
 	.index-footer {
+		height: 735px;
 		background: url("@{img-url}/bg-map-tablet@1x.jpg") no-repeat center -74%;
 	}
 	@media @retinaTablet {
@@ -104,10 +105,10 @@
 			background: url("@{img-url}/bg-map-tablet@2x.jpg") no-repeat center 55%;
 		}
 	}
-	.index-footer__heading{
-		margin: 0;
-    font-size: 40px;
-    line-height: 50px;
+	.index-footer__heading {
+		.zero-margin();
+		font-size: 40px;
+		line-height: 50px;
 	}
 	.index-footer__section {
 		background: #ffffff;
@@ -118,11 +119,11 @@
 		top: 428px;
 	}
 	.index-footer__contact {
-		display: inline-block;
-		vertical-align: top;
+		.display-inlineblock();
+		.vertical-align();
 		margin-top: 21px;
 		margin-left: 72px;
-		&--order{
+		&--order {
 			margin-left: 92px;
 		}
 	}
@@ -133,10 +134,6 @@
 		display: block;
 		margin: 0 auto;
 		margin-top: 30px;
-	}
-	.index-footer {
-		height: 735px;
-		background-size: cover;
 	}
 	.index-footer__contact--triangle::after {
 		background: #ffffff;
@@ -162,24 +159,21 @@
 	@media @retinaDesktop {
 		.index-footer {
 			background: url("@{img-url}/bg-map-desktop@2x.jpg") no-repeat 50% 46%;
-			
 		}
 	}
-	.index-footer__heading{
-		margin: 0;
-    font-size: 50px;
-    line-height: 56px;
+	.index-footer__heading {
+		.zero-margin();
+		font-size: 50px;
+		line-height: 56px;
 	}
 	.index-footer__contact {
 		margin: 40px 0 0 55px;
-		
-	}
-	.index-footer__contact--order {
-		order: 2;
-		margin-top: 40px;
-		margin-right: 35px;
-    margin-left: 30px;
-
+		&--order {
+			order: 2;
+			margin-top: 40px;
+			margin-right: 35px;
+			margin-left: 30px;
+		}
 	}
 	.index-footer__contact--order::before {
 		left: -223px;
@@ -192,17 +186,13 @@
 		height: 40px;
 		top: 100%;
 		left: -160%;
-		background: #ffffff;
+		.background-white();
 		z-index: 2;
 	}
 	.index-footer__section {
-		display: flex;
+		.flex();
 		padding: 0;
 		justify-content: space-between;
-	}
-	.index-footer__contact--triangle {
-		display: inline-block;
-		margin-top: 40px;
 	}
 	.index-footer__text {
 		margin-bottom: 26px;

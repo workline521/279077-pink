@@ -81,10 +81,9 @@
 	border: 2px solid @font-red;
 	border-radius: 50%;
 	background: @font-color;
-}
-
-.functional__tooltoggle:hover {
-	background: @font-red;
+	&:hover {
+		background: @font-red;
+	}
 }
 
 .functional__btns {
@@ -167,16 +166,16 @@
 	}
 	.functional__tool-item {
 		height: 72px;
-	}
-	.functional__tool-item--1 {
-		order: initial;
-	}
-	.functional__tool-item--2,
-	.functional__tool-item--3 {
-		display: block;
-	}
-	.functional__tool-item--2 {
-		position: relative;
+		&--1 {
+			order: initial;
+		}
+		&--2 {
+			position: relative;
+			display: block;
+		}
+		&--3 {
+			display: block;
+		}
 	}
 	.functional__tool-item--2:before {
 		content: "";
@@ -224,9 +223,6 @@
 	}
 	.functional__toolscale {
 		width: 202px;
-	}
-	.tooltoggle:hover {
-		background: @font-red;
 	}
 	.functional__tooltoggle--position1 {
 		top: 31px;

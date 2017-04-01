@@ -24,14 +24,12 @@
 
 .header-stripe__toggle--closed {
 	background: transparent url("@{img-url}/icon-menu-burger.svg") no-repeat;
-}
-
-.header-stripe__toggle--closed:hover {
-	background: transparent url("@{img-url}/icon-menu-burger-hover.svg") no-repeat;
-}
-
-.header-stripe__toggle--closed:active {
-	background: transparent url("@{img-url}/icon-menu-burger-active.svg") no-repeat;
+	&:hover {
+		background: transparent url("@{img-url}/icon-menu-burger-hover.svg") no-repeat;
+	}
+	&:active {
+		background: transparent url("@{img-url}/icon-menu-burger-active.svg") no-repeat;
+	}
 }
 
 .header-stripe__toggle--opened {
@@ -95,7 +93,7 @@
 		height: 30px;
 		padding: 20px 20px;
 		background: url('@{img-url}/logo-pink-white-desktop.svg') no-repeat;
-		cursor: pointer;
+		.pointer();
 		&:hover {
 			background: url('@{img-url}/logo-pink-white-desktop-hover.svg') no-repeat;
 		}
@@ -104,6 +102,6 @@
 		}
 	}
 	.header-stripe__toggle {
-		display: none;
+		.display-none();
 	}
 }
