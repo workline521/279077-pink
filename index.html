@@ -13,18 +13,17 @@
 			<div class="section section--inner">
 				<div class="wrapper wrapper--header">
 					<div class="header-stripe">
-						<a class="header-logo"></a>
-						<button class="header-stripe__toggle header-stripe--closed " type="button" title="Закрыть">Закрыть</button>
+						<a class="header-stripe__logo"></a>
 					</div>
 				</div>
-				<nav class="header-menu header-menu--closed">
+				<nav class="header-menu header-menu--closed header-menu--nojs">
+					<button class="header-menu__toggle" type="button" title="Открыть меню"></button>
 					<div class="wrapper wrapper--menu">
 						<ul class="header-menu__list  ">
-						    <li class="header-menu__item header-menu__item--margin"><a class="desktop-logo"></a></li>
 							<li class="header-menu__item header-menu__item--border"><a class="header-menu__link header-menu__link--active">Главная</a></li>
 							<li class="header-menu__item"><a class="header-menu__link" href="photo.html">Фотографии</a></li>
 							<li class="header-menu__item"><a class="header-menu__link" href="form.html">Конкурс</a></li>
-							<li class="header-menu__item"><a class="header-menu__link" href="http://htmlacademy.ru">HTML Academy</a></li>
+							<li class="header-menu__item"><a class="header-menu__link header-menu__link--last" href="http://htmlacademy.ru">HTML Academy</a></li>
 						</ul>
 					</div>
 				</nav>
@@ -55,45 +54,38 @@
 						<div class="features__description">
 							<div class="features__block">
 								<picture>
-									<source media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
-									<img class="features__image" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" alt=""> 
-								</picture>
+									<source media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x"> <img class="features__image" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" alt=""> </picture>
 								<h2 class="features__item-heading">Поднимает настроение</h2>
 								<p class="features__item">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
 							</div>
 							<div class="features__block">
-							    <picture>
-									<source media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
-									<img class="features__image" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt=""> 
-								</picture>
-							 	<h2 class="features__item-heading">Меняет мир вокруг</h2>
+								<picture>
+									<source media="(min-width: 960px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x"> <img class="features__image" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt=""> </picture>
+								<h2 class="features__item-heading">Меняет мир вокруг</h2>
 								<p class="features__item">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
 							</div>
 							<div class="features__block">
-							    <picture>
-									<source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
-									<img class="features__image" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" alt=""> 
-								</picture>
-							   	<h2 class="features__item-heading">Заводит новых друзей</h2>
+								<picture>
+									<source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x"> <img class="features__image" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" alt=""> </picture>
+								<h2 class="features__item-heading features__item-heading--last">Заводит новых друзей</h2>
 								<p class="features__item">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
 							</div>
-							    <picture>
-									<source media="(min-width: 320px)" srcset="img/iphone-screen-mobile@1x.png 1x, img/iphone-screen-mobile@2x.png 2x">
-									<img class="features__pic" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt=""> 
-							    </picture>
-						 </div>
+							<picture>
+								<source media="(min-width: 320px)" srcset="img/iphone-screen-mobile@1x.png 1x, img/iphone-screen-mobile@2x.png 2x"> <img class="features__pic" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt=""> </picture>
+						</div>
 					</div>
 				</section>
 				<section class="research">
-					<div class="research__image"><p class="research__time">24</p></div>
+					<div class="research__image">
+						<p class="research__time">24</p>
+					</div>
 					<div class="research__info">
 						<p class="research__heading">Эффект на 24 часа!</p>
 						<p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p> <a class="research__link" href="#">Узнать больше об исследовании</a> </div>
 				</section>
 				<section class="review">
-					<div class="review__slider"> 
-					<img class="review__quotes" src="img/icon-quotes.svg" width="79" height="63" alt="">
-					<a class="rewiew__arrow" href="#"></a>
+					<div class="review__slider"> <img class="review__quotes" src="img/icon-quotes.svg" width="79" height="63" alt="">
+						<a class="rewiew__arrow" href="#"></a>
 						<div class="review__slide">
 							<p class="review__username review__username--order2">Николай Петров</p>
 							<p class="review__profession review__profession--order3">25 лет, водитель трамвая</p>
@@ -115,38 +107,11 @@
 					</div>
 				</section>
 				<section class="price">
-					<div class="price__slider">
-						<div class="price__slide-mobile">
-							<div class="price__stripe">
-								<h2 class="price__slider-heading">СТАНДАРТ</h2>
-								<p class="price__slider-numbers">3,99 USD</p>
-							</div>
-							<div class="price__slider-item">
-								<p class="price__slider-feature">РОЗОВЫЙ ФИЛЬТР</p>
-							</div>
-							<div class="price__slider-item">
-								<p class="price__slider-feature">СМАЙЛИКИ</p>
-							</div>
-							<div class="price__slider-item">
-								<p class="price__slider-feature">КОММЕНТАРИИ</p>
-							</div>
-						</div>
-						<div class="slider-controls">
-							<div class="slider-bullet">
-								<a class="slider-tool" href="#"></a>
-							</div>
-							<div class="slider-bullet slider-bullet--active">
-								<a class="slider-tool" href="#"></a>
-							</div>
-							<div class="slider-bullet slider-bullet--last">
-								<a class="slider-tool" href="#"></a>
-							</div>
-						</div>
-					</div>
 					<div class="table">
 						<table class="table__price">
 							<tr>
-								<td class="table__col-empty"></td>
+								<td class="table__col-first table__col-first--moblie"><span class="table__text">СТАНДАРТ</span>
+									<br>3,99 USD</td>
 								<td class="table__col-head"><span class="table__text">БАЗА</span>
 									<br>1,99 USD</td>
 								<td class="table__col-head table__col-head--border"><span class="table__text">СТАНДАРТ</span>
@@ -155,24 +120,35 @@
 									<br>9,99 USD</td>
 							</tr>
 							<tr>
-								<td class="table__col">Розовый фильтр</td>
+								<td class="table__col table__col--mobile table__col--col-1">Розовый фильтр</td>
 								<td class="table__col table__col--col-2"></td>
 								<td class="table__col table__col--col-3"></td>
 								<td class="table__col table__col--col-4"></td>
 							</tr>
 							<tr>
-								<td class="table__col">Смайлики</td>
+								<td class="table__col table__col--mobile table__col--col-5">Смайлики</td>
 								<td class="table__col table__col--col-6"></td>
 								<td class="table__col table__col--col-7"></td>
 								<td class="table__col table__col--col-8"></td>
 							</tr>
 							<tr>
-								<td class="table__col">Комментарии</td>
+								<td class="table__col table__col--mobile table__col--col-9">Комментарии</td>
 								<td class="table__col table__col--col-10"></td>
 								<td class="table__col table__col--col-11"></td>
 								<td class="table__col table__col--col-12"></td>
 							</tr>
 						</table>
+					</div>
+					<div class="slider-controls slider-controls--mobile">
+						<div class="slider-bullet">
+							<a class="slider-tool" href="#"></a>
+						</div>
+						<div class="slider-bullet slider-bullet--active">
+							<a class="slider-tool" href="#"></a>
+						</div>
+						<div class="slider-bullet slider-bullet--last">
+							<a class="slider-tool" href="#"></a>
+						</div>
 					</div>
 				</section>
 			</div>
@@ -180,7 +156,7 @@
 		<footer class="page__footer">
 			<div class="section section--inner">
 				<div class="index-footer">
-					<h2 class="features__heading">Остались вопросы?<br>Свяжитесь с нами!</h2>
+					<h2 class="index-footer__heading ">Остались вопросы?<br>Свяжитесь с нами!</h2>
 					<div class="index-footer__section">
 						<article class="index-footer__contact">
 							<p class="index-footer__text">Звоните:</p> <a href="tel:+78125556666" class="index-footer__info index-footer__info--link">+7 (812) 555-66-66</a> </article>
@@ -207,33 +183,12 @@
 						<li class="standart-footer__social-item">
 							<a class="standart-footer__social-link  standart-footer__social-link--yt" href="#"></a>
 						</li>
-					</ul>
-					<a href="#" class="standart-footer__copyright">Разработано</a>
-				</div>
+					</ul> <a href="#" class="standart-footer__copyright">Разработано</a> </div>
 			</div>
 		</footer>
 	</div>
-	<script>
-		var headerMenu = document.querySelector('.header-menu');
-		var navToggle = document.querySelector('.header-stripe__toggle');
-		var headerStripe = document.querySelector('.header-stripe');
-		navToggle.addEventListener('click', function () {
-			if (headerMenu.classList.contains('header-menu--closed')) {
-				navToggle.classList.add('header-stripe--opened')
-				navToggle.classList.remove('header-stripe--closed')
-				headerMenu.classList.remove('header-menu--closed');
-				headerMenu.classList.add('header-menu--opened');
-				headerStripe.classList.add('header-stripe--bg');
-			}
-			else {
-				headerMenu.classList.add('header-menu--closed');
-				headerMenu.classList.remove('header-menu--opened');
-				navToggle.classList.remove('header-stripe--opened');
-				navToggle.classList.add('header-stripe--closed');
-				headerStripe.classList.remove('header-stripe--bg');
-			}
-		});
-	</script>
+	<script src="js/picturefill.min.js"></script>
+	<script src="js/pink.js"></script>
 </body>
 
 </html>

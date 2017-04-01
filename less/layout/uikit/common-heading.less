@@ -6,23 +6,22 @@
 	color: @link-bg;
 	background: @font-color;
 	padding: 30px;
-}
-.common-heading--functional{
-	padding-top: 20px;
-	padding-bottom: 42px;
-}
-.common-heading--photo {
-	padding: 45px 35px 49px 35px;
-}
-
-.common-heading--form {
-	padding: 44px 5px 34px 5px;
-	
+	&--functional {
+		padding-top: 20px;
+		padding-bottom: 42px;
+	}
+	&--photo {
+		padding: 45px 35px 49px 35px;
+	}
+	&--form {
+		padding: 44px 15px 34px 15px;
+	}
 }
 
-.common-heading__additional-text{
-	display: none;
+.common-heading__additional-text {
+	.display-none();
 }
+
 @media @tablet-widths {
 	.common-heading--photo {
 		.display-block();
@@ -30,19 +29,19 @@
 		padding: 91px 100px 79px 100px;
 	}
 	.common-heading--functional {
-		display: block;
+		.display-block();
 		font-size: 18px;
 		padding-top: 44px;
 		padding-bottom: 70px;
+		width: 100%;
 	}
 	.common-heading--form {
 		font-size: 18px;
-	padding: 90px 70px 70px 70px;
-		
+		padding: 90px 70px 70px 70px;
 	}
-	.common-heading__additional-text{
-	display: block;
-}
+	.common-heading__additional-text {
+		.display-block();
+	}
 }
 
 @media @desktop-widths {
@@ -52,12 +51,10 @@
 	}
 	.common-heading--photo {
 		.display-block();
-		padding: 91px 300px 89px 300px;
+		padding: 91px 175px 89px 175px;
 	}
-	
 	.common-heading--form {
 		padding: 90px 200px 84px 200px;
 		height: 61px;
-		
 	}
 }

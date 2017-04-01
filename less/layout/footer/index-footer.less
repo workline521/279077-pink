@@ -11,13 +11,25 @@
 	}
 }
 
+.index-footer__heading {
+	font-size: 24px;
+	line-height: 26px;
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-weight: 300;
+	margin: 0;
+	.margin-top();
+	.text-align();
+	color: #283645;
+	.background-white();
+}
+
 .index-footer__contact {
 	.background-white();
 	.zero-margin();
 }
 
 .index-footer__section {
-	background: #ffffff;
+	.background-white();
 	padding-top: 19px;
 }
 
@@ -35,15 +47,13 @@
 	color: @font-red;
 	font-size: @font-size + 5;
 	line-height: 25px;
-}
-
-.index-footer__info--link {
-	.display-block();
-	.text-decoration();
-}
-
-.index-footer__info--padding {
-	padding-bottom: 45px;
+	&--link {
+		.display-block();
+		.text-decoration();
+	}
+	&--padding {
+		padding-bottom: 45px;
+	}
 }
 
 .index-footer__contact--triangle::after {
@@ -53,7 +63,7 @@
 	height: 40px;
 	bottom: 184px;
 	left: 0;
-	background: #ffffff;
+	.background-white();
 	z-index: 1;
 	transform: rotate(11deg);
 }
@@ -65,7 +75,7 @@
 	height: 40px;
 	bottom: 185px;
 	right: 0;
-	background: #ffffff;
+	.background-white();
 	z-index: 1;
 	transform: rotate(-11deg);
 }
@@ -87,13 +97,18 @@
 
 @media @tablet-widths {
 	.index-footer {
-		background: url("@{img-url}/bg-map-tablet@1x.jpg") no-repeat center center;
+		height: 735px;
+		background: url("@{img-url}/bg-map-tablet@1x.jpg") no-repeat center -74%;
 	}
 	@media @retinaTablet {
 		.index-footer {
-			background: url("@{img-url}/bg-map-tablet@2x.jpg") no-repeat center center;
-			background-size: cover;
+			background: url("@{img-url}/bg-map-tablet@2x.jpg") no-repeat center 55%;
 		}
+	}
+	.index-footer__heading {
+		.zero-margin();
+		font-size: 40px;
+		line-height: 50px;
 	}
 	.index-footer__section {
 		background: #ffffff;
@@ -101,13 +116,16 @@
 	}
 	.index-footer__contact--order::before {
 		left: -53px;
-		top: 355px;
+		top: 428px;
 	}
 	.index-footer__contact {
-		display: inline-block;
-		vertical-align: top;
+		.display-inlineblock();
+		.vertical-align();
 		margin-top: 21px;
-		margin-left: 92px;
+		margin-left: 72px;
+		&--order {
+			margin-left: 92px;
+		}
 	}
 	.index-footer__info--padding {
 		padding-bottom: 30px;
@@ -117,22 +135,18 @@
 		margin: 0 auto;
 		margin-top: 30px;
 	}
-	.index-footer {
-		height: 735px;
-		background-size: cover;
-	}
 	.index-footer__contact--triangle::after {
 		background: #ffffff;
-		width: 361px;
+		width: 340px;
 		height: 75px;
-		bottom: 339px;
+		bottom: 334px;
 		left: 1px;
 	}
 	.index-footer__contact--triangle::before {
 		background: #ffffff;
-		width: 360px;
+		width: 340px;
 		height: 75px;
-		bottom: 339px;
+		bottom: 334px;
 	}
 }
 
@@ -144,17 +158,22 @@
 	}
 	@media @retinaDesktop {
 		.index-footer {
-			background: url("@{img-url}/bg-map-desktop@2x.jpg") no-repeat center 25px;
-			background-size: cover;
+			background: url("@{img-url}/bg-map-desktop@2x.jpg") no-repeat 50% 46%;
 		}
 	}
-	.index-footer__contact {
-		margin: 0;
-		margin-top: 40px;
+	.index-footer__heading {
+		.zero-margin();
+		font-size: 50px;
+		line-height: 56px;
 	}
-	.index-footer__contact--order {
-		order: 2;
-		margin-top: 40px;
+	.index-footer__contact {
+		margin: 40px 0 0 55px;
+		&--order {
+			order: 2;
+			margin-top: 40px;
+			margin-right: 35px;
+			margin-left: 30px;
+		}
 	}
 	.index-footer__contact--order::before {
 		left: -223px;
@@ -165,37 +184,32 @@
 		position: absolute;
 		width: 400px;
 		height: 40px;
-		top: 90%;
+		top: 100%;
 		left: -160%;
-		background: #ffffff;
+		.background-white();
 		z-index: 2;
 	}
 	.index-footer__section {
-		display: flex;
-		padding-right: 152px;
-		padding-left: 177px;
+		.flex();
+		padding: 0;
 		justify-content: space-between;
 	}
-	.index-footer__contact--triangle {
-		display: inline-block;
-		margin-top: 40px;
-	}
 	.index-footer__text {
-		margin-bottom: 21px;
+		margin-bottom: 26px;
 	}
 	.index-footer__contact--triangle::after {
 		background: #ffffff;
-		width: 622px;
+		width: 500px;
 		height: 75px;
-		bottom: 447px;
+		bottom: 436px;
 		left: -10px;
 		transform: rotate(10deg);
 	}
 	.index-footer__contact--triangle::before {
 		background: #ffffff;
-		width: 622px;
+		width: 500px;
 		height: 75px;
-		bottom: 447px;
+		bottom: 436px;
 		right: -10px;
 		transform: rotate(-10deg);
 	}

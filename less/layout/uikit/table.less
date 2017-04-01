@@ -1,21 +1,107 @@
 .table {
-	display: none;
+	padding: 15px 20px 10px 20px;
+}
+
+.table__price {
+	border-collapse: collapse;
+	position: relative;
+}
+
+.table__price::before {
+	content: "";
+	top: 0;
+	right: 205px;
+	width: 74px;
+	height: 73px;
+	position: absolute;
+	z-index: 1;
+	background: url("@{img-url}/bg-hit.svg") no-repeat;
+}
+
+.table__price::after {
+	content: "ХИТ";
+	top: 6px;
+	right: 225px;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 30px;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	z-index: 1;
+	background: transparent;
+	transform: rotate(-45deg);
+}
+
+.table__col:not(.table__col--mobile) {
+	.display-none();
+}
+
+.table__col-head {
+	.display-none();
+}
+
+.table__col-first--moblie {
+	display: table-cell;
+	width: 276px;
+	height: 96px;
+	background: #283645;
+	color: #ffffff;
+	font-size: 24px;
+	line-height: 30px;
+	text-align: center;
+	font-weight: 300;
+	border-left: 2px solid #e6e6e6;
+	border-right: 2px solid #e6e6e6;
+}
+
+.table__text {
+	.font-bold ();
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.table__col {
+	width: 276px;
+	height: 57px;
+	padding-left: 22px;
+	border: 2px solid #e6e6e6;
+	background: @font-color;
+	font-size: 14px;
+	line-height: 30px;
+	color: @link-bg;
+	text-transform: uppercase;
+	&--col-1 {
+		border-top: none;
+		background: #ffffff url("@{img-url}/icon-yes.svg") no-repeat 92% 50%;
+	}
+	&--col-5 {
+		background: #ffffff url("@{img-url}/icon-yes.svg") no-repeat 92% 50%;
+	}
+	&--col-9 {
+		background: #ffffff url("@{img-url}/icon-no.svg") no-repeat 92% 50%;
+	}
 }
 
 @media @tablet-widths {
 	.table {
-		display: block;
-		padding-right: 40px;
-		padding-left: 40px;
+		padding: 0 20px;
 	}
-	.table__price {
-		border-collapse: collapse;
+	.table__col-first--moblie {
+		opacity: 0;
+		width: 130px;
+		height: 78px;
+		border: none;
+	}
+	.table__col:not(.table__col--mobile) {
+		display: table-cell;
 	}
 	td {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
 	.table__col-head {
+		display: table-cell;
 		width: 152px;
 		height: 78px;
 		background: @link-bg;
@@ -24,49 +110,36 @@
 		line-height: 30px;
 		text-align: center;
 		font-weight: 300;
-	}
-	.table__col-head--border {
-		border-left: 2px solid #e6e6e6;
-		border-right: 2px solid #e6e6e6;
+		&--border {
+			border-left: 2px solid #e6e6e6;
+			border-right: 2px solid #e6e6e6;
+		}
 	}
 	.table__text {
-		.font-bold ();
 		color: @font-color;
 		font-size: 16px;
 		line-height: 30px;
 	}
 	.table__col {
-		width: 144px;
+		width: 140px;
 		height: 42px;
 		border: 2px solid #e6e6e6;
 		background: @font-color;
 		font-size: 14px;
 		line-height: 30px;
 		color: @link-bg;
+		text-transform: none;
+		padding-left: 15px;
 	}
 	.table__price::before {
-		content: "";
-		top: 36px;
-		right: 281px;
-		width: 74px;
-		height: 73px;
-		position: absolute;
-		z-index: 1;
+		top: 0;
+		right: 238px;
 		background: url("@{img-url}/bg-hit-tablet.svg") no-repeat;
 	}
 	.table__price::after {
 		content: "ХИТ";
-		top: 35px;
-		right: 306px;
-		color: #ffffff;
-		font-size: 14px;
-		line-height: 30px;
-		width: 40px;
-		height: 40px;
-		position: absolute;
-		z-index: 1;
-		background: transparent;
-		transform: rotate(-45deg);
+		top: 0;
+		right: 264px;
 	}
 	.table__col--col-2,
 	.table__col--col-3,
@@ -81,6 +154,11 @@
 	.table__col--col-11 {
 		background: #ffffff url("@{img-url}/icon-no.svg") no-repeat 63px 7px;
 	}
+	.table__col--col-2,
+	.table__col--col-6,
+	.table__col--col-10 {
+		width: 163px;
+	}
 }
 
 @media @desktop-widths {
@@ -88,16 +166,17 @@
 		margin-top: 30px;
 	}
 	.table {
-		padding-right: 130px;
-		padding-left: 130px;
+		padding-right: 10px;
+		padding-left: 10px;
 	}
 	.table__price::before {
-		top: 66px;
-		right: 525px;
+		top: 0;
+		right: 395px;
+		background: url("@{img-url}/bg-hit.svg") no-repeat;
 	}
 	.table__price::after {
-		top: 65px;
-    left: 610px;
+		top: 5px;
+		right: 415px;
 	}
 	td {
 		padding-left: 20px;
@@ -115,6 +194,7 @@
 		font-size: 18px;
 		width: 193px;
 		height: 56px;
+		padding-left: 20px;
 	}
 	.table__col--col-2,
 	.table__col--col-3,

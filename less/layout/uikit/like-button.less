@@ -1,0 +1,34 @@
+	.like-button {
+		width: 13px;
+		height: 12px;
+		.no-borders();
+		.display-inlineblock();
+		.vertical-align(baseline);
+		.pointer();
+		background: url("@{img-url}/icon-heart.svg") no-repeat;
+		&--main {
+			width: 13px;
+			height: 12px;
+			.no-borders();
+			.display-inlineblock();
+			.vertical-align(baseline);
+			background: url("@{img-url}/icon-heart.svg") no-repeat;
+		}
+	}
+	
+	@media @tablet-widths {
+		.like-button {
+			order: 2;
+			padding: 0;
+			margin-top: 12px;
+			margin-right: 31px;
+			&--main {
+				order: 2;
+				margin-top: 30px;
+				width: 13px;
+				height: 12px;
+				.no-borders();
+				background: url("@{img-url}/icon-heart.svg") no-repeat;
+			}
+		}
+	}

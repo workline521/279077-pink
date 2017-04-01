@@ -17,14 +17,12 @@
 	padding: 20px 20px;
 	border: 2px solid #e5e5e5;
 	margin-bottom: 17px;
-}
-
-.form-field__origin:hover {
-	border-color: @link-bg;
-}
-
-.form-field__origin:focus {
-	border-color: @font-red;
+	&--:hover {
+		border-color: @link-bg;
+	}
+	&:focus {
+		border-color: @font-red;
+	}
 }
 
 .form-field__origin::-webkit-input-placeholder {
@@ -63,13 +61,13 @@
 		padding-top: 20px;
 	}
 	.form-field__origin {
-		width: 521px;
+		width: 525px;
 		margin: 0;
 		padding: 19px 16px;
 		margin-left: 16px;
-	}
-	.form-field__origin--tablet {
-		width: 566px;
+		&--tablet {
+			width: 566px;
+		}
 	}
 	.form-field--order {
 		display: flex;
@@ -81,7 +79,7 @@
 	}
 	.form-field--margin {
 		position: relative;
-		margin-top: 36px;
+		margin-top: 38px;
 	}
 	.form-field--margin::before {
 		content: "";
@@ -111,35 +109,34 @@
 		padding-top: 21px;
 		padding-bottom: 17px;
 		padding-left: 15px;
+		padding-right: 76px;
 	}
 	.form-field__label--order2 {
 		order: 2;
 		margin: 0;
-		padding-left: 15px;
+		padding-left: 19px;
 		padding-top: 12px;
 		padding-bottom: 25px;
 	}
 }
 
 @media @desktop-widths {
-	
 	.form-field__origin {
 		width: 340px;
 		margin-left: 19px;
+		&--tablet {
+			width: 382px;
+		}
 	}
 	.form-field--flex {
 		justify-content: flex-start;
 		width: 470px;
-	}
-	.form-field__origin--tablet {
-		width: 382px;
 	}
 	.form-field--order {
 		margin: 0;
 		width: 410px;
 		margin-top: 34px;
 	}
-	
 	.form-field--margin {
 		margin-right: 30px;
 	}
@@ -155,7 +152,7 @@
 		top: 2px;
 		left: 768px;
 	}
-	.form-field__origin--order1{
+	.form-field__origin--order1 {
 		width: 371px;
 	}
 }
