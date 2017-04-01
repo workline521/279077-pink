@@ -25,12 +25,29 @@
 	margin-top: 40px;
 	&--crop {
 		margin-left: 55px;
+		background: url("@{img-url}/icon-editor-crop-disabled.svg");
+		&:hover {
+			background: url("@{img-url}/icon-editor-crop-hover.svg");
+		}
+	}
+	&--fill {
+		background: url("@{img-url}/icon-editor-fill-disabled.svg");
+		&:hover {
+			background: url("@{img-url}/icon-editor-fill-hover.svg");
+		}
 	}
 	&--contrast {
 		margin-right: 52px;
 		margin-top: 49px;
 		width: 32px;
 		height: 32px;
+		background: url("@{img-url}/icon-editor-contrast-disabled.svg");
+		&:hover {
+			background: url("@{img-url}/icon-editor-contrast-hover.svg");
+		}
+	}
+	&--active {
+		background: url("@{img-url}/icon-editor-crop.svg");
 	}
 }
 
@@ -186,11 +203,18 @@
 		width: 24px;
 		height: 24px;
 		margin-top: 27px;
+		&--crop {
+			background: url("@{img-url}/icon-editor-crop.svg");
+		}
+		&--fill {
+			background: url("@{img-url}/icon-editor-fill.svg");
+		}
 		&--contrast {
 			width: 17px;
 			height: 17px;
 			margin-top: 24px;
 			margin-left: 3px;
+			background: url("@{img-url}/icon-editor-contrast.svg");
 		}
 	}
 	.functional__toolcontrols {
@@ -198,9 +222,8 @@
 		padding: 36px 18px 34px 18px;
 		margin: 0;
 	}
-	.functional__toolscale{
+	.functional__toolscale {
 		width: 202px;
-		
 	}
 	.tooltoggle:hover {
 		background: @font-red;
@@ -266,7 +289,7 @@
 	.functional__tool-list {
 		width: 410px;
 	}
-	.functional__toolscale{
+	.functional__toolscale {
 		width: 288px;
 	}
 	.functional__toolcontrols {
