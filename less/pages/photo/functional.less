@@ -167,14 +167,16 @@
 	.functional__tool-item {
 		height: 72px;
 		&--1 {
-			order: initial;
+			order: 2;
 		}
 		&--2 {
 			position: relative;
 			display: block;
+			order: 4;
 		}
 		&--3 {
 			display: block;
+			order: 6;
 		}
 	}
 	.functional__tool-item--2:before {
@@ -204,9 +206,11 @@
 		margin-top: 27px;
 		&--crop {
 			background: url("@{img-url}/icon-editor-crop.svg");
+			order: 1;
 		}
 		&--fill {
 			background: url("@{img-url}/icon-editor-fill.svg");
+			order: 3;
 		}
 		&--contrast {
 			width: 17px;
@@ -214,6 +218,7 @@
 			margin-top: 24px;
 			margin-left: 3px;
 			background: url("@{img-url}/icon-editor-contrast.svg");
+			order: 5;
 		}
 	}
 	.functional__toolcontrols {
