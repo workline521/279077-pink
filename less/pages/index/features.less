@@ -1,195 +1,195 @@
 .features__image {
-	display: none;
+  display: none;
 }
 
 .features__heading {
-	font-size: @font-size + 6;
-	line-height: @line-height - 6;
-	.font-light();
-	margin: 0;
-	margin-top: 40px;
-	.text-align();
-	color: @link-bg;
-	background: #ffffff;
-	&--white {
-		.background-white();
-		margin: 0;
-		line-height: 29px;
-	}
+  font-size: @font-size + 6;
+  line-height: @line-height - 6;
+  .font-light();
+  margin: 0;
+  margin-top: 40px;
+  .text-align();
+  color: @link-bg;
+  background: #ffffff;
+  &--white {
+    .background-white();
+    margin: 0;
+    line-height: 29px;
+  }
 }
 
 .features__description {
-	position: relative;
-	.margin-top(70px);
+  position: relative;
+  .margin-top(70px);
 }
 
 .features__description::after {
-	content: "";
-	top: -20px;
-	left: 0;
-	width: 100%;
-	height: 50%;
-	position: absolute;
-	background: @description-bg;
-	z-index: -1;
-	transform: skewY(-6deg);
+  content: "";
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  background: @description-bg;
+  z-index: -1;
+  transform: skewY(-6deg);
 }
 
 .features__item-heading {
-	font-size: @font-size;
-	line-height: @line-height - 10;
-	color: @font-black;
-	.text-align();
-	.font-bold ();
-	.zero-margin();
-	padding-top: 40px;
-	padding-bottom: 15px;
+  font-size: @font-size;
+  line-height: @line-height - 10;
+  color: @font-black;
+  .text-align();
+  .font-bold ();
+  .zero-margin();
+  padding-top: 40px;
+  padding-bottom: 15px;
 }
 
 .features__item-heading:first-child {
-	margin-left: 50px;
-	.display-inlineblock();
-	.vertical-align()
+  margin-left: 50px;
+  .display-inlineblock();
+  .vertical-align()
 }
 
 .features__item {
-	font-family: @font-regular;
-	font-size: @font-size - 4;
-	line-height: @line-height - 10;
-	color: @link-bg;
-	.text-align();
-	.zero-margin();
-	padding: 0 20px;
+  font-family: @font-regular;
+  font-size: @font-size - 4;
+  line-height: @line-height - 10;
+  color: @link-bg;
+  .text-align();
+  .zero-margin();
+  padding: 0 20px;
 }
 
 .features__pic {
-	.display-block();
-	.centerize();
-	.margin-top();
+  .display-block();
+  .centerize();
+  .margin-top();
 }
 
 @media @tablet-widths {
-	.features__heading {
-		.zero-margin();
-		font-size: 40px;
-		line-height: 50px;
-		&--desktop {
-			font-size: 40px;
-			line-height: 50px;
-			display: block;
-			margin-top: 49px;
-		}
-	}
-	.features__item-heading {
-		.display-inlineblock();
-		margin-left: 330px;
-		padding: 0;
-		padding-bottom: 15px;
-	}
-	.features__item {
-		.display-block();
-		.zero-margin();
-		margin-left: 310px;
-		padding-bottom: 40px;
-		padding-right: 40px;
-		text-align: left;
-	}
-	.features__description {
-		height: 420px;
-		.margin-top(106px);
-	}
-	.features__pic {
-		.display-none();
-		margin-top: 100px;
-	}
-	.features__description::after {
-		top: -38px;
-		transform: skewY(-4deg);
-	}
-	.features__description::before {
-		content: "";
-		top: -62px;
-		left: 20px;
-		width: 268px;
-		height: 481px;
-		position: absolute;
-		background: url("@{img-url}/iphone-screen-3-tablet@1x.png") no-repeat;
-		z-index: 1;
-	}
-	@media @retinaTablet {
-		.features__description::before {
-			background: url("@{img-url}/iphone-screen-3-tablet@2x.png") no-repeat;
-			background-size: cover;
-		}
-	}
+  .features__heading {
+    .zero-margin();
+    font-size: 40px;
+    line-height: 50px;
+    &--desktop {
+      font-size: 40px;
+      line-height: 50px;
+      display: block;
+      margin-top: 49px;
+    }
+  }
+  .features__item-heading {
+    .display-inlineblock();
+    margin-left: 330px;
+    padding: 0;
+    padding-bottom: 15px;
+  }
+  .features__item {
+    .display-block();
+    .zero-margin();
+    margin-left: 310px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+    text-align: left;
+  }
+  .features__description {
+    height: 420px;
+    .margin-top(106px);
+  }
+  .features__pic {
+    .display-none();
+    margin-top: 100px;
+  }
+  .features__description::after {
+    top: -38px;
+    transform: skewY(-4deg);
+  }
+  .features__description::before {
+    content: "";
+    top: -62px;
+    left: 20px;
+    width: 268px;
+    height: 481px;
+    position: absolute;
+    background: url("@{img-url}/iphone-screen-3-tablet@1x.png") no-repeat;
+    z-index: 1;
+  }
+  @media @retinaTablet {
+    .features__description::before {
+      background: url("@{img-url}/iphone-screen-3-tablet@2x.png") no-repeat;
+      background-size: cover;
+    }
+  }
 }
 
 @media @desktop-widths {
-	.features__description::before {
-		content: "";
-		top: 0;
-		left: 0;
-		position: absolute;
-		z-index: -1;
-	}
-	.features__description {
-		display: flex;
-		justify-content: space-between;
-	}
-	.features__description::after {
-		content: "";
-		top: -43px;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		background: @description-bg;
-		z-index: -1;
-		transform: skewY(-4deg);
-	}
-	.features__title {
-		margin-bottom: 176px;
-	}
-	.features__heading {
-		margin: 0;
-		font-size: 50px;
-		line-height: 55px;
-		&--desktop {
-			font-size: 50px;
-			line-height: 70px;
-			margin-top: 63px;
-		}
-	}
-	.features__image {
-		display: block;
-		margin: 0 auto;
-	}
-	.features__block {
-		margin-left: 16px;
-		width: 292px;
-		margin-top: -95px;
-	}
-	.features__item-heading {
-		margin: 0;
-		margin-top: 52px;
-		display: block;
-		text-align: center;
-		font-size: 30px;
-		line-height: 30px;
-		padding: 0;
-		&--last {
-			padding-left: 30px;
-			padding-right: 30px;
-		}
-	}
-	.features__item {
-		display: block;
-		padding-left: 25px;
-		padding-right: 25px;
-		margin: 25px 0 0 0;
-		text-align: center;
-		font-size: 18px;
-		line-height: 30px;
-		color: @link-bg;
-	}
+  .features__description::before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  .features__description {
+    display: flex;
+    justify-content: space-between;
+  }
+  .features__description::after {
+    content: "";
+    top: -43px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: @description-bg;
+    z-index: -1;
+    transform: skewY(-4deg);
+  }
+  .features__title {
+    margin-bottom: 176px;
+  }
+  .features__heading {
+    margin: 0;
+    font-size: 50px;
+    line-height: 55px;
+    &--desktop {
+      font-size: 50px;
+      line-height: 70px;
+      margin-top: 63px;
+    }
+  }
+  .features__image {
+    display: block;
+    margin: 0 auto;
+  }
+  .features__block {
+    margin-left: 16px;
+    width: 292px;
+    margin-top: -95px;
+  }
+  .features__item-heading {
+    margin: 0;
+    margin-top: 52px;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    padding: 0;
+    &--last {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  .features__item {
+    display: block;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 25px 0 0 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    color: @link-bg;
+  }
 }

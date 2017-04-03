@@ -1,67 +1,65 @@
-.form {}
-
 .form__submit {
-	.display-block();
-	margin: 0 auto;
-	.no-borders();
-	.margin-top();
-	border-radius: 3px;
-	background: #2aab6d;
-	color: @font-color;
-	font-size: @font-size - 1;
-	line-height: @line-height - 2;
-	.font-bold ();
-	padding: 16px 53px;
-	.pointer();
-	&:hover {
-		background: #1c9b5e;
-	}
-	&:active {
-		color: #61b98f;
-	}
+  .display-block();
+  margin: 0 auto;
+  .no-borders();
+  .margin-top();
+  border-radius: 3px;
+  background: #2aab6d;
+  color: @font-color;
+  font-size: @font-size - 1;
+  line-height: @line-height - 2;
+  .font-bold ();
+  padding: 16px 53px;
+  .pointer();
+  &:hover {
+    background: #1c9b5e;
+  }
+  &:active {
+    color: #61b98f;
+  }
 }
 
 .form__commentary {
-	color: @link-bg;
-	.text-align();
-	font-size: @font-size - 4;
-	line-height: @line-height - 2;
-	.margin-top(36px);
-	margin-bottom: 51px;
-	&--red {
-		color: @font-red;
-	}
+  color: @link-bg;
+  .text-align();
+  font-size: @font-size - 4;
+  line-height: @line-height - 2;
+  .margin-top(36px);
+  margin-bottom: 51px;
+  &--red {
+    color: @font-red;
+  }
 }
 
 @media @tablet-widths {
-	.form {
-		margin-bottom: 13px;
-	}
-	.form__submit {
-		.display-inlineblock();
-		.vertical-align;
-		margin-top: 69px;
-		margin-left: 20px;
-		padding: 16px 62px;
-	}
-	.form__commentary {
-		.display-inlineblock();
-		.vertical-align;
-		margin-top: 86px;
-		margin-left: 135px;
-	}
+  .form {
+    margin-bottom: 13px;
+  }
+  .form__submit {
+    .display-inlineblock();
+    .vertical-align;
+    margin-top: 69px;
+    margin-left: 20px;
+    padding: 16px 62px;
+  }
+  .form__commentary {
+    .display-inlineblock();
+    .vertical-align;
+    margin-top: 86px;
+    margin-left: 135px;
+  }
 }
 
 @media @desktop-widths {
-	.form {}
-	.form__submit {
-		margin-top: 64px;
-		margin-left: 10px;
-	}
-	.form__commentary {
-		font-size: @font-size - 4;
-		line-height: @line-height - 2;
-		margin-top: 82px;
-		margin-left: 323px;
-	}
+  .form {}
+  .form__submit {
+    margin-top: 64px;
+    margin-left: 10px;
+  }
+  .form__commentary {
+    font-size: @font-size - 4;
+    line-height: @line-height - 2;
+    margin-top: 82px;
+    margin-left: 323px;
+  }
 }

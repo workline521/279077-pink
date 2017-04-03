@@ -1,55 +1,55 @@
 .photo-content {
-	background: url("@{img-url}/bg-back-mobile@1x.jpg") center -65px no-repeat;
+  background: url("@{img-url}/bg-back-mobile@1x.jpg") center -65px no-repeat;
 }
 
 @media @retinaMobile {
-	.photo-content {
-		background: url(../img/bg-back-mobile@2x.jpg) center -65px no-repeat;
-	}
+  .photo-content {
+    background: url(../img/bg-back-mobile@2x.jpg) center -65px no-repeat;
+  }
 }
 
 .photo-content__heading {
-	font-family: @font-regular;
-	font-size: @font-size + 6;
-	line-height: @line-height - 4;
-	color: @font-color;
-	.font-light();
-	.margin-top();
-	.text-align();
-	.zero-margin();
-	padding-top: 30px;
-	padding-bottom: 84px;
+  font-family: @font-regular;
+  font-size: @font-size + 6;
+  line-height: @line-height - 4;
+  color: @font-color;
+  .font-light();
+  .margin-top();
+  .text-align();
+  .zero-margin();
+  padding-top: 30px;
+  padding-bottom: 84px;
 }
 
 @media @tablet-widths {
-	.photo-content {
-		height: 330px;
-		background: url("@{img-url}/bg-back-tablet@1x.jpg") center -110px no-repeat;
-	}
-	@media @retinaTablet {
-		.photo-content {
-			background: url(../img/bg-back-tablet@2x.jpg) center -110px no-repeat;
-		}
-	}
-	.photo-content__heading {
-		font-size: 50px;
-		line-height: 60px;
-		padding-top: 68px;
-		padding-bottom: 140px;
-	}
+  .photo-content {
+    height: 330px;
+    background: url("@{img-url}/bg-back-tablet@1x.jpg") center -110px no-repeat;
+  }
+  @media @retinaTablet {
+    .photo-content {
+      background: url(../img/bg-back-tablet@2x.jpg) center -110px no-repeat;
+    }
+  }
+  .photo-content__heading {
+    font-size: 50px;
+    line-height: 60px;
+    padding-top: 68px;
+    padding-bottom: 140px;
+  }
 }
 
 @media @desktop-widths {
-	.photo-content {
-		height: 284px;
-		background: url("@{img-url}/bg-back-desktop@1x.jpg") center -110px no-repeat;
-	}
-	@media @retinaDesktop {
-		.photo-content {
-			background: url(../img/bg-back-desktop@2x.jpg) center -110px no-repeat;
-		}
-	}
-	.photo-content__heading {
-		padding-bottom: 96px;
-	}
+  .photo-content {
+    height: 284px;
+    background: url("@{img-url}/bg-back-desktop@1x.jpg") center -110px no-repeat;
+  }
+  @media @retinaDesktop {
+    .photo-content {
+      background: url(../img/bg-back-desktop@2x.jpg) center -110px no-repeat;
+    }
+  }
+  .photo-content__heading {
+    padding-bottom: 96px;
+  }
 }

@@ -1,66 +1,66 @@
 .form-checkbox {
-	margin: 49px 0;
+  margin: 49px 0;
 }
 
 .form-checkbox__label {
-	position: relative;
-	cursor: pointer;
-	.letter-spacing();
-	color: @link-bg;
-	font-size: @font-size - 1;
-	padding-left: 70px;
+  position: relative;
+  cursor: pointer;
+  .letter-spacing();
+  color: @link-bg;
+  font-size: @font-size - 1;
+  padding-left: 70px;
 }
 
 .form-checkbox__label input[type="checkbox"] {
-	display: none;
+  display: none;
 }
 
 .form-checkbox__label input[type="checkbox"] + .form-checkbox__indicator {
-	position: absolute;
-	top: -7px;
-	left: 0;
-	width: 35px;
-	height: 35px;
-	border: 2px solid #e5e5e5;
-	background: #ffffff;
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e5e5e5;
+  background: #ffffff;
 }
 
 .form-checkbox__label input[type="checkbox"]:hover + .form-checkbox__indicator:hover {
-	border: 2px solid #283645;
+  border: 2px solid #283645;
 }
 
 .form-checkbox__label input[type="checkbox"]:active + .form-checkbox__indicator:active {
-	border: 2px solid #d22856;
+  border: 2px solid #d22856;
 }
 
 .form-checkbox__label input[type="checkbox"]:checked + .form-checkbox__indicator {
-	position: absolute;
-	top: -7px;
-	left: 0;
-	width: 35px;
-	height: 35px;
-	background: #ffffff url("@{img-url}/icon-yes-checkbox.svg") no-repeat 50% 50%;
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background: #ffffff url("@{img-url}/icon-yes-checkbox.svg") no-repeat 50% 50%;
 }
 
 .form-checkbox__label input[type="checkbox"]:hover:checked + .form-checkbox__indicator:hover {
-	border: 2px solid #283645;
+  border: 2px solid #283645;
 }
 
 .form-checkbox__label input[type="checkbox"]:active:checked + .form-checkbox__indicator:active {
-	border: 2px solid #d22856;
+  border: 2px solid #d22856;
 }
 
 @media @tablet-widths {
-	.form-checkbox {
-		margin: 51px 0 51px 55px;
-	}
+  .form-checkbox {
+    margin: 51px 0 51px 55px;
+  }
 }
 
 @media @desktop-widths {
-	.form-checkbox {
-		width: 250px;
-		margin: 51px 0;
-		font-size: 18px;
-		line-height: 30px;
-	}
+  .form-checkbox {
+    width: 250px;
+    margin: 51px 0;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

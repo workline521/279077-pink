@@ -1,68 +1,68 @@
 .form-radio {
-	margin: 42px 0;
+  margin: 42px 0;
 }
 
 .form-radio__label {
-	position: relative;
-	cursor: pointer;
-	.letter-spacing();
-	font-size: @font-size - 1;
-	color: @link-bg;
-	padding-left: 70px;
+  position: relative;
+  cursor: pointer;
+  .letter-spacing();
+  font-size: @font-size - 1;
+  color: @link-bg;
+  padding-left: 70px;
 }
 
 .form-radio__label input[type="radio"] {
-	display: none;
+  display: none;
 }
 
 .form-radio__label input[type="radio"] + .form-radio__indicator {
-	position: absolute;
-	top: -7px;
-	left: 0;
-	width: 35px;
-	height: 35px;
-	border: 2px solid #e5e5e5;
-	border-radius: 50%;
-	background: #ffffff;
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  background: #ffffff;
 }
 
 .form-radio__label input[type="radio"]:hover + .form-radio__indicator:hover {
-	border: 2px solid #283645;
+  border: 2px solid #283645;
 }
 
 .form-radio__label input[type="radio"]:active + .form-radio__indicator:active {
-	border: 2px solid #d22856;
+  border: 2px solid #d22856;
 }
 
 .form-radio__label input[type="radio"]:checked + .form-radio__indicator {
-	position: absolute;
-	top: -7px;
-	left: 0;
-	width: 35px;
-	height: 35px;
-	background: transparent url("@{img-url}/icon-map-marker.svg") no-repeat 50% 50%;
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background: transparent url("@{img-url}/icon-map-marker.svg") no-repeat 50% 50%;
 }
 
 .form-radio__label input[type="radio"]:hover:checked + .form-radio__indicator:hover {
-	border: 2px solid #283645;
+  border: 2px solid #283645;
 }
 
 .form-radio__label input[type="radio"]:active:checked + .form-radio__indicator:active {
-	border: 2px solid #d22856;
+  border: 2px solid #d22856;
 }
 
 @media @tablet-widths {
-	.form-radio__label {
-		padding-left: 59px;
-	}
-	.form-radio {
-		margin: 48px 0 48px 58px;
-		margin-left: 58px;
-	}
+  .form-radio__label {
+    padding-left: 59px;
+  }
+  .form-radio {
+    margin: 48px 0 48px 58px;
+    margin-left: 58px;
+  }
 }
 
 @media @desktop-widths {
-	.form-radio {
-		margin-left: 75px;
-	}
+  .form-radio {
+    margin-left: 75px;
+  }
 }

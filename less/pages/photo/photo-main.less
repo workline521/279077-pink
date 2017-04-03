@@ -1,140 +1,140 @@
 .photo-main {
-	display: flex;
-	flex-direction: column;
-	position: relative;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .photo-main::before {
-	content: "";
-	position: absolute;
-	width: 140px;
-	height: 36px;
-	top: 0;
-	right: 20px;
-	background: @font-red;
-	z-index: 1;
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 36px;
+  top: 0;
+  right: 20px;
+  background: @font-red;
+  z-index: 1;
 }
 
 .photo-main::after {
-	content: "ПАНОРАМА ДНЯ";
-	position: absolute;
-	font-size: 12px;
-	line-height: 24px;
-	font-weight: bold;
-	color: #ffffff;
-	width: 140px;
-	height: 36px;
-	top: 7px;
-	right: 0;
-	z-index: 1;
+  content: "ПАНОРАМА ДНЯ";
+  position: absolute;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  width: 140px;
+  height: 36px;
+  top: 7px;
+  right: 0;
+  z-index: 1;
 }
 
 .photo-main__username {
-	font-size: @font-size - 4;
-	color: @link-bg;
-	.font-bold ();
+  font-size: @font-size - 4;
+  color: @link-bg;
+  .font-bold ();
 }
 
 .photo-main__pic {
-	height: 137px;
+  height: 137px;
 }
 
 .photo-main__info {
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
 }
 
 .photo-main__usermessage {
-	font-size: 14px;
-	line-height: 24px;
-	padding-left: 17px;
-	color: @link-bg;
-	margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 17px;
+  color: @link-bg;
+  margin: 0;
 }
 
 .photo-main__controls {
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
 
 .photo-main__likes-number {
-	.display-inlineblock();
-	.vertical-align(baseline);
-	.zero-margin();
-	color: @font-red;
-	font-size: @font-size - 6;
-	padding-left: 10px;
+  .display-inlineblock();
+  .vertical-align(baseline);
+  .zero-margin();
+  color: @font-red;
+  font-size: @font-size - 6;
+  padding-left: 10px;
 }
 
 @media @tablet-widths {
-	.photo-main__pic {
-		height: 509px;
-		&--size {
-			width: 100%;
-			height: 100%;
-		}
-	}
-	.photo-main::before {
-		top: 55px;
-		right: 19px;
-	}
-	.photo-main::after {
-		top: 61px;
-		right: 0;
-	}
-	.photo-main__info {
-		padding: 19px 0 0 28px;
-	}
-	.photo-main__controls {
-		display: flex;
-		padding: 0;
-		line-height: 22px;
-	}
-	.photo-main__block {
-		order: 3;
-		padding-left: 28px;
-		padding-bottom: 23px;
-	}
-	.photo-main__usermessage {
-		display: block;
-		margin: 0;
-		margin-top: -5px;
-		font-size: 14px;
-		line-height: 24px;
-		color: @link-bg;
-		padding: 0;
-	}
-	.photo-main__likes-number {
-		padding-top: 26px;
-		padding-right: 14px;
-		.zero-margin();
-		color: @font-red;
-		font-size: @font-size - 6;
-	}
+  .photo-main__pic {
+    height: 509px;
+    &--size {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .photo-main::before {
+    top: 55px;
+    right: 19px;
+  }
+  .photo-main::after {
+    top: 61px;
+    right: 0;
+  }
+  .photo-main__info {
+    padding: 19px 0 0 28px;
+  }
+  .photo-main__controls {
+    display: flex;
+    padding: 0;
+    line-height: 22px;
+  }
+  .photo-main__block {
+    order: 3;
+    padding-left: 28px;
+    padding-bottom: 23px;
+  }
+  .photo-main__usermessage {
+    display: block;
+    margin: 0;
+    margin-top: -5px;
+    font-size: 14px;
+    line-height: 24px;
+    color: @link-bg;
+    padding: 0;
+  }
+  .photo-main__likes-number {
+    padding-top: 26px;
+    padding-right: 14px;
+    .zero-margin();
+    color: @font-red;
+    font-size: @font-size - 6;
+  }
 }
 
 @media @desktop-widths {
-	.photo-main__pic {
-		height: 506px;
-	}
-	.photo-main::before {
-		top: 54px;
-		right: 10px;
-	}
-	.photo-main::after {
-		top: 60px;
-		right: -10px;
-	}
-	.photo-main__usermessage {
-		display: block;
-		margin: 0;
-		font-size: 14px;
-		line-height: 24px;
-		color: @link-bg;
-	}
-	.photo-main__block {
-		padding-bottom: 20px;
-	}
+  .photo-main__pic {
+    height: 506px;
+  }
+  .photo-main::before {
+    top: 54px;
+    right: 10px;
+  }
+  .photo-main::after {
+    top: 60px;
+    right: -10px;
+  }
+  .photo-main__usermessage {
+    display: block;
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+    color: @link-bg;
+  }
+  .photo-main__block {
+    padding-bottom: 20px;
+  }
 }
