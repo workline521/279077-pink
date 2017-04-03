@@ -29,6 +29,9 @@
   &--red {
     color: @font-red;
   }
+  &--hidden {
+    display: none;
+  }
 }
 
 @media @tablet-widths {
@@ -61,5 +64,8 @@
     line-height: @line-height - 2;
     margin-top: 82px;
     margin-left: 323px;
+    &--hidden {
+      display: inline;
+    }
   }
 }
