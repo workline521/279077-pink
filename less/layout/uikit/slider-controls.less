@@ -4,6 +4,32 @@
   height: 10px;
   margin: 30px auto 0 auto;
   font-size: 0;
+  &--mobile {
+    margin-top: 311px;
+    position: relative;
+  }
+}
+
+.slider-controls--mobile::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: -400px;
+  left: 190px;
+  background: #fff;
+  z-index: 3;
+}
+
+.slider-controls--mobile::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: -400px;
+  right: 191px;
+  background: #fff;
+  z-index: 3;
 }
 
 .slider-tool {
