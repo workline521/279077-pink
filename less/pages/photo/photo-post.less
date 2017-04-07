@@ -1,12 +1,13 @@
 .photo-post {
   padding-left: 20px;
   padding-right: 20px;
+  background: @description-bg;
 }
 
 .photo-post__content {
   display: flex;
   flex-direction: column;
-  background: @description-bg;
+
   .margin-top(-8px);
   margin-bottom: 20px;
 }
@@ -65,7 +66,7 @@
   .photo-post__content {
     margin: 0;
     width: 300px;
-    height: 155px;
+   min-height: 155px;
   }
   .photo-post__photo {
     width: 300px;
@@ -83,7 +84,7 @@
   }
   .photo-post__usermessage {
     padding-left: 28px;
-    height: 50px;
+   min-height: 50px;
   }
   .photo-post__controls {
     flex-direction: row;
