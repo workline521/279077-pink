@@ -3,14 +3,15 @@
   position: relative;
 }
 
-.download__pic {
-  height: 396px;
-  background:#283645 url("@{img-url}/bg-back-mobile@1x.jpg") center -65px no-repeat;
-}
-
-@media @retinaMobile {
+@media @mobile-widths {
   .download__pic {
-    background:#283645 url("@{img-url}/bg-back-mobile@2x.jpg") center -65px no-repeat;
+    height: 396px;
+    background:#283645 url("@{img-url}/bg-back-mobile@1x.jpg") center -65px no-repeat;
+  }
+  @media @retinaMobile {
+    .download__pic {
+      background:#283645 url("@{img-url}/bg-back-mobile@2x.jpg") center -65px no-repeat;
+    }
   }
 }
 
