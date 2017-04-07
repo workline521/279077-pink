@@ -1,9 +1,9 @@
 .wrapper {
   &--header {
-    background: @link-bg;
+    background: #283645 url("@{img-url}/bg-back-mobile@1x.jpg") top center no-repeat;
   }
-  &--js{
-    background:#283645 url("@{img-url}/bg-back-mobile@1x.jpg") top center no-repeat;
+  &--nojs {
+    background: #283645;
   }
 }
 
@@ -58,7 +58,12 @@
 @media @desktop-widths {
   .wrapper--header {
     position: relative;
-    background: none;
+
+  }
+  @media @retinaTablet {
+    .wrapper--header {
+
+    }
   }
   .wrapper--menu {
     background: rgba(0, 0, 0, 0.3);
