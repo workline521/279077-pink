@@ -1,29 +1,26 @@
-.wrapper {
-  &--header {
-    background: #283645 url("@{img-url}/bg-back-mobile@1x.jpg") top center no-repeat;
-  }
-  &--nojs {
+@media @mobile-widths {
+  .wrapper--nojs {
     background: #283645;
   }
-}
-
-@media @retinaMobile {
   .wrapper--header {
-    background:#283645 url("@{img-url}/bg-back-mobile@2x.jpg") top center no-repeat;
+    background: #283645 url("@{img-url}/bg-back-mobile@1x.jpg") top center no-repeat;
   }
-}
-
-.wrapper--features {
-  background: @description-bg;
-}
-
-.wrapper--photo {
-  background: #f2f2f2;
-  width: 280px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
+  @media @retinaMobile {
+    .wrapper--header {
+      background: #283645 url("@{img-url}/bg-back-mobile@2x.jpg") top center no-repeat;
+    }
+  }
+  .wrapper--features {
+    background: @description-bg;
+  }
+  .wrapper--photo {
+    background: #f2f2f2;
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
 }
 
 @media @tablet-widths {
@@ -58,11 +55,11 @@
 @media @desktop-widths {
   .wrapper--header {
     position: relative;
-
+    background: transparent;
   }
-  @media @retinaTablet {
+  @media @retinaDesktop {
     .wrapper--header {
-
+      background: transparent;
     }
   }
   .wrapper--menu {
