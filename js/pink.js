@@ -28,15 +28,15 @@ navToggle.addEventListener("click", function () {
 });
 formSubmit.addEventListener("click", function (event) {
   event.preventDefault();
-  formSuccess.classList.add("show");
+  formSuccess.classList.add("form-success--show");
 });
 successClose.addEventListener("click", function (event) {
-  formSuccess.classList.remove("show");
+  formSuccess.classList.remove("form-success--show");
 });
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 27) {
-    if (formSuccess.classList.contains("show")) {
-      formSuccess.classList.remove("show");
+    if (formSuccess.classList.contains("form-success--show")) {
+      formSuccess.classList.remove("form-success--show");
     }
   }
 });
