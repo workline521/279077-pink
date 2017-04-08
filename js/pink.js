@@ -14,7 +14,7 @@ if (headerMenu.classList.contains("header-menu--nojs")) {
 else {
   headerStripe.classList.remove("header-stripe--bg");
 }
-navToggle.addEventListener('click', function () {
+navToggle.addEventListener("click", function () {
   if (headerMenu.classList.contains("header-menu--closed")) {
     headerMenu.classList.remove("header-menu--closed");
     headerMenu.classList.add("header-menu--opened");
